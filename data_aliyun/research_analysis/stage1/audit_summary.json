@@ -1,0 +1,14 @@
+{
+  "notebooks": 4,
+  "cells": 118,
+  "csv_files": 51,
+  "extracted_figures": 11,
+  "checks": 122,
+  "checks_passed": 122,
+  "metric_comparisons": 1090,
+  "metrics_passed": 1090,
+  "max_metric_abs_difference": 2.0521943255857877e-08,
+  "retrained": false,
+  "executed_notebooks": false,
+  "source_files_unchanged": true
+}

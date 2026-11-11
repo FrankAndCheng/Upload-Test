@@ -1,0 +1,102 @@
+{
+  "original_train": {
+    "rows": 5642,
+    "columns": 42,
+    "age_min": 3,
+    "age_max": 93,
+    "glucose_mean": 5.6319248493442045,
+    "glucose_std_sample": 1.544881931954514,
+    "glucose_min": 3.07,
+    "glucose_max": 38.43,
+    "date_min": "2017-09-15",
+    "date_max": "2017-10-31",
+    "sex_counts": {
+      "男": 2876,
+      "女": 2765,
+      "??": 1
+    }
+  },
+  "A": {
+    "rows": 1000,
+    "columns": 42,
+    "age_min": 16,
+    "age_max": 84,
+    "glucose_mean": 5.74508,
+    "glucose_std_sample": 1.448667121884814,
+    "glucose_min": 3.85,
+    "glucose_max": 20.46,
+    "date_min": "2017-10-10",
+    "date_max": "2017-10-31",
+    "sex_counts": {
+      "女": 548,
+      "男": 452
+    }
+  },
+  "B": {
+    "rows": 1000,
+    "columns": 42,
+    "age_min": 19,
+    "age_max": 86,
+    "glucose_mean": 5.486879999999999,
+    "glucose_std_sample": 1.2398442157300567,
+    "glucose_min": 3.84,
+    "glucose_max": 17.1,
+    "date_min": "2017-10-20",
+    "date_max": "2017-10-31",
+    "sex_counts": {
+      "女": 512,
+      "男": 488
+    }
+  },
+  "fit4649": {
+    "rows": 4649,
+    "columns": 42,
+    "age_min": 3,
+    "age_max": 93,
+    "glucose_mean": 5.626855237685524,
+    "glucose_std_sample": 1.4742553200235289,
+    "glucose_min": 3.07,
+    "glucose_max": 38.43,
+    "date_min": "2017-09-15",
+    "date_max": "2017-10-31",
+    "sex_counts": {
+      "男": 2337,
+      "女": 2311,
+      "??": 1
+    }
+  },
+  "development1993": {
+    "rows": 1993,
+    "columns": 42,
+    "age_min": 21,
+    "age_max": 85,
+    "glucose_mean": 5.700526843953838,
+    "glucose_std_sample": 1.655721512912182,
+    "glucose_min": 3.66,
+    "glucose_max": 23.62,
+    "date_min": "2017-09-15",
+    "date_max": "2017-10-31",
+    "sex_counts": {
+      "女": 1002,
+      "男": 991
+    }
+  },
+  "development_composition": {
+    "original_train": 1685,
+    "A": 308
+  },
+  "old_intermediates": {
+    "drop_fillna.csv": {
+      "rows": 5202,
+      "columns": 36
+    },
+    "target.csv": {
+      "rows": 5202,
+      "columns": 2
+    },
+    "z_score_pca.csv": {
+      "rows": 5202,
+      "columns": 24
+    }
+  }
+}
