@@ -1,0 +1,8 @@
+# Python runtime files
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+
+# Recomputable fold caches; keep scores, frozen parameters and fitted models.
+/review/sequential_experiments/cache/
+/review/preprocessing_ablation/cache/
