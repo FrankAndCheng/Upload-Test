@@ -1,0 +1,6 @@
+{
+  "created_unix": 1792293458.3830311,
+  "source_sha256": "9274d93eff09f49a3d6f01efdfcd73518bea92b0f0f0136751be8e82e9cd60a9",
+  "reason": "Training OOF row id4609 actual4.58 prediction66.675; extreme hepatitis input. No development/B feedback.",
+  "candidates": "64/32 dropout0.1 no_hepatitis raw/PCA; choose on seed23; confirm winner on seed2026; frozen median epochs before holdout evaluation."
+}

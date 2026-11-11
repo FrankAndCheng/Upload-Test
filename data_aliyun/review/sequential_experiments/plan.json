@@ -1,0 +1,139 @@
+{
+  "source_sha256": "f301925f6849114a0dfea5c17be5fb58be5f9a90d7b22c6d9015ab6c74c28d39",
+  "train_rows": 4649,
+  "validation_rows": 1993,
+  "cv_seeds": [
+    23,
+    2026
+  ],
+  "stage1": [
+    {
+      "name": "baseline_xgb",
+      "family": "xgb",
+      "variant": "no_hepatitis",
+      "native": false,
+      "params": {
+        "n_estimators": 350,
+        "learning_rate": 0.02,
+        "max_depth": 4,
+        "min_child_weight": 30,
+        "reg_lambda": 10,
+        "subsample": 0.8,
+        "colsample_bytree": 0.8
+      }
+    },
+    {
+      "name": "feature_all",
+      "family": "xgb",
+      "variant": "all",
+      "native": false,
+      "params": {
+        "n_estimators": 350,
+        "learning_rate": 0.02,
+        "max_depth": 4,
+        "min_child_weight": 30,
+        "reg_lambda": 10,
+        "subsample": 0.8,
+        "colsample_bytree": 0.8
+      }
+    },
+    {
+      "name": "feature_missing",
+      "family": "xgb",
+      "variant": "missing",
+      "native": false,
+      "params": {
+        "n_estimators": 350,
+        "learning_rate": 0.02,
+        "max_depth": 4,
+        "min_child_weight": 30,
+        "reg_lambda": 10,
+        "subsample": 0.8,
+        "colsample_bytree": 0.8
+      }
+    },
+    {
+      "name": "feature_ratios",
+      "family": "xgb",
+      "variant": "ratios",
+      "native": false,
+      "params": {
+        "n_estimators": 350,
+        "learning_rate": 0.02,
+        "max_depth": 4,
+        "min_child_weight": 30,
+        "reg_lambda": 10,
+        "subsample": 0.8,
+        "colsample_bytree": 0.8
+      }
+    },
+    {
+      "name": "feature_counts",
+      "family": "xgb",
+      "variant": "counts",
+      "native": false,
+      "params": {
+        "n_estimators": 350,
+        "learning_rate": 0.02,
+        "max_depth": 4,
+        "min_child_weight": 30,
+        "reg_lambda": 10,
+        "subsample": 0.8,
+        "colsample_bytree": 0.8
+      }
+    },
+    {
+      "name": "feature_interactions",
+      "family": "xgb",
+      "variant": "interactions",
+      "native": false,
+      "params": {
+        "n_estimators": 350,
+        "learning_rate": 0.02,
+        "max_depth": 4,
+        "min_child_weight": 30,
+        "reg_lambda": 10,
+        "subsample": 0.8,
+        "colsample_bytree": 0.8
+      }
+    },
+    {
+      "name": "feature_combined",
+      "family": "xgb",
+      "variant": "combined",
+      "native": false,
+      "params": {
+        "n_estimators": 350,
+        "learning_rate": 0.02,
+        "max_depth": 4,
+        "min_child_weight": 30,
+        "reg_lambda": 10,
+        "subsample": 0.8,
+        "colsample_bytree": 0.8
+      }
+    },
+    {
+      "name": "feature_native_missing",
+      "family": "xgb",
+      "variant": "no_hepatitis",
+      "native": true,
+      "params": {
+        "n_estimators": 350,
+        "learning_rate": 0.02,
+        "max_depth": 4,
+        "min_child_weight": 30,
+        "reg_lambda": 10,
+        "subsample": 0.8,
+        "colsample_bytree": 0.8
+      }
+    }
+  ],
+  "stage2_budget": {
+    "xgb": 100,
+    "lgb": 12,
+    "hist": 8
+  },
+  "stage3": "pair weights .25/.5/.75 and equal triples on train OOF",
+  "stage4": "4 small MLPs; 5 outer folds; stopping on internal 20%; max100 patience12; batch64",
+  "assessment": "Known development/B are descriptive only; no evaluation-label selection; nonnested CV selection scores."
+}

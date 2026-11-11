@@ -1,0 +1,16 @@
+{
+  "seconds": 695.2132997512817,
+  "source_sha256": "f301925f6849114a0dfea5c17be5fb58be5f9a90d7b22c6d9015ab6c74c28d39",
+  "baseline_reproduced": true,
+  "selected": "nn_blend_06",
+  "stage_winners": {
+    "baseline": "baseline_xgb",
+    "feature": "feature_combined",
+    "joint": "joint_xgb_089",
+    "blend": "blend_33",
+    "small_nn": "nn_64_nohep_raw",
+    "selected": "nn_blend_06",
+    "nn_blend": "nn_blend_06"
+  },
+  "nn_blend_supplement_complete": true
+}

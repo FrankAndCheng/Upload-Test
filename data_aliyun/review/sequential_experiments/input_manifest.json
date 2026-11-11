@@ -1,0 +1,11 @@
+{
+  "python": "3.10.20 (main, Jun 11 2026, 15:14:28) [Clang 20.1.8 ]",
+  "executable": "python",
+  "sha256": {
+    "paper.ipynb": "9214690f697f7d2deb0d50c92dfb5e489ee4ad58cfab5a0a5e905dfea9c45dbd",
+    "review/sequential_experiments/run_experiments.py": "f301925f6849114a0dfea5c17be5fb58be5f9a90d7b22c6d9015ab6c74c28d39",
+    "data/d_train_20180102.csv": "b832c38e87f23381fb4fb7439151ee9ca0e628e36ad30e9469c780b9ba23d671",
+    "data/d_test_A_20180102.csv": "13c666c3e9e29b0bdd087307e3e3668cdd5dcd600fef9705bddc2140365e3de1",
+    "data/d_answer_a_20180128.csv": "d13d5428bfab96a5e400393d2cce5ae539b301e66283ca930af049d0ebba9595"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "metrics_recomputed": true,
+  "metric_abs_tolerance": 5e-07,
+  "maximum_metric_roundtrip_error": 2.0521943255857877e-08,
+  "input_files_unchanged_before_notebook_append": true,
+  "reload_checks": [
+    {
+      "dataset": "development",
+      "reloaded_prediction_max_abs_diff": 1.1541748001775431e-07,
+      "rows": 1993
+    },
+    {
+      "dataset": "B",
+      "reloaded_prediction_max_abs_diff": 1.1370849684055884e-07,
+      "rows": 1000
+    }
+  ],
+  "main_existing_cells_preserved": 71,
+  "main_notebook_schema_valid": true,
+  "experiment_notebook_executed_and_valid": true
+}

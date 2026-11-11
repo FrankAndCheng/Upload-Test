@@ -1,0 +1,15 @@
+{
+  "created_unix": 1792293118.477947,
+  "source_sha256": "ca246917c48693df30bc61742493fca16f7024b2e4bedd0802df7163ad4d4316",
+  "partner_stages": [
+    "baseline",
+    "joint",
+    "blend"
+  ],
+  "weights_for_nn": [
+    0.25,
+    0.5,
+    0.75
+  ],
+  "selection": "Choose supplemental weight on seed23 train OOF; confirm same weight on seed2026; compare to original finalists by mean CV; never select on development/B."
+}

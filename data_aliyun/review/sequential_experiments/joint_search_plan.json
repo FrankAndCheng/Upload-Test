@@ -1,0 +1,1974 @@
+[
+  {
+    "name": "joint_xgb_000",
+    "family": "xgb",
+    "params": {
+      "colsample_bytree": 1.0,
+      "gamma": 0.0,
+      "learning_rate": 0.01583565781018246,
+      "max_depth": 2,
+      "min_child_weight": 12.266931010310099,
+      "n_estimators": 660,
+      "reg_alpha": 10.0,
+      "reg_lambda": 15.11833507855479,
+      "subsample": 0.8
+    },
+    "variant": "ratios",
+    "native": false
+  },
+  {
+    "name": "joint_xgb_001",
+    "family": "xgb",
+    "params": {
+      "colsample_bytree": 1.0,
+      "gamma": 1.0,
+      "learning_rate": 0.04645051166535116,
+      "max_depth": 3,
+      "min_child_weight": 19.40869619259157,
+      "n_estimators": 909,
+      "reg_alpha": 0.0,
+      "reg_lambda": 64.66572356006463,
+      "subsample": 0.65
+    },
+    "variant": "no_hepatitis",
+    "native": true
+  },
+  {
+    "name": "joint_xgb_002",
+    "family": "xgb",
+    "params": {
+      "colsample_bytree": 0.8,
+      "gamma": 1.0,
+      "learning_rate": 0.02833399213889679,
+      "max_depth": 3,
+      "min_child_weight": 73.34626410509463,
+      "n_estimators": 387,
+      "reg_alpha": 10.0,
+      "reg_lambda": 0.8632474776485153,
+      "subsample": 0.8
+    },
+    "variant": "interactions",
+    "native": false
+  },
+  {
+    "name": "joint_xgb_003",
+    "family": "xgb",
+    "params": {
+      "colsample_bytree": 0.8,
+      "gamma": 0.0,
+      "learning_rate": 0.026417729840172318,
+      "max_depth": 5,
+      "min_child_weight": 5.008410016727344,
+      "n_estimators": 830,
+      "reg_alpha": 0.1,
+      "reg_lambda": 0.2814617086374593,
+      "subsample": 0.65
+    },
+    "variant": "ratios",
+    "native": true
+  },
+  {
+    "name": "joint_xgb_004",
+    "family": "xgb",
+    "params": {
+      "colsample_bytree": 0.8,
+      "gamma": 1.0,
+      "learning_rate": 0.02930850525984608,
+      "max_depth": 6,
+      "min_child_weight": 22.310329856874848,
+      "n_estimators": 743,
+      "reg_alpha": 1.0,
+      "reg_lambda": 27.35810360846732,
+      "subsample": 0.8
+    },
+    "variant": "no_hepatitis",
+    "native": true
+  },
+  {
+    "name": "joint_xgb_005",
+    "family": "xgb",
+    "params": {
+      "colsample_bytree": 1.0,
+      "gamma": 0.0,
+      "learning_rate": 0.013804814111838027,
+      "max_depth": 2,
+      "min_child_weight": 37.51907409930763,
+      "n_estimators": 790,
+      "reg_alpha": 10.0,
+      "reg_lambda": 0.2619594275397654,
+      "subsample": 1.0
+    },
+    "variant": "ratios",
+    "native": false
+  },
+  {
+    "name": "joint_xgb_006",
+    "family": "xgb",
+    "params": {
+      "colsample_bytree": 1.0,
+      "gamma": 0.05,
+      "learning_rate": 0.04316014176383232,
+      "max_depth": 3,
+      "min_child_weight": 40.19530036184986,
+      "n_estimators": 914,
+      "reg_alpha": 10.0,
+      "reg_lambda": 0.36823883279262554,
+      "subsample": 0.8
+    },
+    "variant": "combined",
+    "native": true
+  },
+  {
+    "name": "joint_xgb_007",
+    "family": "xgb",
+    "params": {
+      "colsample_bytree": 0.8,
+      "gamma": 0.2,
+      "learning_rate": 0.026801587431762225,
+      "max_depth": 5,
+      "min_child_weight": 23.636123152438568,
+      "n_estimators": 646,
+      "reg_alpha": 0.0,
+      "reg_lambda": 61.653350275406,
+      "subsample": 0.8
+    },
+    "variant": "interactions",
+    "native": true
+  },
+  {
+    "name": "joint_xgb_008",
+    "family": "xgb",
+    "params": {
+      "colsample_bytree": 0.8,
+      "gamma": 0.0,
+      "learning_rate": 0.010699257743422272,
+      "max_depth": 3,
+      "min_child_weight": 6.428109636504716,
+      "n_estimators": 495,
+      "reg_alpha": 0.1,
+      "reg_lambda": 61.90238499703213,
+      "subsample": 0.8
+    },
+    "variant": "combined",
+    "native": false
+  },
+  {
+    "name": "joint_xgb_009",
+    "family": "xgb",
+    "params": {
+      "colsample_bytree": 1.0,
+      "gamma": 0.05,
+      "learning_rate": 0.03204970389658742,
+      "max_depth": 6,
+      "min_child_weight": 92.00390149515309,
+      "n_estimators": 506,
+      "reg_alpha": 0.1,
+      "reg_lambda": 9.045450296191028,
+      "subsample": 0.65
+    },
+    "variant": "combined",
+    "native": false
+  },
+  {
+    "name": "joint_xgb_010",
+    "family": "xgb",
+    "params": {
+      "colsample_bytree": 1.0,
+      "gamma": 0.0,
+      "learning_rate": 0.010805265968137337,
+      "max_depth": 5,
+      "min_child_weight": 10.699230575129656,
+      "n_estimators": 424,
+      "reg_alpha": 1.0,
+      "reg_lambda": 48.28656558537167,
+      "subsample": 0.8
+    },
+    "variant": "ratios",
+    "native": true
+  },
+  {
+    "name": "joint_xgb_011",
+    "family": "xgb",
+    "params": {
+      "colsample_bytree": 0.8,
+      "gamma": 0.2,
+      "learning_rate": 0.07003768752290467,
+      "max_depth": 3,
+      "min_child_weight": 5.922292417429908,
+      "n_estimators": 972,
+      "reg_alpha": 0.0,
+      "reg_lambda": 75.14013103884233,
+      "subsample": 0.65
+    },
+    "variant": "combined",
+    "native": false
+  },
+  {
+    "name": "joint_xgb_012",
+    "family": "xgb",
+    "params": {
+      "colsample_bytree": 0.65,
+      "gamma": 1.0,
+      "learning_rate": 0.020663683132796914,
+      "max_depth": 3,
+      "min_child_weight": 7.4795813012990555,
+      "n_estimators": 842,
+      "reg_alpha": 0.0,
+      "reg_lambda": 4.085492579390231,
+      "subsample": 0.65
+    },
+    "variant": "no_hepatitis",
+    "native": true
+  },
+  {
+    "name": "joint_xgb_013",
+    "family": "xgb",
+    "params": {
+      "colsample_bytree": 0.8,
+      "gamma": 0.2,
+      "learning_rate": 0.07144074355541848,
+      "max_depth": 4,
+      "min_child_weight": 6.869812335003086,
+      "n_estimators": 801,
+      "reg_alpha": 0.1,
+      "reg_lambda": 22.07911365635126,
+      "subsample": 0.65
+    },
+    "variant": "no_hepatitis",
+    "native": true
+  },
+  {
+    "name": "joint_xgb_014",
+    "family": "xgb",
+    "params": {
+      "colsample_bytree": 1.0,
+      "gamma": 0.0,
+      "learning_rate": 0.08290314968668269,
+      "max_depth": 4,
+      "min_child_weight": 14.298792198167995,
+      "n_estimators": 479,
+      "reg_alpha": 1.0,
+      "reg_lambda": 13.055754090339335,
+      "subsample": 0.8
+    },
+    "variant": "ratios",
+    "native": false
+  },
+  {
+    "name": "joint_xgb_015",
+    "family": "xgb",
+    "params": {
+      "colsample_bytree": 1.0,
+      "gamma": 1.0,
+      "learning_rate": 0.041053710825497414,
+      "max_depth": 6,
+      "min_child_weight": 7.61277749298883,
+      "n_estimators": 459,
+      "reg_alpha": 0.1,
+      "reg_lambda": 48.58161964821287,
+      "subsample": 1.0
+    },
+    "variant": "interactions",
+    "native": true
+  },
+  {
+    "name": "joint_xgb_016",
+    "family": "xgb",
+    "params": {
+      "colsample_bytree": 0.8,
+      "gamma": 0.05,
+      "learning_rate": 0.049976340070234944,
+      "max_depth": 3,
+      "min_child_weight": 45.002147007192704,
+      "n_estimators": 723,
+      "reg_alpha": 0.0,
+      "reg_lambda": 114.89632918498276,
+      "subsample": 0.65
+    },
+    "variant": "ratios",
+    "native": true
+  },
+  {
+    "name": "joint_xgb_017",
+    "family": "xgb",
+    "params": {
+      "colsample_bytree": 0.8,
+      "gamma": 1.0,
+      "learning_rate": 0.016656322889375942,
+      "max_depth": 4,
+      "min_child_weight": 6.561032924709633,
+      "n_estimators": 699,
+      "reg_alpha": 10.0,
+      "reg_lambda": 69.65019213578451,
+      "subsample": 0.8
+    },
+    "variant": "ratios",
+    "native": true
+  },
+  {
+    "name": "joint_xgb_018",
+    "family": "xgb",
+    "params": {
+      "colsample_bytree": 0.65,
+      "gamma": 0.05,
+      "learning_rate": 0.048979862997951526,
+      "max_depth": 6,
+      "min_child_weight": 5.718214172563255,
+      "n_estimators": 491,
+      "reg_alpha": 0.1,
+      "reg_lambda": 1.4276031565714797,
+      "subsample": 0.8
+    },
+    "variant": "ratios",
+    "native": false
+  },
+  {
+    "name": "joint_xgb_019",
+    "family": "xgb",
+    "params": {
+      "colsample_bytree": 1.0,
+      "gamma": 0.0,
+      "learning_rate": 0.08261740053317168,
+      "max_depth": 3,
+      "min_child_weight": 12.38383486432779,
+      "n_estimators": 864,
+      "reg_alpha": 0.1,
+      "reg_lambda": 3.442588078361469,
+      "subsample": 1.0
+    },
+    "variant": "combined",
+    "native": true
+  },
+  {
+    "name": "joint_xgb_020",
+    "family": "xgb",
+    "params": {
+      "colsample_bytree": 0.65,
+      "gamma": 0.05,
+      "learning_rate": 0.012952387704282498,
+      "max_depth": 5,
+      "min_child_weight": 6.802862940775338,
+      "n_estimators": 766,
+      "reg_alpha": 0.1,
+      "reg_lambda": 0.40140252452554054,
+      "subsample": 1.0
+    },
+    "variant": "no_hepatitis",
+    "native": true
+  },
+  {
+    "name": "joint_xgb_021",
+    "family": "xgb",
+    "params": {
+      "colsample_bytree": 0.8,
+      "gamma": 0.0,
+      "learning_rate": 0.010047666171718485,
+      "max_depth": 2,
+      "min_child_weight": 9.501276354367178,
+      "n_estimators": 685,
+      "reg_alpha": 1.0,
+      "reg_lambda": 111.66562283161865,
+      "subsample": 0.65
+    },
+    "variant": "ratios",
+    "native": false
+  },
+  {
+    "name": "joint_xgb_022",
+    "family": "xgb",
+    "params": {
+      "colsample_bytree": 0.65,
+      "gamma": 0.0,
+      "learning_rate": 0.07376341254290378,
+      "max_depth": 6,
+      "min_child_weight": 59.80146136685024,
+      "n_estimators": 989,
+      "reg_alpha": 0.0,
+      "reg_lambda": 27.93332209326956,
+      "subsample": 1.0
+    },
+    "variant": "ratios",
+    "native": true
+  },
+  {
+    "name": "joint_xgb_023",
+    "family": "xgb",
+    "params": {
+      "colsample_bytree": 0.65,
+      "gamma": 0.0,
+      "learning_rate": 0.10015707219945434,
+      "max_depth": 2,
+      "min_child_weight": 24.11457950808133,
+      "n_estimators": 462,
+      "reg_alpha": 10.0,
+      "reg_lambda": 1.5023253167185164,
+      "subsample": 0.8
+    },
+    "variant": "no_hepatitis",
+    "native": false
+  },
+  {
+    "name": "joint_xgb_024",
+    "family": "xgb",
+    "params": {
+      "colsample_bytree": 0.8,
+      "gamma": 0.2,
+      "learning_rate": 0.07047710100892163,
+      "max_depth": 2,
+      "min_child_weight": 44.61278330200758,
+      "n_estimators": 553,
+      "reg_alpha": 10.0,
+      "reg_lambda": 18.157300343076926,
+      "subsample": 0.8
+    },
+    "variant": "interactions",
+    "native": true
+  },
+  {
+    "name": "joint_xgb_025",
+    "family": "xgb",
+    "params": {
+      "colsample_bytree": 0.65,
+      "gamma": 0.05,
+      "learning_rate": 0.02517400328610939,
+      "max_depth": 2,
+      "min_child_weight": 25.826791360763476,
+      "n_estimators": 504,
+      "reg_alpha": 0.0,
+      "reg_lambda": 0.2125903937903714,
+      "subsample": 0.65
+    },
+    "variant": "interactions",
+    "native": false
+  },
+  {
+    "name": "joint_xgb_026",
+    "family": "xgb",
+    "params": {
+      "colsample_bytree": 0.8,
+      "gamma": 1.0,
+      "learning_rate": 0.015806934463419218,
+      "max_depth": 2,
+      "min_child_weight": 9.62056539909645,
+      "n_estimators": 701,
+      "reg_alpha": 10.0,
+      "reg_lambda": 83.18399520195341,
+      "subsample": 0.65
+    },
+    "variant": "no_hepatitis",
+    "native": true
+  },
+  {
+    "name": "joint_xgb_027",
+    "family": "xgb",
+    "params": {
+      "colsample_bytree": 0.8,
+      "gamma": 1.0,
+      "learning_rate": 0.04912291483579183,
+      "max_depth": 2,
+      "min_child_weight": 66.06268474692453,
+      "n_estimators": 332,
+      "reg_alpha": 0.1,
+      "reg_lambda": 0.12799330552152646,
+      "subsample": 0.65
+    },
+    "variant": "ratios",
+    "native": false
+  },
+  {
+    "name": "joint_xgb_028",
+    "family": "xgb",
+    "params": {
+      "colsample_bytree": 1.0,
+      "gamma": 0.0,
+      "learning_rate": 0.032390829832901195,
+      "max_depth": 5,
+      "min_child_weight": 34.207228792344644,
+      "n_estimators": 830,
+      "reg_alpha": 0.0,
+      "reg_lambda": 0.12342093723222386,
+      "subsample": 0.8
+    },
+    "variant": "no_hepatitis",
+    "native": true
+  },
+  {
+    "name": "joint_xgb_029",
+    "family": "xgb",
+    "params": {
+      "colsample_bytree": 0.8,
+      "gamma": 1.0,
+      "learning_rate": 0.08076694410529589,
+      "max_depth": 3,
+      "min_child_weight": 103.42941389590281,
+      "n_estimators": 466,
+      "reg_alpha": 0.0,
+      "reg_lambda": 140.23044234577998,
+      "subsample": 0.65
+    },
+    "variant": "no_hepatitis",
+    "native": false
+  },
+  {
+    "name": "joint_xgb_030",
+    "family": "xgb",
+    "params": {
+      "colsample_bytree": 0.65,
+      "gamma": 1.0,
+      "learning_rate": 0.07700651598991713,
+      "max_depth": 2,
+      "min_child_weight": 6.202617087782201,
+      "n_estimators": 759,
+      "reg_alpha": 10.0,
+      "reg_lambda": 0.24335491172189222,
+      "subsample": 0.8
+    },
+    "variant": "interactions",
+    "native": true
+  },
+  {
+    "name": "joint_xgb_031",
+    "family": "xgb",
+    "params": {
+      "colsample_bytree": 0.8,
+      "gamma": 0.05,
+      "learning_rate": 0.01929778558193634,
+      "max_depth": 5,
+      "min_child_weight": 13.50430318230198,
+      "n_estimators": 754,
+      "reg_alpha": 1.0,
+      "reg_lambda": 16.066701810083263,
+      "subsample": 1.0
+    },
+    "variant": "interactions",
+    "native": false
+  },
+  {
+    "name": "joint_xgb_032",
+    "family": "xgb",
+    "params": {
+      "colsample_bytree": 1.0,
+      "gamma": 0.0,
+      "learning_rate": 0.03328511504787074,
+      "max_depth": 3,
+      "min_child_weight": 6.467259100718953,
+      "n_estimators": 695,
+      "reg_alpha": 0.1,
+      "reg_lambda": 2.0667814954045207,
+      "subsample": 0.8
+    },
+    "variant": "no_hepatitis",
+    "native": true
+  },
+  {
+    "name": "joint_xgb_033",
+    "family": "xgb",
+    "params": {
+      "colsample_bytree": 0.8,
+      "gamma": 0.0,
+      "learning_rate": 0.011066255723399702,
+      "max_depth": 5,
+      "min_child_weight": 22.19026474842941,
+      "n_estimators": 816,
+      "reg_alpha": 10.0,
+      "reg_lambda": 44.837182487647716,
+      "subsample": 1.0
+    },
+    "variant": "interactions",
+    "native": false
+  },
+  {
+    "name": "joint_xgb_034",
+    "family": "xgb",
+    "params": {
+      "colsample_bytree": 0.8,
+      "gamma": 0.0,
+      "learning_rate": 0.05041494769476955,
+      "max_depth": 2,
+      "min_child_weight": 96.9163158797913,
+      "n_estimators": 807,
+      "reg_alpha": 0.1,
+      "reg_lambda": 25.096705065562986,
+      "subsample": 0.8
+    },
+    "variant": "interactions",
+    "native": false
+  },
+  {
+    "name": "joint_xgb_035",
+    "family": "xgb",
+    "params": {
+      "colsample_bytree": 0.65,
+      "gamma": 0.05,
+      "learning_rate": 0.11328657189681801,
+      "max_depth": 5,
+      "min_child_weight": 17.442655540115474,
+      "n_estimators": 673,
+      "reg_alpha": 0.0,
+      "reg_lambda": 1.7840901521945431,
+      "subsample": 0.8
+    },
+    "variant": "no_hepatitis",
+    "native": false
+  },
+  {
+    "name": "joint_xgb_036",
+    "family": "xgb",
+    "params": {
+      "colsample_bytree": 0.8,
+      "gamma": 0.0,
+      "learning_rate": 0.09355348291988773,
+      "max_depth": 4,
+      "min_child_weight": 26.33616985658349,
+      "n_estimators": 231,
+      "reg_alpha": 0.0,
+      "reg_lambda": 75.87837276381795,
+      "subsample": 0.8
+    },
+    "variant": "ratios",
+    "native": false
+  },
+  {
+    "name": "joint_xgb_037",
+    "family": "xgb",
+    "params": {
+      "colsample_bytree": 0.65,
+      "gamma": 0.2,
+      "learning_rate": 0.033957658170063375,
+      "max_depth": 5,
+      "min_child_weight": 83.65212990066657,
+      "n_estimators": 894,
+      "reg_alpha": 0.0,
+      "reg_lambda": 33.445671955777215,
+      "subsample": 0.8
+    },
+    "variant": "ratios",
+    "native": false
+  },
+  {
+    "name": "joint_xgb_038",
+    "family": "xgb",
+    "params": {
+      "colsample_bytree": 1.0,
+      "gamma": 0.2,
+      "learning_rate": 0.04464897793266195,
+      "max_depth": 6,
+      "min_child_weight": 24.488313697470076,
+      "n_estimators": 393,
+      "reg_alpha": 1.0,
+      "reg_lambda": 0.19592994192652616,
+      "subsample": 0.65
+    },
+    "variant": "interactions",
+    "native": false
+  },
+  {
+    "name": "joint_xgb_039",
+    "family": "xgb",
+    "params": {
+      "colsample_bytree": 0.8,
+      "gamma": 0.05,
+      "learning_rate": 0.011991639377702212,
+      "max_depth": 3,
+      "min_child_weight": 72.85970493208647,
+      "n_estimators": 368,
+      "reg_alpha": 0.0,
+      "reg_lambda": 0.23204374197372393,
+      "subsample": 1.0
+    },
+    "variant": "interactions",
+    "native": true
+  },
+  {
+    "name": "joint_xgb_040",
+    "family": "xgb",
+    "params": {
+      "colsample_bytree": 1.0,
+      "gamma": 1.0,
+      "learning_rate": 0.08152095625895901,
+      "max_depth": 4,
+      "min_child_weight": 33.063091415771424,
+      "n_estimators": 926,
+      "reg_alpha": 0.0,
+      "reg_lambda": 1.5590907608655575,
+      "subsample": 0.8
+    },
+    "variant": "ratios",
+    "native": true
+  },
+  {
+    "name": "joint_xgb_041",
+    "family": "xgb",
+    "params": {
+      "colsample_bytree": 1.0,
+      "gamma": 0.2,
+      "learning_rate": 0.08096152834597982,
+      "max_depth": 2,
+      "min_child_weight": 49.28826218919397,
+      "n_estimators": 981,
+      "reg_alpha": 0.0,
+      "reg_lambda": 2.974878558957714,
+      "subsample": 0.65
+    },
+    "variant": "interactions",
+    "native": true
+  },
+  {
+    "name": "joint_xgb_042",
+    "family": "xgb",
+    "params": {
+      "colsample_bytree": 1.0,
+      "gamma": 1.0,
+      "learning_rate": 0.025863299107063382,
+      "max_depth": 4,
+      "min_child_weight": 103.24796366767374,
+      "n_estimators": 447,
+      "reg_alpha": 0.1,
+      "reg_lambda": 0.47814064679203017,
+      "subsample": 1.0
+    },
+    "variant": "no_hepatitis",
+    "native": true
+  },
+  {
+    "name": "joint_xgb_043",
+    "family": "xgb",
+    "params": {
+      "colsample_bytree": 0.65,
+      "gamma": 1.0,
+      "learning_rate": 0.030357959097724117,
+      "max_depth": 5,
+      "min_child_weight": 39.87289259224819,
+      "n_estimators": 903,
+      "reg_alpha": 0.0,
+      "reg_lambda": 2.2385928319077446,
+      "subsample": 0.8
+    },
+    "variant": "interactions",
+    "native": true
+  },
+  {
+    "name": "joint_xgb_044",
+    "family": "xgb",
+    "params": {
+      "colsample_bytree": 1.0,
+      "gamma": 0.05,
+      "learning_rate": 0.0587414187093652,
+      "max_depth": 3,
+      "min_child_weight": 6.495376705783121,
+      "n_estimators": 740,
+      "reg_alpha": 0.0,
+      "reg_lambda": 0.5720940597051192,
+      "subsample": 1.0
+    },
+    "variant": "ratios",
+    "native": false
+  },
+  {
+    "name": "joint_xgb_045",
+    "family": "xgb",
+    "params": {
+      "colsample_bytree": 0.8,
+      "gamma": 0.2,
+      "learning_rate": 0.041707522291067375,
+      "max_depth": 2,
+      "min_child_weight": 70.10791358306957,
+      "n_estimators": 417,
+      "reg_alpha": 0.0,
+      "reg_lambda": 7.493597746003878,
+      "subsample": 0.65
+    },
+    "variant": "ratios",
+    "native": true
+  },
+  {
+    "name": "joint_xgb_046",
+    "family": "xgb",
+    "params": {
+      "colsample_bytree": 0.8,
+      "gamma": 1.0,
+      "learning_rate": 0.015384600830561165,
+      "max_depth": 2,
+      "min_child_weight": 8.407062709774571,
+      "n_estimators": 882,
+      "reg_alpha": 0.0,
+      "reg_lambda": 8.383094472989063,
+      "subsample": 0.8
+    },
+    "variant": "combined",
+    "native": false
+  },
+  {
+    "name": "joint_xgb_047",
+    "family": "xgb",
+    "params": {
+      "colsample_bytree": 0.8,
+      "gamma": 1.0,
+      "learning_rate": 0.012466371213363182,
+      "max_depth": 4,
+      "min_child_weight": 90.54319462003461,
+      "n_estimators": 806,
+      "reg_alpha": 0.1,
+      "reg_lambda": 149.50471472017313,
+      "subsample": 0.65
+    },
+    "variant": "no_hepatitis",
+    "native": false
+  },
+  {
+    "name": "joint_xgb_048",
+    "family": "xgb",
+    "params": {
+      "colsample_bytree": 1.0,
+      "gamma": 0.0,
+      "learning_rate": 0.05000807592906015,
+      "max_depth": 6,
+      "min_child_weight": 72.75539201970506,
+      "n_estimators": 692,
+      "reg_alpha": 1.0,
+      "reg_lambda": 1.0027531774425302,
+      "subsample": 1.0
+    },
+    "variant": "ratios",
+    "native": false
+  },
+  {
+    "name": "joint_xgb_049",
+    "family": "xgb",
+    "params": {
+      "colsample_bytree": 0.65,
+      "gamma": 0.0,
+      "learning_rate": 0.029739139971848218,
+      "max_depth": 5,
+      "min_child_weight": 118.57047697117645,
+      "n_estimators": 242,
+      "reg_alpha": 0.1,
+      "reg_lambda": 10.433798035405456,
+      "subsample": 1.0
+    },
+    "variant": "combined",
+    "native": false
+  },
+  {
+    "name": "joint_xgb_050",
+    "family": "xgb",
+    "params": {
+      "colsample_bytree": 1.0,
+      "gamma": 1.0,
+      "learning_rate": 0.04314659881839208,
+      "max_depth": 5,
+      "min_child_weight": 8.401418827035778,
+      "n_estimators": 986,
+      "reg_alpha": 0.0,
+      "reg_lambda": 25.52367122096466,
+      "subsample": 0.65
+    },
+    "variant": "no_hepatitis",
+    "native": false
+  },
+  {
+    "name": "joint_xgb_051",
+    "family": "xgb",
+    "params": {
+      "colsample_bytree": 0.8,
+      "gamma": 0.0,
+      "learning_rate": 0.0588101412808782,
+      "max_depth": 3,
+      "min_child_weight": 23.00332721677989,
+      "n_estimators": 244,
+      "reg_alpha": 10.0,
+      "reg_lambda": 0.14306095562769963,
+      "subsample": 0.65
+    },
+    "variant": "no_hepatitis",
+    "native": true
+  },
+  {
+    "name": "joint_xgb_052",
+    "family": "xgb",
+    "params": {
+      "colsample_bytree": 0.8,
+      "gamma": 0.0,
+      "learning_rate": 0.01963683068613358,
+      "max_depth": 6,
+      "min_child_weight": 62.418338939072335,
+      "n_estimators": 261,
+      "reg_alpha": 0.1,
+      "reg_lambda": 0.24005116821024727,
+      "subsample": 1.0
+    },
+    "variant": "combined",
+    "native": true
+  },
+  {
+    "name": "joint_xgb_053",
+    "family": "xgb",
+    "params": {
+      "colsample_bytree": 0.8,
+      "gamma": 0.2,
+      "learning_rate": 0.020995247305357404,
+      "max_depth": 2,
+      "min_child_weight": 79.67895268968455,
+      "n_estimators": 690,
+      "reg_alpha": 10.0,
+      "reg_lambda": 128.72476440744916,
+      "subsample": 1.0
+    },
+    "variant": "no_hepatitis",
+    "native": false
+  },
+  {
+    "name": "joint_xgb_054",
+    "family": "xgb",
+    "params": {
+      "colsample_bytree": 0.8,
+      "gamma": 0.0,
+      "learning_rate": 0.017593172074032593,
+      "max_depth": 6,
+      "min_child_weight": 7.262878260361008,
+      "n_estimators": 442,
+      "reg_alpha": 10.0,
+      "reg_lambda": 120.9227178037656,
+      "subsample": 0.8
+    },
+    "variant": "combined",
+    "native": true
+  },
+  {
+    "name": "joint_xgb_055",
+    "family": "xgb",
+    "params": {
+      "colsample_bytree": 0.8,
+      "gamma": 0.0,
+      "learning_rate": 0.011370073623608002,
+      "max_depth": 6,
+      "min_child_weight": 23.638965026207913,
+      "n_estimators": 570,
+      "reg_alpha": 0.0,
+      "reg_lambda": 0.8865399181536948,
+      "subsample": 0.65
+    },
+    "variant": "combined",
+    "native": false
+  },
+  {
+    "name": "joint_xgb_056",
+    "family": "xgb",
+    "params": {
+      "colsample_bytree": 1.0,
+      "gamma": 0.05,
+      "learning_rate": 0.02956911893192958,
+      "max_depth": 4,
+      "min_child_weight": 5.346681736158048,
+      "n_estimators": 729,
+      "reg_alpha": 0.0,
+      "reg_lambda": 0.5852566630187465,
+      "subsample": 1.0
+    },
+    "variant": "ratios",
+    "native": true
+  },
+  {
+    "name": "joint_xgb_057",
+    "family": "xgb",
+    "params": {
+      "colsample_bytree": 0.65,
+      "gamma": 0.05,
+      "learning_rate": 0.0546154543492704,
+      "max_depth": 6,
+      "min_child_weight": 20.18247301766524,
+      "n_estimators": 825,
+      "reg_alpha": 0.1,
+      "reg_lambda": 15.196554441227963,
+      "subsample": 1.0
+    },
+    "variant": "interactions",
+    "native": false
+  },
+  {
+    "name": "joint_xgb_058",
+    "family": "xgb",
+    "params": {
+      "colsample_bytree": 0.8,
+      "gamma": 1.0,
+      "learning_rate": 0.010483500655501942,
+      "max_depth": 5,
+      "min_child_weight": 7.590470909427215,
+      "n_estimators": 517,
+      "reg_alpha": 10.0,
+      "reg_lambda": 0.46227956843393525,
+      "subsample": 0.65
+    },
+    "variant": "combined",
+    "native": true
+  },
+  {
+    "name": "joint_xgb_059",
+    "family": "xgb",
+    "params": {
+      "colsample_bytree": 0.8,
+      "gamma": 1.0,
+      "learning_rate": 0.02184057420943905,
+      "max_depth": 4,
+      "min_child_weight": 5.267089792268001,
+      "n_estimators": 548,
+      "reg_alpha": 0.0,
+      "reg_lambda": 25.795862336452164,
+      "subsample": 0.65
+    },
+    "variant": "ratios",
+    "native": false
+  },
+  {
+    "name": "joint_xgb_060",
+    "family": "xgb",
+    "params": {
+      "colsample_bytree": 0.8,
+      "gamma": 0.05,
+      "learning_rate": 0.10090889660772344,
+      "max_depth": 6,
+      "min_child_weight": 14.92120158342584,
+      "n_estimators": 892,
+      "reg_alpha": 0.0,
+      "reg_lambda": 2.606411803814559,
+      "subsample": 0.65
+    },
+    "variant": "combined",
+    "native": false
+  },
+  {
+    "name": "joint_xgb_061",
+    "family": "xgb",
+    "params": {
+      "colsample_bytree": 0.65,
+      "gamma": 0.2,
+      "learning_rate": 0.03271398103275185,
+      "max_depth": 6,
+      "min_child_weight": 7.4516528071669,
+      "n_estimators": 681,
+      "reg_alpha": 0.0,
+      "reg_lambda": 0.578070619551645,
+      "subsample": 0.8
+    },
+    "variant": "interactions",
+    "native": false
+  },
+  {
+    "name": "joint_xgb_062",
+    "family": "xgb",
+    "params": {
+      "colsample_bytree": 1.0,
+      "gamma": 0.2,
+      "learning_rate": 0.08911255085375898,
+      "max_depth": 6,
+      "min_child_weight": 88.87492000695016,
+      "n_estimators": 359,
+      "reg_alpha": 0.1,
+      "reg_lambda": 93.17776589965892,
+      "subsample": 0.65
+    },
+    "variant": "combined",
+    "native": false
+  },
+  {
+    "name": "joint_xgb_063",
+    "family": "xgb",
+    "params": {
+      "colsample_bytree": 0.65,
+      "gamma": 0.05,
+      "learning_rate": 0.08722163091982418,
+      "max_depth": 5,
+      "min_child_weight": 6.6308291253969935,
+      "n_estimators": 719,
+      "reg_alpha": 0.0,
+      "reg_lambda": 0.10542818713648283,
+      "subsample": 0.8
+    },
+    "variant": "interactions",
+    "native": true
+  },
+  {
+    "name": "joint_xgb_064",
+    "family": "xgb",
+    "params": {
+      "colsample_bytree": 0.8,
+      "gamma": 0.05,
+      "learning_rate": 0.015926168337182533,
+      "max_depth": 6,
+      "min_child_weight": 38.94768444500991,
+      "n_estimators": 635,
+      "reg_alpha": 0.0,
+      "reg_lambda": 11.160776002928285,
+      "subsample": 0.8
+    },
+    "variant": "ratios",
+    "native": true
+  },
+  {
+    "name": "joint_xgb_065",
+    "family": "xgb",
+    "params": {
+      "colsample_bytree": 0.65,
+      "gamma": 0.0,
+      "learning_rate": 0.051621931523090234,
+      "max_depth": 6,
+      "min_child_weight": 10.067394578985956,
+      "n_estimators": 711,
+      "reg_alpha": 1.0,
+      "reg_lambda": 1.6445707753385683,
+      "subsample": 0.65
+    },
+    "variant": "no_hepatitis",
+    "native": true
+  },
+  {
+    "name": "joint_xgb_066",
+    "family": "xgb",
+    "params": {
+      "colsample_bytree": 0.65,
+      "gamma": 0.05,
+      "learning_rate": 0.010556828780334515,
+      "max_depth": 2,
+      "min_child_weight": 6.7831489009726855,
+      "n_estimators": 479,
+      "reg_alpha": 1.0,
+      "reg_lambda": 4.323901576050933,
+      "subsample": 0.8
+    },
+    "variant": "ratios",
+    "native": false
+  },
+  {
+    "name": "joint_xgb_067",
+    "family": "xgb",
+    "params": {
+      "colsample_bytree": 1.0,
+      "gamma": 0.05,
+      "learning_rate": 0.026805150909786704,
+      "max_depth": 3,
+      "min_child_weight": 10.278334715792978,
+      "n_estimators": 230,
+      "reg_alpha": 1.0,
+      "reg_lambda": 8.337358062303043,
+      "subsample": 1.0
+    },
+    "variant": "no_hepatitis",
+    "native": false
+  },
+  {
+    "name": "joint_xgb_068",
+    "family": "xgb",
+    "params": {
+      "colsample_bytree": 0.8,
+      "gamma": 0.05,
+      "learning_rate": 0.01761495305355644,
+      "max_depth": 6,
+      "min_child_weight": 5.531084028730217,
+      "n_estimators": 258,
+      "reg_alpha": 0.0,
+      "reg_lambda": 0.41020011600812234,
+      "subsample": 0.65
+    },
+    "variant": "ratios",
+    "native": true
+  },
+  {
+    "name": "joint_xgb_069",
+    "family": "xgb",
+    "params": {
+      "colsample_bytree": 0.8,
+      "gamma": 0.0,
+      "learning_rate": 0.017298945853872393,
+      "max_depth": 5,
+      "min_child_weight": 12.320150793257556,
+      "n_estimators": 682,
+      "reg_alpha": 10.0,
+      "reg_lambda": 4.6602338407484,
+      "subsample": 0.65
+    },
+    "variant": "no_hepatitis",
+    "native": true
+  },
+  {
+    "name": "joint_xgb_070",
+    "family": "xgb",
+    "params": {
+      "colsample_bytree": 0.65,
+      "gamma": 0.0,
+      "learning_rate": 0.02150991720635478,
+      "max_depth": 3,
+      "min_child_weight": 15.029257297368853,
+      "n_estimators": 897,
+      "reg_alpha": 0.0,
+      "reg_lambda": 6.445503817022354,
+      "subsample": 0.8
+    },
+    "variant": "interactions",
+    "native": false
+  },
+  {
+    "name": "joint_xgb_071",
+    "family": "xgb",
+    "params": {
+      "colsample_bytree": 1.0,
+      "gamma": 1.0,
+      "learning_rate": 0.015729625562482776,
+      "max_depth": 4,
+      "min_child_weight": 8.435781844105065,
+      "n_estimators": 928,
+      "reg_alpha": 0.0,
+      "reg_lambda": 128.19645069438158,
+      "subsample": 0.8
+    },
+    "variant": "no_hepatitis",
+    "native": false
+  },
+  {
+    "name": "joint_xgb_072",
+    "family": "xgb",
+    "params": {
+      "colsample_bytree": 0.65,
+      "gamma": 0.05,
+      "learning_rate": 0.06767314994054624,
+      "max_depth": 2,
+      "min_child_weight": 87.48772945038957,
+      "n_estimators": 273,
+      "reg_alpha": 10.0,
+      "reg_lambda": 22.632813602216014,
+      "subsample": 0.8
+    },
+    "variant": "no_hepatitis",
+    "native": false
+  },
+  {
+    "name": "joint_xgb_073",
+    "family": "xgb",
+    "params": {
+      "colsample_bytree": 0.8,
+      "gamma": 1.0,
+      "learning_rate": 0.03685654406931089,
+      "max_depth": 3,
+      "min_child_weight": 113.80289010976098,
+      "n_estimators": 842,
+      "reg_alpha": 0.1,
+      "reg_lambda": 1.2868618766137008,
+      "subsample": 0.8
+    },
+    "variant": "combined",
+    "native": true
+  },
+  {
+    "name": "joint_xgb_074",
+    "family": "xgb",
+    "params": {
+      "colsample_bytree": 0.8,
+      "gamma": 0.2,
+      "learning_rate": 0.10623151368755894,
+      "max_depth": 5,
+      "min_child_weight": 73.294275598905,
+      "n_estimators": 675,
+      "reg_alpha": 10.0,
+      "reg_lambda": 12.154825757887373,
+      "subsample": 1.0
+    },
+    "variant": "interactions",
+    "native": true
+  },
+  {
+    "name": "joint_xgb_075",
+    "family": "xgb",
+    "params": {
+      "colsample_bytree": 1.0,
+      "gamma": 0.0,
+      "learning_rate": 0.05392854723124555,
+      "max_depth": 6,
+      "min_child_weight": 5.137566146648138,
+      "n_estimators": 269,
+      "reg_alpha": 10.0,
+      "reg_lambda": 0.31329344112248264,
+      "subsample": 1.0
+    },
+    "variant": "combined",
+    "native": false
+  },
+  {
+    "name": "joint_xgb_076",
+    "family": "xgb",
+    "params": {
+      "colsample_bytree": 1.0,
+      "gamma": 1.0,
+      "learning_rate": 0.10235266830997006,
+      "max_depth": 2,
+      "min_child_weight": 46.1538085650477,
+      "n_estimators": 802,
+      "reg_alpha": 1.0,
+      "reg_lambda": 2.6013010168871062,
+      "subsample": 0.65
+    },
+    "variant": "combined",
+    "native": true
+  },
+  {
+    "name": "joint_xgb_077",
+    "family": "xgb",
+    "params": {
+      "colsample_bytree": 0.8,
+      "gamma": 0.0,
+      "learning_rate": 0.012833565281628956,
+      "max_depth": 2,
+      "min_child_weight": 11.157392822668527,
+      "n_estimators": 501,
+      "reg_alpha": 10.0,
+      "reg_lambda": 66.96226472582747,
+      "subsample": 0.65
+    },
+    "variant": "combined",
+    "native": true
+  },
+  {
+    "name": "joint_xgb_078",
+    "family": "xgb",
+    "params": {
+      "colsample_bytree": 1.0,
+      "gamma": 0.05,
+      "learning_rate": 0.01124221751046275,
+      "max_depth": 3,
+      "min_child_weight": 21.46218450522203,
+      "n_estimators": 434,
+      "reg_alpha": 10.0,
+      "reg_lambda": 0.1393686777060651,
+      "subsample": 1.0
+    },
+    "variant": "no_hepatitis",
+    "native": false
+  },
+  {
+    "name": "joint_xgb_079",
+    "family": "xgb",
+    "params": {
+      "colsample_bytree": 0.65,
+      "gamma": 0.0,
+      "learning_rate": 0.010026795923704463,
+      "max_depth": 2,
+      "min_child_weight": 15.377858565784743,
+      "n_estimators": 725,
+      "reg_alpha": 10.0,
+      "reg_lambda": 0.2070790026172044,
+      "subsample": 0.8
+    },
+    "variant": "interactions",
+    "native": true
+  },
+  {
+    "name": "joint_xgb_080",
+    "family": "xgb",
+    "params": {
+      "colsample_bytree": 1.0,
+      "gamma": 0.0,
+      "learning_rate": 0.017445070687167743,
+      "max_depth": 4,
+      "min_child_weight": 42.24069682122391,
+      "n_estimators": 739,
+      "reg_alpha": 0.0,
+      "reg_lambda": 16.15189161475108,
+      "subsample": 0.65
+    },
+    "variant": "no_hepatitis",
+    "native": false
+  },
+  {
+    "name": "joint_xgb_081",
+    "family": "xgb",
+    "params": {
+      "colsample_bytree": 0.65,
+      "gamma": 0.2,
+      "learning_rate": 0.06785090761302368,
+      "max_depth": 3,
+      "min_child_weight": 23.788236605205167,
+      "n_estimators": 279,
+      "reg_alpha": 0.0,
+      "reg_lambda": 11.378035201308425,
+      "subsample": 0.8
+    },
+    "variant": "ratios",
+    "native": true
+  },
+  {
+    "name": "joint_xgb_082",
+    "family": "xgb",
+    "params": {
+      "colsample_bytree": 0.8,
+      "gamma": 0.05,
+      "learning_rate": 0.013647968809729348,
+      "max_depth": 5,
+      "min_child_weight": 46.9216355083961,
+      "n_estimators": 588,
+      "reg_alpha": 10.0,
+      "reg_lambda": 0.10882866758501493,
+      "subsample": 1.0
+    },
+    "variant": "interactions",
+    "native": true
+  },
+  {
+    "name": "joint_xgb_083",
+    "family": "xgb",
+    "params": {
+      "colsample_bytree": 0.8,
+      "gamma": 1.0,
+      "learning_rate": 0.02203105502044644,
+      "max_depth": 4,
+      "min_child_weight": 8.922870173950653,
+      "n_estimators": 259,
+      "reg_alpha": 10.0,
+      "reg_lambda": 4.496779565786845,
+      "subsample": 0.8
+    },
+    "variant": "interactions",
+    "native": true
+  },
+  {
+    "name": "joint_xgb_084",
+    "family": "xgb",
+    "params": {
+      "colsample_bytree": 1.0,
+      "gamma": 0.05,
+      "learning_rate": 0.033088767875370795,
+      "max_depth": 4,
+      "min_child_weight": 7.081558470329723,
+      "n_estimators": 205,
+      "reg_alpha": 0.0,
+      "reg_lambda": 45.213917394947785,
+      "subsample": 0.8
+    },
+    "variant": "interactions",
+    "native": false
+  },
+  {
+    "name": "joint_xgb_085",
+    "family": "xgb",
+    "params": {
+      "colsample_bytree": 0.8,
+      "gamma": 0.2,
+      "learning_rate": 0.03131355667435659,
+      "max_depth": 2,
+      "min_child_weight": 23.672965136226384,
+      "n_estimators": 336,
+      "reg_alpha": 1.0,
+      "reg_lambda": 21.19343115300193,
+      "subsample": 1.0
+    },
+    "variant": "ratios",
+    "native": false
+  },
+  {
+    "name": "joint_xgb_086",
+    "family": "xgb",
+    "params": {
+      "colsample_bytree": 0.65,
+      "gamma": 0.2,
+      "learning_rate": 0.09749971880575971,
+      "max_depth": 2,
+      "min_child_weight": 16.730405355046567,
+      "n_estimators": 564,
+      "reg_alpha": 0.1,
+      "reg_lambda": 1.656285147814094,
+      "subsample": 0.8
+    },
+    "variant": "no_hepatitis",
+    "native": true
+  },
+  {
+    "name": "joint_xgb_087",
+    "family": "xgb",
+    "params": {
+      "colsample_bytree": 1.0,
+      "gamma": 1.0,
+      "learning_rate": 0.014802267304318866,
+      "max_depth": 3,
+      "min_child_weight": 76.90058453396148,
+      "n_estimators": 449,
+      "reg_alpha": 0.1,
+      "reg_lambda": 113.42468705973755,
+      "subsample": 0.8
+    },
+    "variant": "combined",
+    "native": false
+  },
+  {
+    "name": "joint_xgb_088",
+    "family": "xgb",
+    "params": {
+      "colsample_bytree": 0.65,
+      "gamma": 0.05,
+      "learning_rate": 0.08821846404727324,
+      "max_depth": 2,
+      "min_child_weight": 53.20051470283932,
+      "n_estimators": 451,
+      "reg_alpha": 1.0,
+      "reg_lambda": 87.89669411272021,
+      "subsample": 1.0
+    },
+    "variant": "interactions",
+    "native": false
+  },
+  {
+    "name": "joint_xgb_089",
+    "family": "xgb",
+    "params": {
+      "colsample_bytree": 0.65,
+      "gamma": 0.05,
+      "learning_rate": 0.03962175009621365,
+      "max_depth": 5,
+      "min_child_weight": 22.839155331252698,
+      "n_estimators": 393,
+      "reg_alpha": 1.0,
+      "reg_lambda": 119.89079839483685,
+      "subsample": 0.8
+    },
+    "variant": "interactions",
+    "native": false
+  },
+  {
+    "name": "joint_xgb_090",
+    "family": "xgb",
+    "params": {
+      "colsample_bytree": 1.0,
+      "gamma": 0.05,
+      "learning_rate": 0.013414236848656372,
+      "max_depth": 3,
+      "min_child_weight": 17.737794973767855,
+      "n_estimators": 502,
+      "reg_alpha": 10.0,
+      "reg_lambda": 0.14653099929030636,
+      "subsample": 0.65
+    },
+    "variant": "no_hepatitis",
+    "native": true
+  },
+  {
+    "name": "joint_xgb_091",
+    "family": "xgb",
+    "params": {
+      "colsample_bytree": 0.65,
+      "gamma": 1.0,
+      "learning_rate": 0.022468835844266007,
+      "max_depth": 3,
+      "min_child_weight": 43.81150044514018,
+      "n_estimators": 581,
+      "reg_alpha": 10.0,
+      "reg_lambda": 10.422257920880813,
+      "subsample": 0.65
+    },
+    "variant": "combined",
+    "native": false
+  },
+  {
+    "name": "joint_xgb_092",
+    "family": "xgb",
+    "params": {
+      "colsample_bytree": 0.65,
+      "gamma": 0.05,
+      "learning_rate": 0.023327097937684227,
+      "max_depth": 3,
+      "min_child_weight": 7.121838131789701,
+      "n_estimators": 928,
+      "reg_alpha": 1.0,
+      "reg_lambda": 0.7013485463100501,
+      "subsample": 1.0
+    },
+    "variant": "combined",
+    "native": false
+  },
+  {
+    "name": "joint_xgb_093",
+    "family": "xgb",
+    "params": {
+      "colsample_bytree": 1.0,
+      "gamma": 0.0,
+      "learning_rate": 0.055718800254624314,
+      "max_depth": 4,
+      "min_child_weight": 11.13111379111367,
+      "n_estimators": 704,
+      "reg_alpha": 10.0,
+      "reg_lambda": 0.397446373833788,
+      "subsample": 1.0
+    },
+    "variant": "ratios",
+    "native": false
+  },
+  {
+    "name": "joint_xgb_094",
+    "family": "xgb",
+    "params": {
+      "colsample_bytree": 0.8,
+      "gamma": 0.2,
+      "learning_rate": 0.012176674863416323,
+      "max_depth": 3,
+      "min_child_weight": 9.19806123464887,
+      "n_estimators": 894,
+      "reg_alpha": 0.0,
+      "reg_lambda": 0.22621516535142816,
+      "subsample": 1.0
+    },
+    "variant": "no_hepatitis",
+    "native": true
+  },
+  {
+    "name": "joint_xgb_095",
+    "family": "xgb",
+    "params": {
+      "colsample_bytree": 1.0,
+      "gamma": 0.05,
+      "learning_rate": 0.07902914681207493,
+      "max_depth": 2,
+      "min_child_weight": 77.81637634902795,
+      "n_estimators": 445,
+      "reg_alpha": 10.0,
+      "reg_lambda": 109.08481400159508,
+      "subsample": 0.65
+    },
+    "variant": "ratios",
+    "native": false
+  },
+  {
+    "name": "joint_xgb_096",
+    "family": "xgb",
+    "params": {
+      "colsample_bytree": 0.65,
+      "gamma": 0.05,
+      "learning_rate": 0.02320298633971043,
+      "max_depth": 3,
+      "min_child_weight": 41.37104593011195,
+      "n_estimators": 892,
+      "reg_alpha": 10.0,
+      "reg_lambda": 0.394120538414653,
+      "subsample": 0.65
+    },
+    "variant": "interactions",
+    "native": true
+  },
+  {
+    "name": "joint_xgb_097",
+    "family": "xgb",
+    "params": {
+      "colsample_bytree": 0.65,
+      "gamma": 0.0,
+      "learning_rate": 0.018954205940652852,
+      "max_depth": 6,
+      "min_child_weight": 5.809317521362091,
+      "n_estimators": 398,
+      "reg_alpha": 1.0,
+      "reg_lambda": 0.16428923589539463,
+      "subsample": 0.65
+    },
+    "variant": "combined",
+    "native": true
+  },
+  {
+    "name": "joint_xgb_098",
+    "family": "xgb",
+    "params": {
+      "colsample_bytree": 0.65,
+      "gamma": 0.2,
+      "learning_rate": 0.07431643666913801,
+      "max_depth": 4,
+      "min_child_weight": 10.321158094615667,
+      "n_estimators": 213,
+      "reg_alpha": 10.0,
+      "reg_lambda": 22.371616291800674,
+      "subsample": 0.8
+    },
+    "variant": "interactions",
+    "native": true
+  },
+  {
+    "name": "joint_xgb_099",
+    "family": "xgb",
+    "params": {
+      "colsample_bytree": 1.0,
+      "gamma": 0.05,
+      "learning_rate": 0.01277185581987725,
+      "max_depth": 2,
+      "min_child_weight": 24.125541024835957,
+      "n_estimators": 841,
+      "reg_alpha": 0.1,
+      "reg_lambda": 1.6780862971216923,
+      "subsample": 0.8
+    },
+    "variant": "no_hepatitis",
+    "native": true
+  },
+  {
+    "name": "joint_lgb_00",
+    "family": "lgb",
+    "params": {
+      "reg_lambda": 10.0,
+      "num_leaves": 7,
+      "n_estimators": 250,
+      "min_child_samples": 80,
+      "learning_rate": 0.015,
+      "colsample_bytree": 1.0
+    },
+    "variant": "interactions",
+    "native": true
+  },
+  {
+    "name": "joint_lgb_01",
+    "family": "lgb",
+    "params": {
+      "reg_lambda": 1.0,
+      "num_leaves": 7,
+      "n_estimators": 500,
+      "min_child_samples": 20,
+      "learning_rate": 0.03,
+      "colsample_bytree": 1.0
+    },
+    "variant": "ratios",
+    "native": true
+  },
+  {
+    "name": "joint_lgb_02",
+    "family": "lgb",
+    "params": {
+      "reg_lambda": 50.0,
+      "num_leaves": 15,
+      "n_estimators": 800,
+      "min_child_samples": 20,
+      "learning_rate": 0.06,
+      "colsample_bytree": 1.0
+    },
+    "variant": "ratios",
+    "native": true
+  },
+  {
+    "name": "joint_lgb_03",
+    "family": "lgb",
+    "params": {
+      "reg_lambda": 1.0,
+      "num_leaves": 15,
+      "n_estimators": 250,
+      "min_child_samples": 20,
+      "learning_rate": 0.03,
+      "colsample_bytree": 1.0
+    },
+    "variant": "ratios",
+    "native": true
+  },
+  {
+    "name": "joint_lgb_04",
+    "family": "lgb",
+    "params": {
+      "reg_lambda": 10.0,
+      "num_leaves": 7,
+      "n_estimators": 800,
+      "min_child_samples": 40,
+      "learning_rate": 0.015,
+      "colsample_bytree": 0.7
+    },
+    "variant": "no_hepatitis",
+    "native": true
+  },
+  {
+    "name": "joint_lgb_05",
+    "family": "lgb",
+    "params": {
+      "reg_lambda": 1.0,
+      "num_leaves": 15,
+      "n_estimators": 800,
+      "min_child_samples": 20,
+      "learning_rate": 0.015,
+      "colsample_bytree": 1.0
+    },
+    "variant": "interactions",
+    "native": true
+  },
+  {
+    "name": "joint_lgb_06",
+    "family": "lgb",
+    "params": {
+      "reg_lambda": 50.0,
+      "num_leaves": 15,
+      "n_estimators": 500,
+      "min_child_samples": 20,
+      "learning_rate": 0.06,
+      "colsample_bytree": 1.0
+    },
+    "variant": "interactions",
+    "native": true
+  },
+  {
+    "name": "joint_lgb_07",
+    "family": "lgb",
+    "params": {
+      "reg_lambda": 1.0,
+      "num_leaves": 31,
+      "n_estimators": 500,
+      "min_child_samples": 40,
+      "learning_rate": 0.06,
+      "colsample_bytree": 0.7
+    },
+    "variant": "ratios",
+    "native": true
+  },
+  {
+    "name": "joint_lgb_08",
+    "family": "lgb",
+    "params": {
+      "reg_lambda": 10.0,
+      "num_leaves": 31,
+      "n_estimators": 800,
+      "min_child_samples": 20,
+      "learning_rate": 0.03,
+      "colsample_bytree": 1.0
+    },
+    "variant": "combined",
+    "native": true
+  },
+  {
+    "name": "joint_lgb_09",
+    "family": "lgb",
+    "params": {
+      "reg_lambda": 10.0,
+      "num_leaves": 31,
+      "n_estimators": 500,
+      "min_child_samples": 80,
+      "learning_rate": 0.03,
+      "colsample_bytree": 1.0
+    },
+    "variant": "interactions",
+    "native": true
+  },
+  {
+    "name": "joint_lgb_10",
+    "family": "lgb",
+    "params": {
+      "reg_lambda": 1.0,
+      "num_leaves": 7,
+      "n_estimators": 250,
+      "min_child_samples": 20,
+      "learning_rate": 0.015,
+      "colsample_bytree": 1.0
+    },
+    "variant": "ratios",
+    "native": true
+  },
+  {
+    "name": "joint_lgb_11",
+    "family": "lgb",
+    "params": {
+      "reg_lambda": 10.0,
+      "num_leaves": 31,
+      "n_estimators": 800,
+      "min_child_samples": 40,
+      "learning_rate": 0.03,
+      "colsample_bytree": 0.7
+    },
+    "variant": "interactions",
+    "native": true
+  },
+  {
+    "name": "joint_hist_00",
+    "family": "hist",
+    "params": {
+      "min_samples_leaf": 50,
+      "max_leaf_nodes": 15,
+      "max_iter": 700,
+      "learning_rate": 0.05,
+      "l2_regularization": 10.0
+    },
+    "variant": "combined",
+    "native": true
+  },
+  {
+    "name": "joint_hist_01",
+    "family": "hist",
+    "params": {
+      "min_samples_leaf": 80,
+      "max_leaf_nodes": 15,
+      "max_iter": 700,
+      "learning_rate": 0.02,
+      "l2_regularization": 10.0
+    },
+    "variant": "combined",
+    "native": true
+  },
+  {
+    "name": "joint_hist_02",
+    "family": "hist",
+    "params": {
+      "min_samples_leaf": 80,
+      "max_leaf_nodes": 15,
+      "max_iter": 400,
+      "learning_rate": 0.02,
+      "l2_regularization": 10.0
+    },
+    "variant": "combined",
+    "native": true
+  },
+  {
+    "name": "joint_hist_03",
+    "family": "hist",
+    "params": {
+      "min_samples_leaf": 50,
+      "max_leaf_nodes": 15,
+      "max_iter": 700,
+      "learning_rate": 0.02,
+      "l2_regularization": 10.0
+    },
+    "variant": "no_hepatitis",
+    "native": true
+  },
+  {
+    "name": "joint_hist_04",
+    "family": "hist",
+    "params": {
+      "min_samples_leaf": 80,
+      "max_leaf_nodes": 7,
+      "max_iter": 700,
+      "learning_rate": 0.02,
+      "l2_regularization": 50.0
+    },
+    "variant": "combined",
+    "native": true
+  },
+  {
+    "name": "joint_hist_05",
+    "family": "hist",
+    "params": {
+      "min_samples_leaf": 80,
+      "max_leaf_nodes": 7,
+      "max_iter": 200,
+      "learning_rate": 0.05,
+      "l2_regularization": 50.0
+    },
+    "variant": "combined",
+    "native": true
+  },
+  {
+    "name": "joint_hist_06",
+    "family": "hist",
+    "params": {
+      "min_samples_leaf": 20,
+      "max_leaf_nodes": 7,
+      "max_iter": 400,
+      "learning_rate": 0.02,
+      "l2_regularization": 10.0
+    },
+    "variant": "combined",
+    "native": true
+  },
+  {
+    "name": "joint_hist_07",
+    "family": "hist",
+    "params": {
+      "min_samples_leaf": 80,
+      "max_leaf_nodes": 7,
+      "max_iter": 400,
+      "learning_rate": 0.02,
+      "l2_regularization": 10.0
+    },
+    "variant": "interactions",
+    "native": true
+  }
+]
