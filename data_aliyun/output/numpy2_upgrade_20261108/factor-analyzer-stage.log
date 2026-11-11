@@ -1,0 +1,9 @@
+WARNING: The directory '/Users/chengchong/Library/Caches/pip' or its parent directory is not owned or is not writable by the current user. The cache has been disabled. Check the permissions and owner of that directory. If executing pip with sudo, you should use sudo's -H flag.
+Looking in links: /private/tmp/numpy2-upgrade-wheels
+Processing /private/tmp/numpy2-upgrade-wheels/factor_analyzer-0.5.1-py2.py3-none-any.whl
+Installing collected packages: factor-analyzer
+  Attempting uninstall: factor-analyzer
+    Found existing installation: factor-analyzer 0.4.1
+    Not uninstalling factor-analyzer at /Users/chengchong/anaconda3/lib/python3.10/site-packages, outside environment /private/tmp/numpy2-compat-20261108
+    Can't uninstall 'factor-analyzer'. No files were found to uninstall.
+Successfully installed factor-analyzer-0.5.1

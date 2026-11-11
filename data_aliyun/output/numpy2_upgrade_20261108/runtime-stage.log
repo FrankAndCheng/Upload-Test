@@ -1,0 +1,5 @@
+PASS: project frozen classical estimators fit/predict
+PASS: project small neural fit/predict/save/load
+PASS: project original PReLU neural fit/predict/save/load
+PASS: all eight historical Keras models load/infer
+PASS: 1000-row frozen ensemble before/after comparison

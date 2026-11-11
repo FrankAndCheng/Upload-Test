@@ -1,0 +1,8 @@
+tensorflow==2.21.0
+ml_dtypes==0.5.4
+protobuf==7.36.2
+tensorboard==2.21.0
+grpcio==1.85.1
+flatbuffers==25.12.19
+keras==3.12.4
+numpy==1.26.4

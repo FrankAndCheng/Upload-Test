@@ -1,0 +1,82 @@
+{
+  "python": "python",
+  "imports": {
+    "numpy": {
+      "ok": true,
+      "version": "2.2.5"
+    },
+    "pandas": {
+      "ok": true,
+      "version": "2.3.3"
+    },
+    "scipy": {
+      "ok": true,
+      "version": "1.15.3"
+    },
+    "sklearn": {
+      "ok": true,
+      "version": "1.4.2"
+    },
+    "statsmodels": {
+      "ok": true,
+      "version": "0.15.0"
+    },
+    "matplotlib": {
+      "ok": true,
+      "version": "3.10.9"
+    },
+    "seaborn": {
+      "ok": true,
+      "version": "0.13.2"
+    },
+    "xgboost": {
+      "ok": true,
+      "version": "2.1.3"
+    },
+    "lightgbm": {
+      "ok": true,
+      "version": "4.1.0"
+    },
+    "tensorflow": {
+      "ok": true,
+      "version": "2.21.0"
+    },
+    "keras": {
+      "ok": true,
+      "version": "3.12.4"
+    },
+    "factor_analyzer": {
+      "ok": true,
+      "version": "not exposed"
+    }
+  },
+  "checks": {
+    "pandas_csv": {
+      "ok": true
+    },
+    "ridge_pipeline": {
+      "ok": true
+    },
+    "hist_gradient_boosting": {
+      "ok": true
+    },
+    "adaboost": {
+      "ok": true
+    },
+    "xgboost": {
+      "ok": true
+    },
+    "lightgbm": {
+      "ok": true
+    },
+    "statsmodels_ols": {
+      "ok": true
+    },
+    "factor_analysis": {
+      "ok": true
+    },
+    "keras_train_on_batch": {
+      "ok": true
+    }
+  }
+}

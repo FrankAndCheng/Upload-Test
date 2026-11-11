@@ -1,0 +1,75 @@
+Collecting numpy==2.2.5
+  Downloading numpy-2.2.5-cp310-cp310-macosx_14_0_arm64.whl.metadata (62 kB)
+Requirement already satisfied: scipy in /Users/chengchong/anaconda3/lib/python3.10/site-packages (1.11.1)
+Collecting scipy
+  Using cached scipy-1.15.3-cp310-cp310-macosx_14_0_arm64.whl.metadata (61 kB)
+Requirement already satisfied: pandas in /Users/chengchong/anaconda3/lib/python3.10/site-packages (2.0.3)
+Collecting pandas
+  Using cached pandas-2.3.3-cp310-cp310-macosx_11_0_arm64.whl.metadata (91 kB)
+Collecting scikit-learn==1.4.2
+  Downloading scikit_learn-1.4.2-cp310-cp310-macosx_12_0_arm64.whl.metadata (11 kB)
+Requirement already satisfied: statsmodels in /Users/chengchong/anaconda3/lib/python3.10/site-packages (0.14.0)
+Collecting statsmodels
+  Using cached statsmodels-0.15.0-cp310-cp310-macosx_11_0_arm64.whl.metadata (9.6 kB)
+Requirement already satisfied: ml-dtypes in /Users/chengchong/anaconda3/lib/python3.10/site-packages (0.5.4)
+Collecting ml-dtypes
+  Using cached ml_dtypes-0.6.0-cp310-cp310-macosx_10_9_universal2.whl.metadata (8.8 kB)
+Requirement already satisfied: imbalanced-learn in /Users/chengchong/anaconda3/lib/python3.10/site-packages (0.11.0)
+Collecting imbalanced-learn
+  Using cached imbalanced_learn-0.14.2-py3-none-any.whl.metadata (8.9 kB)
+Requirement already satisfied: mlxtend in /Users/chengchong/anaconda3/lib/python3.10/site-packages (0.22.0)
+Collecting mlxtend
+  Using cached mlxtend-0.24.0-py3-none-any.whl.metadata (7.3 kB)
+Requirement already satisfied: scikit-optimize in /Users/chengchong/anaconda3/lib/python3.10/site-packages (0.9.0)
+Collecting scikit-optimize
+  Using cached scikit_optimize-0.10.2-py2.py3-none-any.whl.metadata (9.7 kB)
+Requirement already satisfied: pandas-stubs in /Users/chengchong/anaconda3/lib/python3.10/site-packages (2.0.3.230814)
+Collecting pandas-stubs
+  Using cached pandas_stubs-2.3.3.260113-py3-none-any.whl.metadata (10 kB)
+Requirement already satisfied: patsy in /Users/chengchong/anaconda3/lib/python3.10/site-packages (0.5.3)
+Collecting patsy
+  Using cached patsy-1.0.3-py2.py3-none-any.whl.metadata (3.7 kB)
+Requirement already satisfied: wordcloud in /Users/chengchong/anaconda3/lib/python3.10/site-packages (1.9.2)
+Collecting wordcloud
+  Downloading wordcloud-1.9.6-cp310-cp310-macosx_11_0_arm64.whl.metadata (3.4 kB)
+Requirement already satisfied: factor-analyzer in /Users/chengchong/anaconda3/lib/python3.10/site-packages (0.4.1)
+Requirement already satisfied: joblib>=1.2.0 in /Users/chengchong/anaconda3/lib/python3.10/site-packages (from scikit-learn==1.4.2) (1.3.1)
+Requirement already satisfied: threadpoolctl>=2.0.0 in /Users/chengchong/anaconda3/lib/python3.10/site-packages (from scikit-learn==1.4.2) (3.1.0)
+Requirement already satisfied: python-dateutil>=2.8.2 in /Users/chengchong/anaconda3/lib/python3.10/site-packages (from pandas) (2.9.0.post0)
+Requirement already satisfied: pytz>=2020.1 in /Users/chengchong/anaconda3/lib/python3.10/site-packages (from pandas) (2026.5)
+Requirement already satisfied: tzdata>=2022.7 in /Users/chengchong/anaconda3/lib/python3.10/site-packages (from pandas) (2023.3)
+Requirement already satisfied: packaging>=21.3 in /Users/chengchong/anaconda3/lib/python3.10/site-packages (from statsmodels) (26.3)
+Collecting formulaic>=1.1.0 (from statsmodels)
+  Using cached formulaic-1.2.2-py3-none-any.whl.metadata (7.0 kB)
+Collecting sklearn-compat<0.2,>=0.1.6 (from imbalanced-learn)
+  Using cached sklearn_compat-0.1.6-py3-none-any.whl.metadata (22 kB)
+INFO: pip is looking at multiple versions of mlxtend to determine which version is compatible with other requirements. This could take a while.
+Collecting mlxtend
+  Using cached mlxtend-0.23.4-py3-none-any.whl.metadata (7.3 kB)
+Requirement already satisfied: matplotlib>=3.0.0 in /Users/chengchong/anaconda3/lib/python3.10/site-packages (from mlxtend) (3.10.9)
+Requirement already satisfied: pyaml>=16.9 in /Users/chengchong/anaconda3/lib/python3.10/site-packages (from scikit-optimize) (23.9.1)
+Requirement already satisfied: types-pytz>=2022.1.1 in /Users/chengchong/anaconda3/lib/python3.10/site-packages (from pandas-stubs) (2026.1.1.20260304)
+Requirement already satisfied: pillow in /Users/chengchong/anaconda3/lib/python3.10/site-packages (from wordcloud) (12.3.0)
+Requirement already satisfied: pre-commit in /Users/chengchong/anaconda3/lib/python3.10/site-packages (from factor-analyzer) (3.3.3)
+Collecting interface-meta>=1.2.0 (from formulaic>=1.1.0->statsmodels)
+  Using cached interface_meta-2.0.1-py3-none-any.whl.metadata (6.4 kB)
+Collecting narwhals>=1.17 (from formulaic>=1.1.0->statsmodels)
+  Using cached narwhals-2.28.0-py3-none-any.whl.metadata (15 kB)
+Requirement already satisfied: typing-extensions>=4.2.0 in /Users/chengchong/anaconda3/lib/python3.10/site-packages (from formulaic>=1.1.0->statsmodels) (4.16.0)
+Requirement already satisfied: wrapt>=1.0 in /Users/chengchong/anaconda3/lib/python3.10/site-packages (from formulaic>=1.1.0->statsmodels) (1.17.2)
+Requirement already satisfied: contourpy>=1.0.1 in /Users/chengchong/anaconda3/lib/python3.10/site-packages (from matplotlib>=3.0.0->mlxtend) (1.3.1)
+Requirement already satisfied: cycler>=0.10 in /Users/chengchong/anaconda3/lib/python3.10/site-packages (from matplotlib>=3.0.0->mlxtend) (0.12.1)
+Requirement already satisfied: fonttools>=4.22.0 in /Users/chengchong/anaconda3/lib/python3.10/site-packages (from matplotlib>=3.0.0->mlxtend) (4.63.0)
+Requirement already satisfied: kiwisolver>=1.3.1 in /Users/chengchong/anaconda3/lib/python3.10/site-packages (from matplotlib>=3.0.0->mlxtend) (1.5.0)
+Requirement already satisfied: pyparsing>=3 in /Users/chengchong/anaconda3/lib/python3.10/site-packages (from matplotlib>=3.0.0->mlxtend) (3.3.3)
+Requirement already satisfied: PyYAML in /Users/chengchong/anaconda3/lib/python3.10/site-packages (from pyaml>=16.9->scikit-optimize) (6.0.3)
+Requirement already satisfied: six>=1.5 in /Users/chengchong/anaconda3/lib/python3.10/site-packages (from python-dateutil>=2.8.2->pandas) (1.17.0)
+Requirement already satisfied: cfgv>=2.0.0 in /Users/chengchong/anaconda3/lib/python3.10/site-packages (from pre-commit->factor-analyzer) (3.3.1)
+Requirement already satisfied: identify>=1.0.0 in /Users/chengchong/anaconda3/lib/python3.10/site-packages (from pre-commit->factor-analyzer) (2.5.24)
+Requirement already satisfied: nodeenv>=0.11.1 in /Users/chengchong/anaconda3/lib/python3.10/site-packages (from pre-commit->factor-analyzer) (1.8.0)
+Requirement already satisfied: virtualenv>=20.10.0 in /Users/chengchong/anaconda3/lib/python3.10/site-packages (from pre-commit->factor-analyzer) (20.26.6)
+Requirement already satisfied: setuptools in /Users/chengchong/anaconda3/lib/python3.10/site-packages (from nodeenv>=0.11.1->pre-commit->factor-analyzer) (80.10.2)
+Requirement already satisfied: distlib<1,>=0.3.7 in /Users/chengchong/anaconda3/lib/python3.10/site-packages (from virtualenv>=20.10.0->pre-commit->factor-analyzer) (0.3.9)
+Requirement already satisfied: filelock<4,>=3.12.2 in /Users/chengchong/anaconda3/lib/python3.10/site-packages (from virtualenv>=20.10.0->pre-commit->factor-analyzer) (3.29.4)
+Requirement already satisfied: platformdirs<5,>=3.9.1 in /Users/chengchong/anaconda3/lib/python3.10/site-packages (from virtualenv>=20.10.0->pre-commit->factor-analyzer) (4.12.3)
+Would install formulaic-1.2.2 imbalanced-learn-0.14.2 interface_meta-2.0.1 ml_dtypes-0.6.0 mlxtend-0.23.4 narwhals-2.28.0 numpy-2.2.5 pandas-2.3.3 pandas-stubs-2.3.3.260113 patsy-1.0.3 scikit-learn-1.4.2 scikit-optimize-0.10.2 scipy-1.15.3 sklearn-compat-0.1.6 statsmodels-0.15.0 wordcloud-1.9.6

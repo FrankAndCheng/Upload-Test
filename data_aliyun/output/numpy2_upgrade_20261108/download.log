@@ -1,0 +1,72 @@
+Collecting numpy==2.2.5 (from -r /Users/chengchong/Desktop/Code/PyCharmProject/python/data_aliyun/output/numpy2_upgrade_20261108/stage-packages.txt (line 1))
+  Using cached numpy-2.2.5-cp310-cp310-macosx_14_0_arm64.whl.metadata (62 kB)
+Collecting scikit-learn==1.4.2 (from -r /Users/chengchong/Desktop/Code/PyCharmProject/python/data_aliyun/output/numpy2_upgrade_20261108/stage-packages.txt (line 2))
+  Using cached scikit_learn-1.4.2-cp310-cp310-macosx_12_0_arm64.whl.metadata (11 kB)
+Collecting scipy==1.15.3 (from -r /Users/chengchong/Desktop/Code/PyCharmProject/python/data_aliyun/output/numpy2_upgrade_20261108/stage-packages.txt (line 3))
+  Using cached scipy-1.15.3-cp310-cp310-macosx_14_0_arm64.whl.metadata (61 kB)
+Collecting pandas==2.3.3 (from -r /Users/chengchong/Desktop/Code/PyCharmProject/python/data_aliyun/output/numpy2_upgrade_20261108/stage-packages.txt (line 4))
+  Using cached pandas-2.3.3-cp310-cp310-macosx_11_0_arm64.whl.metadata (91 kB)
+Collecting statsmodels==0.15.0 (from -r /Users/chengchong/Desktop/Code/PyCharmProject/python/data_aliyun/output/numpy2_upgrade_20261108/stage-packages.txt (line 5))
+  Using cached statsmodels-0.15.0-cp310-cp310-macosx_11_0_arm64.whl.metadata (9.6 kB)
+Collecting ml_dtypes==0.6.0 (from -r /Users/chengchong/Desktop/Code/PyCharmProject/python/data_aliyun/output/numpy2_upgrade_20261108/stage-packages.txt (line 6))
+  Using cached ml_dtypes-0.6.0-cp310-cp310-macosx_10_9_universal2.whl.metadata (8.8 kB)
+Collecting imbalanced-learn==0.14.2 (from -r /Users/chengchong/Desktop/Code/PyCharmProject/python/data_aliyun/output/numpy2_upgrade_20261108/stage-packages.txt (line 7))
+  Using cached imbalanced_learn-0.14.2-py3-none-any.whl.metadata (8.9 kB)
+Collecting sklearn-compat==0.1.6 (from -r /Users/chengchong/Desktop/Code/PyCharmProject/python/data_aliyun/output/numpy2_upgrade_20261108/stage-packages.txt (line 8))
+  Using cached sklearn_compat-0.1.6-py3-none-any.whl.metadata (22 kB)
+Collecting mlxtend==0.23.4 (from -r /Users/chengchong/Desktop/Code/PyCharmProject/python/data_aliyun/output/numpy2_upgrade_20261108/stage-packages.txt (line 9))
+  Using cached mlxtend-0.23.4-py3-none-any.whl.metadata (7.3 kB)
+Collecting scikit-optimize==0.10.2 (from -r /Users/chengchong/Desktop/Code/PyCharmProject/python/data_aliyun/output/numpy2_upgrade_20261108/stage-packages.txt (line 10))
+  Using cached scikit_optimize-0.10.2-py2.py3-none-any.whl.metadata (9.7 kB)
+Collecting pandas-stubs==2.3.3.260113 (from -r /Users/chengchong/Desktop/Code/PyCharmProject/python/data_aliyun/output/numpy2_upgrade_20261108/stage-packages.txt (line 11))
+  Using cached pandas_stubs-2.3.3.260113-py3-none-any.whl.metadata (10 kB)
+Collecting patsy==1.0.3 (from -r /Users/chengchong/Desktop/Code/PyCharmProject/python/data_aliyun/output/numpy2_upgrade_20261108/stage-packages.txt (line 12))
+  Using cached patsy-1.0.3-py2.py3-none-any.whl.metadata (3.7 kB)
+Collecting wordcloud==1.9.6 (from -r /Users/chengchong/Desktop/Code/PyCharmProject/python/data_aliyun/output/numpy2_upgrade_20261108/stage-packages.txt (line 13))
+  Using cached wordcloud-1.9.6-cp310-cp310-macosx_11_0_arm64.whl.metadata (3.4 kB)
+Collecting formulaic==1.2.2 (from -r /Users/chengchong/Desktop/Code/PyCharmProject/python/data_aliyun/output/numpy2_upgrade_20261108/stage-packages.txt (line 14))
+  Using cached formulaic-1.2.2-py3-none-any.whl.metadata (7.0 kB)
+Collecting interface_meta==2.0.1 (from -r /Users/chengchong/Desktop/Code/PyCharmProject/python/data_aliyun/output/numpy2_upgrade_20261108/stage-packages.txt (line 15))
+  Using cached interface_meta-2.0.1-py3-none-any.whl.metadata (6.4 kB)
+Collecting narwhals==2.28.0 (from -r /Users/chengchong/Desktop/Code/PyCharmProject/python/data_aliyun/output/numpy2_upgrade_20261108/stage-packages.txt (line 16))
+  Using cached narwhals-2.28.0-py3-none-any.whl.metadata (15 kB)
+Downloading numpy-2.2.5-cp310-cp310-macosx_14_0_arm64.whl (5.4 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 5.4/5.4 MB 4.5 MB/s  0:00:01
+Downloading scikit_learn-1.4.2-cp310-cp310-macosx_12_0_arm64.whl (10.4 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 10.4/10.4 MB 15.5 MB/s  0:00:00
+Downloading scipy-1.15.3-cp310-cp310-macosx_14_0_arm64.whl (22.4 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 22.4/22.4 MB 13.3 MB/s  0:00:01
+Downloading pandas-2.3.3-cp310-cp310-macosx_11_0_arm64.whl (10.8 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 10.8/10.8 MB 13.5 MB/s  0:00:01
+Downloading statsmodels-0.15.0-cp310-cp310-macosx_11_0_arm64.whl (11.6 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 11.6/11.6 MB 14.3 MB/s  0:00:01
+Downloading ml_dtypes-0.6.0-cp310-cp310-macosx_10_9_universal2.whl (566 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 566.8/566.8 kB 2.0 MB/s  0:00:00
+Downloading imbalanced_learn-0.14.2-py3-none-any.whl (236 kB)
+Downloading sklearn_compat-0.1.6-py3-none-any.whl (22 kB)
+Downloading mlxtend-0.23.4-py3-none-any.whl (1.4 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.4/1.4 MB 4.7 MB/s  0:00:00
+Downloading scikit_optimize-0.10.2-py2.py3-none-any.whl (107 kB)
+Downloading pandas_stubs-2.3.3.260113-py3-none-any.whl (168 kB)
+Downloading patsy-1.0.3-py2.py3-none-any.whl (233 kB)
+Downloading wordcloud-1.9.6-cp310-cp310-macosx_11_0_arm64.whl (168 kB)
+Downloading formulaic-1.2.2-py3-none-any.whl (118 kB)
+Downloading interface_meta-2.0.1-py3-none-any.whl (15 kB)
+Downloading narwhals-2.28.0-py3-none-any.whl (490 kB)
+Saved /private/tmp/numpy2-upgrade-wheels/numpy-2.2.5-cp310-cp310-macosx_14_0_arm64.whl
+Saved /private/tmp/numpy2-upgrade-wheels/scikit_learn-1.4.2-cp310-cp310-macosx_12_0_arm64.whl
+Saved /private/tmp/numpy2-upgrade-wheels/scipy-1.15.3-cp310-cp310-macosx_14_0_arm64.whl
+Saved /private/tmp/numpy2-upgrade-wheels/pandas-2.3.3-cp310-cp310-macosx_11_0_arm64.whl
+Saved /private/tmp/numpy2-upgrade-wheels/statsmodels-0.15.0-cp310-cp310-macosx_11_0_arm64.whl
+Saved /private/tmp/numpy2-upgrade-wheels/ml_dtypes-0.6.0-cp310-cp310-macosx_10_9_universal2.whl
+Saved /private/tmp/numpy2-upgrade-wheels/imbalanced_learn-0.14.2-py3-none-any.whl
+Saved /private/tmp/numpy2-upgrade-wheels/sklearn_compat-0.1.6-py3-none-any.whl
+Saved /private/tmp/numpy2-upgrade-wheels/mlxtend-0.23.4-py3-none-any.whl
+Saved /private/tmp/numpy2-upgrade-wheels/scikit_optimize-0.10.2-py2.py3-none-any.whl
+Saved /private/tmp/numpy2-upgrade-wheels/pandas_stubs-2.3.3.260113-py3-none-any.whl
+Saved /private/tmp/numpy2-upgrade-wheels/patsy-1.0.3-py2.py3-none-any.whl
+Saved /private/tmp/numpy2-upgrade-wheels/wordcloud-1.9.6-cp310-cp310-macosx_11_0_arm64.whl
+Saved /private/tmp/numpy2-upgrade-wheels/formulaic-1.2.2-py3-none-any.whl
+Saved /private/tmp/numpy2-upgrade-wheels/interface_meta-2.0.1-py3-none-any.whl
+Saved /private/tmp/numpy2-upgrade-wheels/narwhals-2.28.0-py3-none-any.whl
+Successfully downloaded numpy scikit-learn scipy pandas statsmodels ml_dtypes imbalanced-learn sklearn-compat mlxtend scikit-optimize pandas-stubs patsy wordcloud formulaic interface_meta narwhals

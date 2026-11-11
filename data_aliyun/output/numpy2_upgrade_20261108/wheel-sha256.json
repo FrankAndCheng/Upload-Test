@@ -1,0 +1,19 @@
+{
+  "mlxtend-0.23.4-py3-none-any.whl": "8675456e2b71841116e5317f6d7aa568848ea2546865eb5eca7192e9b7f395f4",
+  "pandas-2.3.3-cp310-cp310-macosx_11_0_arm64.whl": "e19d192383eab2f4ceb30b412b22ea30690c9e618f78870357ae1d682912015a",
+  "statsmodels-0.15.0-cp310-cp310-macosx_11_0_arm64.whl": "0a42d58efadd47352f805fcf7eeb000f3399fe9cda260055a81105a922443bdd",
+  "narwhals-2.28.0-py3-none-any.whl": "1f69d6385ec30e2fa6e1fdeb37c562ecabd0f713f6f3e3b58a668c5c9df9567f",
+  "factor_analyzer-0.5.1-py2.py3-none-any.whl": "5320a43e90b84e71fd0bc0d2a40887fea43fea943c3ae96363b92072127477ac",
+  "wordcloud-1.9.6-cp310-cp310-macosx_11_0_arm64.whl": "6c4677c4b70e800ce3ff84b904db2ab9a30a6ad03898c668a71507da9ce14ad7",
+  "pandas_stubs-2.3.3.260113-py3-none-any.whl": "ec070b5c576e1badf12544ae50385872f0631fc35d99d00dc598c2954ec564d3",
+  "formulaic-1.2.2-py3-none-any.whl": "0f84ff49e3fc9dc0e68ab08a0a9427874021aa6c558e66b44dc634a35739b09b",
+  "sklearn_compat-0.1.6-py3-none-any.whl": "b555db6c09d21eb50ee4a767dc08478a865f33f0e42b3ff8fc33f33c616bd7c1",
+  "numpy-2.2.5-cp310-cp310-macosx_14_0_arm64.whl": "19f4718c9012e3baea91a7dba661dcab2451cda2550678dc30d53acb91a7290f",
+  "imbalanced_learn-0.14.2-py3-none-any.whl": "f9b81c47231aa1e3a71a1e4b3cc85b42e3b14f85e3a36922f3323c4da23605ef",
+  "interface_meta-2.0.1-py3-none-any.whl": "f38016bef9a4429b6d0792d809be7b65e9781820c674bf7f463999086b6e6323",
+  "patsy-1.0.3-py2.py3-none-any.whl": "d3dbebe8fd5f46e29912d030b63c6268647b59bf788a99e2af28a30234cf357c",
+  "ml_dtypes-0.6.0-cp310-cp310-macosx_10_9_universal2.whl": "bad8d1dd5bed060a29332b99d63d0e5c2969081e1c6ea54adfbccfdfa783be44",
+  "scipy-1.15.3-cp310-cp310-macosx_14_0_arm64.whl": "aef683a9ae6eb00728a542b796f52a5477b78252edede72b8327a886ab63293f",
+  "scikit_optimize-0.10.2-py2.py3-none-any.whl": "45bc7e879b086133984721f2f6735a86c085073f6c481c2ec665b5c67b44d723",
+  "scikit_learn-1.4.2-cp310-cp310-macosx_12_0_arm64.whl": "68b8404841f944a4a1459b07198fa2edd41a82f189b44f3e1d55c104dbc2e40c"
+}

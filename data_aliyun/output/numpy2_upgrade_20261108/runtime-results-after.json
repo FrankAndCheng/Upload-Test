@@ -1,0 +1,125 @@
+[
+  {
+    "name": "all 38 historical joblib artifacts load/call",
+    "ok": true,
+    "details": {
+      "loaded": 38,
+      "artifacts": [
+        "review/optimization/external/selected_model.joblib",
+        "review/optimization/same_validation/selected_model.joblib",
+        "review/preprocessing_ablation/models/B__AdaBoost__raw.joblib",
+        "review/preprocessing_ablation/models/B__DecisionTree__raw.joblib",
+        "review/preprocessing_ablation/models/B__HistGradientBoosting__native.joblib",
+        "review/preprocessing_ablation/models/B__LightGBM__native.joblib",
+        "review/preprocessing_ablation/models/B__LightGBM__raw.joblib",
+        "review/preprocessing_ablation/models/B__NeuralNetwork_original__scale_pca_preprocess.joblib",
+        "review/preprocessing_ablation/models/B__NeuralNetwork_small__scale_preprocess.joblib",
+        "review/preprocessing_ablation/models/B__RandomForest__raw.joblib",
+        "review/preprocessing_ablation/models/B__Ridge__scale.joblib",
+        "review/preprocessing_ablation/models/B__XGBoost_optimized__raw.joblib",
+        "review/preprocessing_ablation/models/B__XGBoost_original__raw.joblib",
+        "review/preprocessing_ablation/models/development__AdaBoost__raw.joblib",
+        "review/preprocessing_ablation/models/development__DecisionTree__raw.joblib",
+        "review/preprocessing_ablation/models/development__HistGradientBoosting__native.joblib",
+        "review/preprocessing_ablation/models/development__LightGBM__native.joblib",
+        "review/preprocessing_ablation/models/development__LightGBM__raw.joblib",
+        "review/preprocessing_ablation/models/development__NeuralNetwork_original__scale_pca_preprocess.joblib",
+        "review/preprocessing_ablation/models/development__NeuralNetwork_small__scale_preprocess.joblib",
+        "review/preprocessing_ablation/models/development__RandomForest__raw.joblib",
+        "review/preprocessing_ablation/models/development__Ridge__scale.joblib",
+        "review/preprocessing_ablation/models/development__XGBoost_optimized__raw.joblib",
+        "review/preprocessing_ablation/models/development__XGBoost_original__raw.joblib",
+        "review/sequential_experiments/B_baseline_xgb.joblib",
+        "review/sequential_experiments/B_feature_combined.joblib",
+        "review/sequential_experiments/B_frozen_ridge.joblib",
+        "review/sequential_experiments/B_joint_lgb_05.joblib",
+        "review/sequential_experiments/B_joint_xgb_089.joblib",
+        "review/sequential_experiments/B_nn_128_pca_preprocessor.joblib",
+        "review/sequential_experiments/B_nn_64_nohep_raw_preprocessor.joblib",
+        "review/sequential_experiments/development_baseline_xgb.joblib",
+        "review/sequential_experiments/development_feature_combined.joblib",
+        "review/sequential_experiments/development_frozen_ridge.joblib",
+        "review/sequential_experiments/development_joint_lgb_05.joblib",
+        "review/sequential_experiments/development_joint_xgb_089.joblib",
+        "review/sequential_experiments/development_nn_128_pca_preprocessor.joblib",
+        "review/sequential_experiments/development_nn_64_nohep_raw_preprocessor.joblib"
+      ]
+    }
+  },
+  {
+    "name": "scientific companion operations",
+    "ok": true,
+    "details": {
+      "operations": [
+        "factor-analyzer fit",
+        "imbalanced-learn resampling",
+        "scikit-optimize GP",
+        "statsmodels formula OLS",
+        "mlxtend apriori",
+        "wordcloud",
+        "torch NumPy bridge",
+        "numba JIT",
+        "h5py roundtrip"
+      ]
+    }
+  },
+  {
+    "name": "project frozen classical estimators fit/predict",
+    "ok": true,
+    "details": {
+      "models": [
+        "joint_xgb_089",
+        "joint_lgb_05",
+        "joint_hist_04",
+        "frozen_forest",
+        "frozen_ridge"
+      ],
+      "train_rows": 128,
+      "test_rows": 32
+    }
+  },
+  {
+    "name": "project small neural fit/predict/save/load",
+    "ok": true,
+    "details": {
+      "epochs": 2,
+      "save_load_max_abs_diff": 0.0
+    }
+  },
+  {
+    "name": "project original PReLU neural fit/predict/save/load",
+    "ok": true,
+    "details": {
+      "epochs": 2,
+      "test_rows": 32
+    }
+  },
+  {
+    "name": "all eight historical Keras models load/infer",
+    "ok": true,
+    "details": {
+      "models": [
+        "review/preprocessing_ablation/models/B__NeuralNetwork_original__scale_pca.keras",
+        "review/preprocessing_ablation/models/B__NeuralNetwork_small__scale.keras",
+        "review/preprocessing_ablation/models/development__NeuralNetwork_original__scale_pca.keras",
+        "review/preprocessing_ablation/models/development__NeuralNetwork_small__scale.keras",
+        "review/sequential_experiments/B_nn_128_pca.keras",
+        "review/sequential_experiments/B_nn_64_nohep_raw.keras",
+        "review/sequential_experiments/development_nn_128_pca.keras",
+        "review/sequential_experiments/development_nn_64_nohep_raw.keras"
+      ],
+      "input": "synthetic zeros matching each saved input shape"
+    }
+  },
+  {
+    "name": "1000-row frozen ensemble before/after comparison",
+    "ok": true,
+    "details": {
+      "rows": 1000,
+      "max_abs_diff": 0.0,
+      "mean_abs_diff": 0.0,
+      "atol": 1e-05,
+      "rtol": 1e-06
+    }
+  }
+]

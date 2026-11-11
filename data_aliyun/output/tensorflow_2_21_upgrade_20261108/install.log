@@ -1,0 +1,70 @@
+Looking in links: /private/tmp/tf221-upgrade-wheels
+Processing /private/tmp/tf221-upgrade-wheels/tensorflow-2.21.0-cp310-cp310-macosx_12_0_arm64.whl (from -r /Users/chengchong/Desktop/Code/PyCharmProject/python/data_aliyun/output/tensorflow_2_21_upgrade_20261108/upgrade-packages.txt (line 1))
+Processing /private/tmp/tf221-upgrade-wheels/ml_dtypes-0.5.4-cp310-cp310-macosx_10_9_universal2.whl (from -r /Users/chengchong/Desktop/Code/PyCharmProject/python/data_aliyun/output/tensorflow_2_21_upgrade_20261108/upgrade-packages.txt (line 2))
+Processing /private/tmp/tf221-upgrade-wheels/protobuf-7.36.2-cp310-abi3-macosx_10_9_universal2.whl (from -r /Users/chengchong/Desktop/Code/PyCharmProject/python/data_aliyun/output/tensorflow_2_21_upgrade_20261108/upgrade-packages.txt (line 3))
+Processing /private/tmp/tf221-upgrade-wheels/tensorboard-2.21.0-py3-none-any.whl (from -r /Users/chengchong/Desktop/Code/PyCharmProject/python/data_aliyun/output/tensorflow_2_21_upgrade_20261108/upgrade-packages.txt (line 4))
+Processing /private/tmp/tf221-upgrade-wheels/grpcio-1.85.1-cp310-cp310-macosx_11_0_universal2.whl (from -r /Users/chengchong/Desktop/Code/PyCharmProject/python/data_aliyun/output/tensorflow_2_21_upgrade_20261108/upgrade-packages.txt (line 5))
+Processing /private/tmp/tf221-upgrade-wheels/flatbuffers-25.12.19-py2.py3-none-any.whl (from -r /Users/chengchong/Desktop/Code/PyCharmProject/python/data_aliyun/output/tensorflow_2_21_upgrade_20261108/upgrade-packages.txt (line 6))
+Processing /private/tmp/tf221-upgrade-wheels/keras-3.12.4-py3-none-any.whl (from -r /Users/chengchong/Desktop/Code/PyCharmProject/python/data_aliyun/output/tensorflow_2_21_upgrade_20261108/upgrade-packages.txt (line 7))
+Requirement already satisfied: numpy==1.26.4 in /Users/chengchong/anaconda3/lib/python3.10/site-packages (from -r /Users/chengchong/Desktop/Code/PyCharmProject/python/data_aliyun/output/tensorflow_2_21_upgrade_20261108/upgrade-packages.txt (line 8)) (1.26.4)
+Requirement already satisfied: absl-py>=1.0.0 in /Users/chengchong/anaconda3/lib/python3.10/site-packages (from tensorflow==2.21.0->-r /Users/chengchong/Desktop/Code/PyCharmProject/python/data_aliyun/output/tensorflow_2_21_upgrade_20261108/upgrade-packages.txt (line 1)) (2.1.0)
+Requirement already satisfied: astunparse>=1.6.0 in /Users/chengchong/anaconda3/lib/python3.10/site-packages (from tensorflow==2.21.0->-r /Users/chengchong/Desktop/Code/PyCharmProject/python/data_aliyun/output/tensorflow_2_21_upgrade_20261108/upgrade-packages.txt (line 1)) (1.6.3)
+Requirement already satisfied: gast!=0.5.0,!=0.5.1,!=0.5.2,>=0.2.1 in /Users/chengchong/anaconda3/lib/python3.10/site-packages (from tensorflow==2.21.0->-r /Users/chengchong/Desktop/Code/PyCharmProject/python/data_aliyun/output/tensorflow_2_21_upgrade_20261108/upgrade-packages.txt (line 1)) (0.6.0)
+Requirement already satisfied: google_pasta>=0.1.1 in /Users/chengchong/anaconda3/lib/python3.10/site-packages (from tensorflow==2.21.0->-r /Users/chengchong/Desktop/Code/PyCharmProject/python/data_aliyun/output/tensorflow_2_21_upgrade_20261108/upgrade-packages.txt (line 1)) (0.2.0)
+Requirement already satisfied: libclang>=13.0.0 in /Users/chengchong/anaconda3/lib/python3.10/site-packages (from tensorflow==2.21.0->-r /Users/chengchong/Desktop/Code/PyCharmProject/python/data_aliyun/output/tensorflow_2_21_upgrade_20261108/upgrade-packages.txt (line 1)) (18.1.1)
+Requirement already satisfied: opt_einsum>=2.3.2 in /Users/chengchong/anaconda3/lib/python3.10/site-packages (from tensorflow==2.21.0->-r /Users/chengchong/Desktop/Code/PyCharmProject/python/data_aliyun/output/tensorflow_2_21_upgrade_20261108/upgrade-packages.txt (line 1)) (3.4.0)
+Requirement already satisfied: packaging in /Users/chengchong/anaconda3/lib/python3.10/site-packages (from tensorflow==2.21.0->-r /Users/chengchong/Desktop/Code/PyCharmProject/python/data_aliyun/output/tensorflow_2_21_upgrade_20261108/upgrade-packages.txt (line 1)) (26.3)
+Requirement already satisfied: requests<3,>=2.21.0 in /Users/chengchong/anaconda3/lib/python3.10/site-packages (from tensorflow==2.21.0->-r /Users/chengchong/Desktop/Code/PyCharmProject/python/data_aliyun/output/tensorflow_2_21_upgrade_20261108/upgrade-packages.txt (line 1)) (2.34.2)
+Requirement already satisfied: setuptools in /Users/chengchong/anaconda3/lib/python3.10/site-packages (from tensorflow==2.21.0->-r /Users/chengchong/Desktop/Code/PyCharmProject/python/data_aliyun/output/tensorflow_2_21_upgrade_20261108/upgrade-packages.txt (line 1)) (80.10.2)
+Requirement already satisfied: six>=1.12.0 in /Users/chengchong/anaconda3/lib/python3.10/site-packages (from tensorflow==2.21.0->-r /Users/chengchong/Desktop/Code/PyCharmProject/python/data_aliyun/output/tensorflow_2_21_upgrade_20261108/upgrade-packages.txt (line 1)) (1.17.0)
+Requirement already satisfied: termcolor>=1.1.0 in /Users/chengchong/anaconda3/lib/python3.10/site-packages (from tensorflow==2.21.0->-r /Users/chengchong/Desktop/Code/PyCharmProject/python/data_aliyun/output/tensorflow_2_21_upgrade_20261108/upgrade-packages.txt (line 1)) (2.5.0)
+Requirement already satisfied: typing_extensions>=3.6.6 in /Users/chengchong/anaconda3/lib/python3.10/site-packages (from tensorflow==2.21.0->-r /Users/chengchong/Desktop/Code/PyCharmProject/python/data_aliyun/output/tensorflow_2_21_upgrade_20261108/upgrade-packages.txt (line 1)) (4.16.0)
+Requirement already satisfied: wrapt>=1.11.0 in /Users/chengchong/anaconda3/lib/python3.10/site-packages (from tensorflow==2.21.0->-r /Users/chengchong/Desktop/Code/PyCharmProject/python/data_aliyun/output/tensorflow_2_21_upgrade_20261108/upgrade-packages.txt (line 1)) (1.17.2)
+Requirement already satisfied: h5py<3.15.0,>=3.11.0 in /Users/chengchong/anaconda3/lib/python3.10/site-packages (from tensorflow==2.21.0->-r /Users/chengchong/Desktop/Code/PyCharmProject/python/data_aliyun/output/tensorflow_2_21_upgrade_20261108/upgrade-packages.txt (line 1)) (3.12.1)
+Requirement already satisfied: markdown>=2.6.8 in /Users/chengchong/anaconda3/lib/python3.10/site-packages (from tensorboard==2.21.0->-r /Users/chengchong/Desktop/Code/PyCharmProject/python/data_aliyun/output/tensorflow_2_21_upgrade_20261108/upgrade-packages.txt (line 4)) (3.7)
+Requirement already satisfied: pillow in /Users/chengchong/anaconda3/lib/python3.10/site-packages (from tensorboard==2.21.0->-r /Users/chengchong/Desktop/Code/PyCharmProject/python/data_aliyun/output/tensorflow_2_21_upgrade_20261108/upgrade-packages.txt (line 4)) (12.3.0)
+Requirement already satisfied: tensorboard-data-server<0.8.0,>=0.7.0 in /Users/chengchong/anaconda3/lib/python3.10/site-packages (from tensorboard==2.21.0->-r /Users/chengchong/Desktop/Code/PyCharmProject/python/data_aliyun/output/tensorflow_2_21_upgrade_20261108/upgrade-packages.txt (line 4)) (0.7.2)
+Requirement already satisfied: werkzeug>=1.0.1 in /Users/chengchong/anaconda3/lib/python3.10/site-packages (from tensorboard==2.21.0->-r /Users/chengchong/Desktop/Code/PyCharmProject/python/data_aliyun/output/tensorflow_2_21_upgrade_20261108/upgrade-packages.txt (line 4)) (3.1.3)
+Requirement already satisfied: rich in /Users/chengchong/anaconda3/lib/python3.10/site-packages (from keras==3.12.4->-r /Users/chengchong/Desktop/Code/PyCharmProject/python/data_aliyun/output/tensorflow_2_21_upgrade_20261108/upgrade-packages.txt (line 7)) (15.0.0)
+Requirement already satisfied: namex in /Users/chengchong/anaconda3/lib/python3.10/site-packages (from keras==3.12.4->-r /Users/chengchong/Desktop/Code/PyCharmProject/python/data_aliyun/output/tensorflow_2_21_upgrade_20261108/upgrade-packages.txt (line 7)) (0.0.8)
+Requirement already satisfied: optree in /Users/chengchong/anaconda3/lib/python3.10/site-packages (from keras==3.12.4->-r /Users/chengchong/Desktop/Code/PyCharmProject/python/data_aliyun/output/tensorflow_2_21_upgrade_20261108/upgrade-packages.txt (line 7)) (0.14.0)
+Requirement already satisfied: charset_normalizer<4,>=2 in /Users/chengchong/anaconda3/lib/python3.10/site-packages (from requests<3,>=2.21.0->tensorflow==2.21.0->-r /Users/chengchong/Desktop/Code/PyCharmProject/python/data_aliyun/output/tensorflow_2_21_upgrade_20261108/upgrade-packages.txt (line 1)) (3.4.7)
+Requirement already satisfied: idna<4,>=2.5 in /Users/chengchong/anaconda3/lib/python3.10/site-packages (from requests<3,>=2.21.0->tensorflow==2.21.0->-r /Users/chengchong/Desktop/Code/PyCharmProject/python/data_aliyun/output/tensorflow_2_21_upgrade_20261108/upgrade-packages.txt (line 1)) (3.20)
+Requirement already satisfied: urllib3<3,>=1.26 in /Users/chengchong/anaconda3/lib/python3.10/site-packages (from requests<3,>=2.21.0->tensorflow==2.21.0->-r /Users/chengchong/Desktop/Code/PyCharmProject/python/data_aliyun/output/tensorflow_2_21_upgrade_20261108/upgrade-packages.txt (line 1)) (2.8.0)
+Requirement already satisfied: certifi>=2023.5.7 in /Users/chengchong/anaconda3/lib/python3.10/site-packages (from requests<3,>=2.21.0->tensorflow==2.21.0->-r /Users/chengchong/Desktop/Code/PyCharmProject/python/data_aliyun/output/tensorflow_2_21_upgrade_20261108/upgrade-packages.txt (line 1)) (2026.10.23)
+Requirement already satisfied: wheel<1.0,>=0.23.0 in /Users/chengchong/anaconda3/lib/python3.10/site-packages (from astunparse>=1.6.0->tensorflow==2.21.0->-r /Users/chengchong/Desktop/Code/PyCharmProject/python/data_aliyun/output/tensorflow_2_21_upgrade_20261108/upgrade-packages.txt (line 1)) (0.48.0)
+Requirement already satisfied: MarkupSafe>=2.1.1 in /Users/chengchong/anaconda3/lib/python3.10/site-packages (from werkzeug>=1.0.1->tensorboard==2.21.0->-r /Users/chengchong/Desktop/Code/PyCharmProject/python/data_aliyun/output/tensorflow_2_21_upgrade_20261108/upgrade-packages.txt (line 4)) (3.0.3)
+Requirement already satisfied: markdown-it-py>=2.2.0 in /Users/chengchong/anaconda3/lib/python3.10/site-packages (from rich->keras==3.12.4->-r /Users/chengchong/Desktop/Code/PyCharmProject/python/data_aliyun/output/tensorflow_2_21_upgrade_20261108/upgrade-packages.txt (line 7)) (4.2.0)
+Requirement already satisfied: pygments<3.0.0,>=2.13.0 in /Users/chengchong/anaconda3/lib/python3.10/site-packages (from rich->keras==3.12.4->-r /Users/chengchong/Desktop/Code/PyCharmProject/python/data_aliyun/output/tensorflow_2_21_upgrade_20261108/upgrade-packages.txt (line 7)) (2.21.0)
+Requirement already satisfied: mdurl~=0.1 in /Users/chengchong/anaconda3/lib/python3.10/site-packages (from markdown-it-py>=2.2.0->rich->keras==3.12.4->-r /Users/chengchong/Desktop/Code/PyCharmProject/python/data_aliyun/output/tensorflow_2_21_upgrade_20261108/upgrade-packages.txt (line 7)) (0.1.2)
+Installing collected packages: flatbuffers, protobuf, ml_dtypes, grpcio, tensorboard, keras, tensorflow
+  Attempting uninstall: flatbuffers
+    Found existing installation: flatbuffers 24.12.23
+    Uninstalling flatbuffers-24.12.23:
+      Successfully uninstalled flatbuffers-24.12.23
+  Attempting uninstall: protobuf
+    Found existing installation: protobuf 4.25.5
+    Uninstalling protobuf-4.25.5:
+      Successfully uninstalled protobuf-4.25.5
+  Attempting uninstall: ml_dtypes
+    Found existing installation: ml-dtypes 0.3.2
+    Uninstalling ml-dtypes-0.3.2:
+      Successfully uninstalled ml-dtypes-0.3.2
+  Attempting uninstall: grpcio
+    Found existing installation: grpcio 1.69.0
+    Uninstalling grpcio-1.69.0:
+      Successfully uninstalled grpcio-1.69.0
+  Attempting uninstall: tensorboard
+    Found existing installation: tensorboard 2.16.2
+    Uninstalling tensorboard-2.16.2:
+      Successfully uninstalled tensorboard-2.16.2
+  Attempting uninstall: keras
+    Found existing installation: keras 3.8.0
+    Uninstalling keras-3.8.0:
+      Successfully uninstalled keras-3.8.0
+  Attempting uninstall: tensorflow
+    Found existing installation: tensorflow 2.16.2
+    Uninstalling tensorflow-2.16.2:
+      Successfully uninstalled tensorflow-2.16.2
+
+Successfully installed flatbuffers-25.12.19 grpcio-1.85.1 keras-3.12.4 ml_dtypes-0.5.4 protobuf-7.36.2 tensorboard-2.21.0 tensorflow-2.21.0

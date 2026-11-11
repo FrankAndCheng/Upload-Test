@@ -1,0 +1,92 @@
+[
+  {
+    "package": "factor-analyzer",
+    "before": "0.4.1",
+    "after": "0.5.1"
+  },
+  {
+    "package": "formulaic",
+    "before": null,
+    "after": "1.2.2"
+  },
+  {
+    "package": "imbalanced-learn",
+    "before": "0.11.0",
+    "after": "0.14.2"
+  },
+  {
+    "package": "interface-meta",
+    "before": null,
+    "after": "2.0.1"
+  },
+  {
+    "package": "ml-dtypes",
+    "before": "0.5.4",
+    "after": "0.6.0"
+  },
+  {
+    "package": "mlxtend",
+    "before": "0.22.0",
+    "after": "0.23.4"
+  },
+  {
+    "package": "narwhals",
+    "before": null,
+    "after": "2.28.0"
+  },
+  {
+    "package": "numpy",
+    "before": "1.26.4",
+    "after": "2.2.5"
+  },
+  {
+    "package": "numpy-base",
+    "before": "1.26.4",
+    "after": "2.2.5"
+  },
+  {
+    "package": "pandas",
+    "before": "2.0.3",
+    "after": "2.3.3"
+  },
+  {
+    "package": "pandas-stubs",
+    "before": "2.0.3.230814",
+    "after": "2.3.3.260113"
+  },
+  {
+    "package": "patsy",
+    "before": "0.5.3",
+    "after": "1.0.3"
+  },
+  {
+    "package": "scikit-learn",
+    "before": "1.3.0",
+    "after": "1.4.2"
+  },
+  {
+    "package": "scikit-optimize",
+    "before": "0.9.0",
+    "after": "0.10.2"
+  },
+  {
+    "package": "scipy",
+    "before": "1.11.1",
+    "after": "1.15.3"
+  },
+  {
+    "package": "sklearn-compat",
+    "before": null,
+    "after": "0.1.6"
+  },
+  {
+    "package": "statsmodels",
+    "before": "0.14.0",
+    "after": "0.15.0"
+  },
+  {
+    "package": "wordcloud",
+    "before": "1.9.2",
+    "after": "1.9.6"
+  }
+]

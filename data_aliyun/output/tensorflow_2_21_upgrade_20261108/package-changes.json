@@ -1,0 +1,42 @@
+[
+  {
+    "package": "flatbuffers",
+    "before": "24.12.23",
+    "after": "25.12.19"
+  },
+  {
+    "package": "grpcio",
+    "before": "1.69.0",
+    "after": "1.85.1"
+  },
+  {
+    "package": "keras",
+    "before": "3.8.0",
+    "after": "3.12.4"
+  },
+  {
+    "package": "ml-dtypes",
+    "before": "0.3.2",
+    "after": "0.5.4"
+  },
+  {
+    "package": "protobuf",
+    "before": "4.25.5",
+    "after": "7.36.2"
+  },
+  {
+    "package": "tensorboard",
+    "before": "2.16.2",
+    "after": "2.21.0"
+  },
+  {
+    "package": "tensorflow",
+    "before": "2.16.2",
+    "after": "2.21.0"
+  },
+  {
+    "package": "tensorflow-macos",
+    "before": "2.16.2",
+    "after": null
+  }
+]

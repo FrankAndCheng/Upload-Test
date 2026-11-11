@@ -1,0 +1,6 @@
+Environment Health Report for: /Users/chengchong/anaconda3
+
+✅ The environment is consistent.
+
+✅ There are no packages with missing files.
+

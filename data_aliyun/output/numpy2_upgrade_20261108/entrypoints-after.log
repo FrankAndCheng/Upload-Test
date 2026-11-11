@@ -1,0 +1,11 @@
+test_all_help_and_dry_runs_are_nonexecuting (test_workflow_entrypoints.WorkflowEntrypoints) ... ok
+test_child_failure_is_returned_to_the_caller (test_workflow_entrypoints.WorkflowEntrypoints) ... ok
+test_historical_sources_match_the_recorded_organization_snapshot (test_workflow_entrypoints.WorkflowEntrypoints) ... ok
+test_importing_categories_does_not_import_training_libraries (test_workflow_entrypoints.WorkflowEntrypoints) ... ok
+test_missing_prediction_arguments_cannot_launch_training_or_prediction (test_workflow_entrypoints.WorkflowEntrypoints) ... ok
+test_predict_paths_keep_the_callers_directory_and_spaces (test_workflow_entrypoints.WorkflowEntrypoints) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.055s
+
+OK

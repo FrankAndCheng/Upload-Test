@@ -1,0 +1,53 @@
+{
+  "success": true,
+  "actions": {
+    "FETCH": [],
+    "PREFIX": "/Users/chengchong/anaconda3",
+    "UNLINK": [
+      {
+        "base_url": "https://repo.anaconda.com/pkgs/main",
+        "build_number": 1,
+        "build_string": "py310h901140f_1",
+        "channel": "pkgs/main",
+        "dist_name": "numpy-1.26.4-py310h901140f_1",
+        "name": "numpy",
+        "platform": "osx-arm64",
+        "version": "1.26.4"
+      },
+      {
+        "base_url": "https://repo.anaconda.com/pkgs/main",
+        "build_number": 1,
+        "build_string": "py310hae06d03_1",
+        "channel": "pkgs/main",
+        "dist_name": "numpy-base-1.26.4-py310hae06d03_1",
+        "name": "numpy-base",
+        "platform": "osx-arm64",
+        "version": "1.26.4"
+      }
+    ],
+    "LINK": [
+      {
+        "base_url": "https://repo.anaconda.com/pkgs/main",
+        "build_number": 3,
+        "build_string": "py310hb22d27a_3",
+        "channel": "pkgs/main",
+        "dist_name": "numpy-base-2.2.5-py310hb22d27a_3",
+        "name": "numpy-base",
+        "platform": "osx-arm64",
+        "version": "2.2.5"
+      },
+      {
+        "base_url": "https://repo.anaconda.com/pkgs/main",
+        "build_number": 3,
+        "build_string": "py310h51bfb38_3",
+        "channel": "pkgs/main",
+        "dist_name": "numpy-2.2.5-py310h51bfb38_3",
+        "name": "numpy",
+        "platform": "osx-arm64",
+        "version": "2.2.5"
+      }
+    ]
+  },
+  "prefix": "/Users/chengchong/anaconda3",
+  "dry_run": true
+}

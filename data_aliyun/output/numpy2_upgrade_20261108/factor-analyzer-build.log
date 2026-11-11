@@ -1,0 +1,10 @@
+Collecting factor-analyzer==0.5.1
+  Downloading factor_analyzer-0.5.1.tar.gz (42 kB)
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'done'
+Building wheels for collected packages: factor-analyzer
+  Building wheel for factor-analyzer (pyproject.toml): started
+  Building wheel for factor-analyzer (pyproject.toml): finished with status 'done'
+  Created wheel for factor-analyzer: filename=factor_analyzer-0.5.1-py2.py3-none-any.whl size=42658 sha256=5320a43e90b84e71fd0bc0d2a40887fea43fea943c3ae96363b92072127477ac
+  Stored in directory: /Users/chengchong/.cache/pip/wheels/24/59/82/6493618e30ed1cb7a013b9e1b0c9e17de80b04dfcef4ba8a4d
+Successfully built factor-analyzer

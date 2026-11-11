@@ -1,0 +1,31 @@
+
+Fontconfig error: No writable cache directories
+	/opt/homebrew/var/cache/fontconfig
+	/Users/chengchong/.cache/fontconfig
+	/Users/chengchong/.fontconfig
+
+Fontconfig error: No writable cache directories
+	/opt/homebrew/var/cache/fontconfig
+	/Users/chengchong/.cache/fontconfig
+	/Users/chengchong/.fontconfig
+
+Fontconfig error: No writable cache directories
+	/opt/homebrew/var/cache/fontconfig
+	/Users/chengchong/.cache/fontconfig
+	/Users/chengchong/.fontconfig
+
+Fontconfig error: No writable cache directories
+	/opt/homebrew/var/cache/fontconfig
+	/Users/chengchong/.cache/fontconfig
+	/Users/chengchong/.fontconfig
+
+Fontconfig error: No writable cache directories
+	/opt/homebrew/var/cache/fontconfig
+	/Users/chengchong/.cache/fontconfig
+	/Users/chengchong/.fontconfig
+Matplotlib is building the font cache; this may take a moment.
+PASS: project frozen classical estimators fit/predict
+PASS: project small neural fit/predict/save/load
+PASS: project original PReLU neural fit/predict/save/load
+PASS: all eight historical Keras models load/infer
+PASS: 1000-row frozen ensemble before/after comparison

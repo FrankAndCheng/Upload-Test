@@ -1,0 +1,192 @@
+[
+  {
+    "path": "review/sequential_experiments/development_frozen_ridge.joblib",
+    "ok": true,
+    "detail": "loaded and synthetic call passed"
+  },
+  {
+    "path": "review/sequential_experiments/B_joint_lgb_05.joblib",
+    "ok": true,
+    "detail": "loaded and synthetic call passed"
+  },
+  {
+    "path": "review/sequential_experiments/development_feature_combined.joblib",
+    "ok": true,
+    "detail": "loaded and synthetic call passed"
+  },
+  {
+    "path": "review/sequential_experiments/B_baseline_xgb.joblib",
+    "ok": true,
+    "detail": "loaded and synthetic call passed"
+  },
+  {
+    "path": "review/sequential_experiments/B_feature_combined.joblib",
+    "ok": true,
+    "detail": "loaded and synthetic call passed"
+  },
+  {
+    "path": "review/sequential_experiments/B_frozen_ridge.joblib",
+    "ok": true,
+    "detail": "loaded and synthetic call passed"
+  },
+  {
+    "path": "review/sequential_experiments/B_nn_64_nohep_raw_preprocessor.joblib",
+    "ok": true,
+    "detail": "loaded and synthetic call passed"
+  },
+  {
+    "path": "review/sequential_experiments/development_joint_lgb_05.joblib",
+    "ok": true,
+    "detail": "loaded and synthetic call passed"
+  },
+  {
+    "path": "review/sequential_experiments/B_joint_xgb_089.joblib",
+    "ok": true,
+    "detail": "loaded and synthetic call passed"
+  },
+  {
+    "path": "review/sequential_experiments/development_nn_128_pca_preprocessor.joblib",
+    "ok": true,
+    "detail": "loaded and synthetic call passed"
+  },
+  {
+    "path": "review/sequential_experiments/B_nn_128_pca_preprocessor.joblib",
+    "ok": true,
+    "detail": "loaded and synthetic call passed"
+  },
+  {
+    "path": "review/sequential_experiments/development_joint_xgb_089.joblib",
+    "ok": true,
+    "detail": "loaded and synthetic call passed"
+  },
+  {
+    "path": "review/sequential_experiments/development_baseline_xgb.joblib",
+    "ok": true,
+    "detail": "loaded and synthetic call passed"
+  },
+  {
+    "path": "review/sequential_experiments/development_nn_64_nohep_raw_preprocessor.joblib",
+    "ok": true,
+    "detail": "loaded and synthetic call passed"
+  },
+  {
+    "path": "review/optimization/same_validation/selected_model.joblib",
+    "ok": true,
+    "detail": "loaded; container artifact"
+  },
+  {
+    "path": "review/optimization/external/selected_model.joblib",
+    "ok": true,
+    "detail": "loaded; container artifact"
+  },
+  {
+    "path": "review/preprocessing_ablation/models/development__XGBoost_optimized__raw.joblib",
+    "ok": true,
+    "detail": "loaded; container artifact"
+  },
+  {
+    "path": "review/preprocessing_ablation/models/B__Ridge__scale.joblib",
+    "ok": true,
+    "detail": "loaded; container artifact"
+  },
+  {
+    "path": "review/preprocessing_ablation/models/B__RandomForest__raw.joblib",
+    "ok": true,
+    "detail": "loaded; container artifact"
+  },
+  {
+    "path": "review/preprocessing_ablation/models/B__XGBoost_original__raw.joblib",
+    "ok": true,
+    "detail": "loaded; container artifact"
+  },
+  {
+    "path": "review/preprocessing_ablation/models/development__LightGBM__raw.joblib",
+    "ok": true,
+    "detail": "loaded; container artifact"
+  },
+  {
+    "path": "review/preprocessing_ablation/models/development__XGBoost_original__raw.joblib",
+    "ok": true,
+    "detail": "loaded; container artifact"
+  },
+  {
+    "path": "review/preprocessing_ablation/models/B__DecisionTree__raw.joblib",
+    "ok": true,
+    "detail": "loaded; container artifact"
+  },
+  {
+    "path": "review/preprocessing_ablation/models/development__AdaBoost__raw.joblib",
+    "ok": true,
+    "detail": "loaded; container artifact"
+  },
+  {
+    "path": "review/preprocessing_ablation/models/development__NeuralNetwork_small__scale_preprocess.joblib",
+    "ok": true,
+    "detail": "loaded and synthetic call passed"
+  },
+  {
+    "path": "review/preprocessing_ablation/models/B__HistGradientBoosting__native.joblib",
+    "ok": true,
+    "detail": "loaded; container artifact"
+  },
+  {
+    "path": "review/preprocessing_ablation/models/development__NeuralNetwork_original__scale_pca_preprocess.joblib",
+    "ok": true,
+    "detail": "loaded and synthetic call passed"
+  },
+  {
+    "path": "review/preprocessing_ablation/models/development__Ridge__scale.joblib",
+    "ok": true,
+    "detail": "loaded; container artifact"
+  },
+  {
+    "path": "review/preprocessing_ablation/models/B__XGBoost_optimized__raw.joblib",
+    "ok": true,
+    "detail": "loaded; container artifact"
+  },
+  {
+    "path": "review/preprocessing_ablation/models/B__NeuralNetwork_original__scale_pca_preprocess.joblib",
+    "ok": true,
+    "detail": "loaded and synthetic call passed"
+  },
+  {
+    "path": "review/preprocessing_ablation/models/development__HistGradientBoosting__native.joblib",
+    "ok": true,
+    "detail": "loaded; container artifact"
+  },
+  {
+    "path": "review/preprocessing_ablation/models/development__DecisionTree__raw.joblib",
+    "ok": true,
+    "detail": "loaded; container artifact"
+  },
+  {
+    "path": "review/preprocessing_ablation/models/B__AdaBoost__raw.joblib",
+    "ok": true,
+    "detail": "loaded; container artifact"
+  },
+  {
+    "path": "review/preprocessing_ablation/models/B__NeuralNetwork_small__scale_preprocess.joblib",
+    "ok": true,
+    "detail": "loaded and synthetic call passed"
+  },
+  {
+    "path": "review/preprocessing_ablation/models/B__LightGBM__raw.joblib",
+    "ok": true,
+    "detail": "loaded; container artifact"
+  },
+  {
+    "path": "review/preprocessing_ablation/models/B__LightGBM__native.joblib",
+    "ok": true,
+    "detail": "loaded; container artifact"
+  },
+  {
+    "path": "review/preprocessing_ablation/models/development__LightGBM__native.joblib",
+    "ok": true,
+    "detail": "loaded; container artifact"
+  },
+  {
+    "path": "review/preprocessing_ablation/models/development__RandomForest__raw.joblib",
+    "ok": true,
+    "detail": "loaded; container artifact"
+  }
+]

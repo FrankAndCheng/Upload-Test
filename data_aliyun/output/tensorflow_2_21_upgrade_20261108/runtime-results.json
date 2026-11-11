@@ -1,0 +1,61 @@
+[
+  {
+    "name": "project frozen classical estimators fit/predict",
+    "ok": true,
+    "details": {
+      "models": [
+        "joint_xgb_089",
+        "joint_lgb_05",
+        "joint_hist_04",
+        "frozen_forest",
+        "frozen_ridge"
+      ],
+      "train_rows": 128,
+      "test_rows": 32
+    }
+  },
+  {
+    "name": "project small neural fit/predict/save/load",
+    "ok": true,
+    "details": {
+      "epochs": 2,
+      "save_load_max_abs_diff": 0.0
+    }
+  },
+  {
+    "name": "project original PReLU neural fit/predict/save/load",
+    "ok": true,
+    "details": {
+      "epochs": 2,
+      "test_rows": 32
+    }
+  },
+  {
+    "name": "all eight historical Keras models load/infer",
+    "ok": true,
+    "details": {
+      "models": [
+        "review/preprocessing_ablation/models/B__NeuralNetwork_original__scale_pca.keras",
+        "review/preprocessing_ablation/models/B__NeuralNetwork_small__scale.keras",
+        "review/preprocessing_ablation/models/development__NeuralNetwork_original__scale_pca.keras",
+        "review/preprocessing_ablation/models/development__NeuralNetwork_small__scale.keras",
+        "review/sequential_experiments/B_nn_128_pca.keras",
+        "review/sequential_experiments/B_nn_64_nohep_raw.keras",
+        "review/sequential_experiments/development_nn_128_pca.keras",
+        "review/sequential_experiments/development_nn_64_nohep_raw.keras"
+      ],
+      "input": "synthetic zeros matching each saved input shape"
+    }
+  },
+  {
+    "name": "1000-row frozen ensemble before/after comparison",
+    "ok": true,
+    "details": {
+      "rows": 1000,
+      "max_abs_diff": 0.0,
+      "mean_abs_diff": 0.0,
+      "atol": 1e-05,
+      "rtol": 1e-06
+    }
+  }
+]

@@ -1,0 +1,22 @@
+[
+  {
+    "name": "imports",
+    "ok": true,
+    "output": "/Users/chengchong/.matplotlib is not a writable directory\nMatplotlib created a temporary cache directory at /var/folders/2n/7t0v6dtd0ddfgfr6308zwbqc0000gn/T/matplotlib-9t12dumj because there was an issue with the default path (/Users/chengchong/.matplotlib); it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.\n\nFontconfig error: No writable cache directories\n\t/opt/homebrew/var/cache/fontconfig\n\t/Users/chengchong/.cache/fontconfig\n\t/Users/chengchong/.fontconfig\n\nFontconfig error: No writable cache directories\n\t/opt/homebrew/var/cache/fontconfig\n\t/Users/chengchong/.cache/fontconfig\n\t/Users/chengchong/.fontconfig\n\nFontconfig error: No writable cache directories\n\t/opt/homebrew/var/cache/fontconfig\n\t/Users/chengchong/.cache/fontconfig\n\t/Users/chengchong/.fontconfig\n\nFontconfig error: No writable cache directories\n\t/opt/homebrew/var/cache/fontconfig\n\t/Users/chengchong/.cache/fontconfig\n\t/Users/chengchong/.fontconfig\n\nFontconfig error: No writable cache directories\n\t/opt/homebrew/var/cache/fontconfig\n\t/Users/chengchong/.cache/fontconfig\n\t/Users/chengchong/.fontconfig\nMatplotlib is building the font cache; this may take a moment.\nAll imports OK\n"
+  },
+  {
+    "name": "factor-analyzer",
+    "ok": false,
+    "output": "Traceback (most recent call last):\n  File \"/private/tmp/numpy2-compat-20261108/lib/python3.10/site-packages/scipy/__init__.py\", line 137, in __getattr__\n    return globals()[name]\nKeyError: 'sum'\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"<string>\", line 1, in <module>\n  File \"/Users/chengchong/anaconda3/lib/python3.10/site-packages/factor_analyzer/factor_analyzer.py\", line 651, in fit\n    loadings = self._fit_factor_analysis(corr_mtx)\n  File \"/Users/chengchong/anaconda3/lib/python3.10/site-packages/factor_analyzer/factor_analyzer.py\", line 563, in _fit_factor_analysis\n    res = minimize(\n  File \"/private/tmp/numpy2-compat-20261108/lib/python3.10/site-packages/scipy/optimize/_minimize.py\", line 738, in minimize\n    res = _minimize_lbfgsb(fun, x0, args, jac, bounds,\n  File \"/private/tmp/numpy2-compat-20261108/lib/python3.10/site-packages/scipy/optimize/_lbfgsb_py.py\", line 386, in _minimize_lbfgsb\n    sf = _prepare_scalar_function(fun, x0, jac=jac, args=args, epsilon=eps,\n  File \"/private/tmp/numpy2-compat-20261108/lib/python3.10/site-packages/scipy/optimize/_optimize.py\", line 291, in _prepare_scalar_function\n    sf = ScalarFunction(fun, x0, args, grad, hess,\n  File \"/private/tmp/numpy2-compat-20261108/lib/python3.10/site-packages/scipy/optimize/_differentiable_functions.py\", line 223, in __init__\n    self._update_fun()\n  File \"/private/tmp/numpy2-compat-20261108/lib/python3.10/site-packages/scipy/optimize/_differentiable_functions.py\", line 295, in _update_fun\n    fx = self._wrapped_fun(self.x)\n  File \"/private/tmp/numpy2-compat-20261108/lib/python3.10/site-packages/scipy/optimize/_differentiable_functions.py\", line 21, in wrapped\n    fx = fun(np.copy(x), *args)\n  File \"/Users/chengchong/anaconda3/lib/python3.10/site-packages/factor_analyzer/factor_analyzer.py\", line 368, in _fit_uls_objective\n    error = sp.sum(residual)\n  File \"/private/tmp/numpy2-compat-20261108/lib/python3.10/site-packages/scipy/__init__.py\", line 139, in __getattr__\n    raise AttributeError(\nAttributeError: Module 'scipy' has no attribute 'sum'\n"
+  },
+  {
+    "name": "scientific-functions",
+    "ok": true,
+    "output": ""
+  },
+  {
+    "name": "torch-h5py-numba",
+    "ok": true,
+    "output": ""
+  }
+]
