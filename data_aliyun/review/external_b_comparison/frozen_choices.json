@@ -1,0 +1,111 @@
+{
+  "choices": {
+    "Ridge": {
+      "kind": "sklearn",
+      "family": "linear",
+      "representation": "raw",
+      "feature_set": "all",
+      "best_search_params": {}
+    },
+    "DecisionTree": {
+      "kind": "sklearn",
+      "family": "tree",
+      "representation": "raw",
+      "feature_set": "all",
+      "best_search_params": {
+        "model__min_samples_split": 10,
+        "model__min_samples_leaf": 60,
+        "model__max_depth": 6
+      }
+    },
+    "AdaBoost": {
+      "kind": "sklearn",
+      "family": "tree",
+      "representation": "raw",
+      "feature_set": "all",
+      "best_search_params": {
+        "model__n_estimators": 300,
+        "model__loss": "exponential",
+        "model__learning_rate": 0.005
+      }
+    },
+    "XGBoost": {
+      "kind": "sklearn",
+      "family": "tree",
+      "representation": "raw",
+      "feature_set": "no_hepatitis",
+      "best_search_params": {
+        "model__subsample": 0.8,
+        "model__reg_lambda": 10,
+        "model__n_estimators": 350,
+        "model__min_child_weight": 30,
+        "model__max_depth": 4,
+        "model__learning_rate": 0.02,
+        "model__colsample_bytree": 0.8
+      }
+    },
+    "RandomForest": {
+      "kind": "sklearn",
+      "family": "tree",
+      "representation": "raw",
+      "feature_set": "all",
+      "best_search_params": {
+        "model__min_samples_leaf": 7,
+        "model__max_features": 0.6,
+        "model__max_depth": null
+      }
+    },
+    "NeuralNetwork": {
+      "kind": "keras",
+      "representation": "pca",
+      "feature_set": "all",
+      "epochs": 87,
+      "batch_size": 32,
+      "seed": 23
+    }
+  },
+  "development_results": [
+    {
+      "model": "Ridge",
+      "development_MSE": 2.2891152865485442,
+      "development_RMSE": 1.5129822492509766,
+      "development_MAE": 0.807901679692159,
+      "development_R2": 0.16456811419988981
+    },
+    {
+      "model": "NeuralNetwork",
+      "development_MSE": 2.3755301543346707,
+      "development_RMSE": 1.5412754959236428,
+      "development_MAE": 0.7486433278670935,
+      "development_R2": 0.13303028105537307
+    },
+    {
+      "model": "DecisionTree",
+      "development_MSE": 2.5951759289624046,
+      "development_RMSE": 1.6109549742194549,
+      "development_MAE": 0.8296504628588666,
+      "development_R2": 0.052868707375111734
+    },
+    {
+      "model": "AdaBoost",
+      "development_MSE": 2.4555002180741985,
+      "development_RMSE": 1.5670035794707677,
+      "development_MAE": 0.8080511621130063,
+      "development_R2": 0.10384453337806754
+    },
+    {
+      "model": "XGBoost",
+      "development_MSE": 2.228807860191054,
+      "development_RMSE": 1.492919241014414,
+      "development_MAE": 0.7809505546960289,
+      "development_R2": 0.18657781691152342
+    },
+    {
+      "model": "RandomForest",
+      "development_MSE": 2.276036394957753,
+      "development_RMSE": 1.50865383536375,
+      "development_MAE": 0.7866524039199047,
+      "development_R2": 0.16934136573950298
+    }
+  ]
+}

@@ -1,0 +1,193 @@
+{
+  "algorithms": {
+    "Ridge": {
+      "kind": "sklearn",
+      "family": "linear",
+      "representation": "raw",
+      "feature_set": "all",
+      "best_search_params": {},
+      "estimator": {
+        "class": "Ridge",
+        "parameters": {
+          "alpha": 100.0,
+          "copy_X": true,
+          "fit_intercept": true,
+          "max_iter": null,
+          "positive": false,
+          "random_state": null,
+          "solver": "auto",
+          "tol": 0.0001
+        }
+      }
+    },
+    "NeuralNetwork": {
+      "kind": "keras",
+      "representation": "pca",
+      "feature_set": "all",
+      "epochs": 87,
+      "batch_size": 32,
+      "seed": 23,
+      "build_nn_source": "def build_nn(n_features):\n    tf.keras.utils.set_random_seed(23)\n    nn = Sequential([\n        Input(shape=(n_features,)),\n        Dense(400, activation=PReLU()), Dropout(0.4),\n        Dense(160, kernel_initializer=\"normal\", activation=PReLU()), BatchNormalization(), Dropout(0.6),\n        Dense(64, kernel_initializer=\"normal\", activation=PReLU()), BatchNormalization(), Dropout(0.5),\n        Dense(26, kernel_initializer=\"normal\", activation=PReLU()), BatchNormalization(), Dropout(0.6),\n        Dense(1, kernel_initializer=\"normal\"),\n    ])\n    nn.compile(loss=\"mse\", optimizer=\"adamax\")\n    return nn"
+    },
+    "DecisionTree": {
+      "kind": "sklearn",
+      "family": "tree",
+      "representation": "raw",
+      "feature_set": "all",
+      "best_search_params": {
+        "model__min_samples_split": 10,
+        "model__min_samples_leaf": 60,
+        "model__max_depth": 6
+      },
+      "estimator": {
+        "class": "DecisionTreeRegressor",
+        "parameters": {
+          "ccp_alpha": 0.0,
+          "criterion": "squared_error",
+          "max_depth": 6,
+          "max_features": null,
+          "max_leaf_nodes": null,
+          "min_impurity_decrease": 0.0,
+          "min_samples_leaf": 60,
+          "min_samples_split": 10,
+          "min_weight_fraction_leaf": 0.0,
+          "random_state": 30,
+          "splitter": "random"
+        }
+      }
+    },
+    "AdaBoost": {
+      "kind": "sklearn",
+      "family": "tree",
+      "representation": "raw",
+      "feature_set": "all",
+      "best_search_params": {
+        "model__n_estimators": 300,
+        "model__loss": "exponential",
+        "model__learning_rate": 0.005
+      },
+      "estimator": {
+        "class": "AdaBoostRegressor",
+        "parameters": {
+          "base_estimator": "deprecated",
+          "estimator": {
+            "class": "DecisionTreeRegressor",
+            "parameters": {
+              "ccp_alpha": 0.0,
+              "criterion": "squared_error",
+              "max_depth": 3,
+              "max_features": null,
+              "max_leaf_nodes": null,
+              "min_impurity_decrease": 0.0,
+              "min_samples_leaf": 20,
+              "min_samples_split": 2,
+              "min_weight_fraction_leaf": 0.0,
+              "random_state": 23,
+              "splitter": "best"
+            }
+          },
+          "learning_rate": 0.005,
+          "loss": "exponential",
+          "n_estimators": 300,
+          "random_state": 32
+        }
+      }
+    },
+    "XGBoost": {
+      "kind": "sklearn",
+      "family": "tree",
+      "representation": "raw",
+      "feature_set": "no_hepatitis",
+      "best_search_params": {
+        "model__subsample": 0.8,
+        "model__reg_lambda": 10,
+        "model__n_estimators": 350,
+        "model__min_child_weight": 30,
+        "model__max_depth": 4,
+        "model__learning_rate": 0.02,
+        "model__colsample_bytree": 0.8
+      },
+      "estimator": {
+        "class": "XGBRegressor",
+        "parameters": {
+          "objective": "reg:squarederror",
+          "base_score": null,
+          "booster": null,
+          "callbacks": null,
+          "colsample_bylevel": null,
+          "colsample_bynode": null,
+          "colsample_bytree": 0.8,
+          "device": null,
+          "early_stopping_rounds": null,
+          "enable_categorical": false,
+          "eval_metric": null,
+          "feature_types": null,
+          "gamma": null,
+          "grow_policy": null,
+          "importance_type": null,
+          "interaction_constraints": null,
+          "learning_rate": 0.02,
+          "max_bin": null,
+          "max_cat_threshold": null,
+          "max_cat_to_onehot": null,
+          "max_delta_step": null,
+          "max_depth": 4,
+          "max_leaves": null,
+          "min_child_weight": 30,
+          "missing": "nan",
+          "monotone_constraints": null,
+          "multi_strategy": null,
+          "n_estimators": 350,
+          "n_jobs": 1,
+          "num_parallel_tree": null,
+          "random_state": 23,
+          "reg_alpha": null,
+          "reg_lambda": 10,
+          "sampling_method": null,
+          "scale_pos_weight": null,
+          "subsample": 0.8,
+          "tree_method": "hist",
+          "validate_parameters": null,
+          "verbosity": null
+        }
+      }
+    },
+    "RandomForest": {
+      "kind": "sklearn",
+      "family": "tree",
+      "representation": "raw",
+      "feature_set": "all",
+      "best_search_params": {
+        "model__min_samples_leaf": 7,
+        "model__max_features": 0.6,
+        "model__max_depth": null
+      },
+      "estimator": {
+        "class": "RandomForestRegressor",
+        "parameters": {
+          "bootstrap": true,
+          "ccp_alpha": 0.0,
+          "criterion": "squared_error",
+          "max_depth": null,
+          "max_features": 0.6,
+          "max_leaf_nodes": null,
+          "max_samples": null,
+          "min_impurity_decrease": 0.0,
+          "min_samples_leaf": 7,
+          "min_samples_split": 2,
+          "min_weight_fraction_leaf": 0.0,
+          "n_estimators": 200,
+          "n_jobs": 1,
+          "oob_score": false,
+          "random_state": 23,
+          "verbose": 0,
+          "warm_start": false
+        }
+      }
+    }
+  },
+  "development_training_rows": 4649,
+  "external_training_rows": 6642,
+  "external_rows": 1000,
+  "source_code_sha256": "9e445cbeef0642a07c7bdfd4169c08a78918b54c5e3d5d64ccbbb78775f69a44"
+}
