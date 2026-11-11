@@ -1,0 +1,29 @@
+{
+  "same_vs_legacy_xgb": {
+    "MSE_reduction": 0.07996812534953107,
+    "paired_row_bootstrap_95pct_CI": [
+      0.005710182271622155,
+      0.16056089403396406
+    ],
+    "replicates": 3000,
+    "limitation": "Conditional on fitted models and these rows; excludes training/selection variation and date clustering."
+  },
+  "A_vs_ridge": {
+    "MSE_reduction": 0.0619767005670136,
+    "paired_row_bootstrap_95pct_CI": [
+      -0.003088473207575191,
+      0.1336001071148311
+    ],
+    "replicates": 3000,
+    "limitation": "Conditional on fitted models and these rows; excludes training/selection variation and date clustering."
+  },
+  "B_vs_ridge": {
+    "MSE_reduction": 0.10485555417303354,
+    "paired_row_bootstrap_95pct_CI": [
+      0.048363079266299444,
+      0.16711771500825992
+    ],
+    "replicates": 3000,
+    "limitation": "Conditional on fitted models and these rows; excludes training/selection variation and date clustering."
+  }
+}
