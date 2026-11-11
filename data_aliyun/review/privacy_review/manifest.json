@@ -1,0 +1,220 @@
+{
+  "date": "2026-11-01",
+  "scope": "Current project files, binary byte scan and expanded ZIP members; Git history excluded.",
+  "changes": "Personal paths removed, project links made relative, notebook roots discovered at runtime, reporting metadata minimized.",
+  "changed_files": [
+    {
+      "file": "paper.ipynb",
+      "before_sha256": "05232261dcb9720865b85d1c29f36f3be7d329c74fd66f2d138ff69d9bdaf73a",
+      "after_sha256": "cab499fbfcaaeb7786f071aab27ce9998c2f7ae9f4f8d330f9425042599491a1"
+    },
+    {
+      "file": "paper_experiments.ipynb",
+      "before_sha256": "2db074f4c71dfe12a3fd6cc59dfa30da760d2c358170c16ce358c098f6462c0d",
+      "after_sha256": "71c172ddfcbc7e08cf4306e4c18b41cd8ddaf6fc95559802d82c71f186edf9ab"
+    },
+    {
+      "file": "paper_preprocessing_experiments.ipynb",
+      "before_sha256": "2b2a5e764d3d4f96e955dbc28ff475e2dde9983835ca78509419bae65dcced63",
+      "after_sha256": "04be0fdd95da2d9ff5af4d1184d1d5c1fe5a12145d131c4aca965d0d66e9720f"
+    },
+    {
+      "file": "VALIDATION_SUMMARY.md",
+      "before_sha256": "fd69ce421d7d289d0c6b1876fcd4b1a23343013a2261df4b51e40d08434bdb20",
+      "after_sha256": "0db4636eb69a18559a5995ebd410d07877bbdd6461e95e67479e67ee3629d59b"
+    },
+    {
+      "file": "glucose_project/README.md",
+      "before_sha256": "41a205dfb3382737c3f201e3ad0e7a7e6c6ca8cceb06f8e3020fbb8ae6e9dd04",
+      "after_sha256": "023a055b28256d10e6cc1fbadae2c377bbcbc15757ec3c1aca6a5c49c18c5716"
+    },
+    {
+      "file": "glucose_project/organization_check.json",
+      "before_sha256": "95903879304b6b1af4ee5bbea9fbbfe0c310d4b1549cadde90c861dc621e5bfc",
+      "after_sha256": "c71e6ea3f7648611965e520219d01c6537c064021379049cec8722f907e9854e"
+    },
+    {
+      "file": "review/environment_repair.md",
+      "before_sha256": "8145071f4a7ca07d0d07468b06bb6126130ee00593d4bf3f72e90af050c1c1b4",
+      "after_sha256": "54de9fd755b1602e20a99c2cf5c6ebf42058c28b6aa16a23009b731f852439a0"
+    },
+    {
+      "file": "review/environment_check.json",
+      "before_sha256": "6a5c57f4fd7b5649b7afb9baf33590ca00d7f5c0c1c26535af9af0ade28a2579",
+      "after_sha256": "867759a60d7d43676a9d17c33717d7ae27f72bf2fe9efd0aa6e4712fef5a1705"
+    },
+    {
+      "file": "review/sequential_experiments/input_manifest.json",
+      "before_sha256": "04f249c0a38b60347e6dcb0292fc60f93245100663be6f74d465455944a2ae57",
+      "after_sha256": "e780b6af10830e58f45bdc6d9d0d3bb7d60d9c20514608d713562660e15fc908"
+    },
+    {
+      "file": "review/sequential_experiments/render_results.py",
+      "before_sha256": "f6984b55d8b9544a3d83487dc71596b8e382cccd4fdb1bdc3b75c8d16c744505",
+      "after_sha256": "f2152ef5c1ce4102e35a23ddc86380f4489fbaf7604385c49b07fd354663e790"
+    },
+    {
+      "file": "review/sequential_experiments/report.md",
+      "before_sha256": "b03a2e57c8e7272dcc8515d58d2a59ca281cb5c7a77143e422f95d7c07f5a4e0",
+      "after_sha256": "fbdbc2b3231428ada499c31e136387df8433b522bbfeb0792c7b8b90fd5bc864"
+    },
+    {
+      "file": "review/base_audit/report.md",
+      "before_sha256": "0cfd4101fd8d6968454ff034cbef26031065c5494da1220b14094e33dc09582e",
+      "after_sha256": "49eaf2f60d43b1a573acc6e93d47f1d97f3e98e8b15c21b59dc7bcebe24a5350"
+    },
+    {
+      "file": "review/optimization/REPORT.md",
+      "before_sha256": "ea50c492172b9d8570c77c0ad777fe1c5102282cc093c2c3f5f4aff7984f3315",
+      "after_sha256": "6c5b19fea8f051a0a5f2ef3795087a9c155a30051a781245994d5ada516c9b3e"
+    },
+    {
+      "file": "review/preprocessing_ablation/render_results.py",
+      "before_sha256": "9ea2e10aab09310b1472980e77ea99e74264862dd408df430c29a66f4733f40f",
+      "after_sha256": "410662863e6b76de3fbc72ac5f25086368c8f564a6ed0ff215ed1c9624d8a81f"
+    },
+    {
+      "file": "review/preprocessing_ablation/report.md",
+      "before_sha256": "5b7b013805ebf80882a810622299b97a07f6d5b5c64f4a1c483de7f641ac8ff4",
+      "after_sha256": "fdfff3f3b958a446fb1032234d103865c861c2508f7ca35b3770784baa226a5e"
+    },
+    {
+      "file": "research_analysis/stage1/notebook_cell_index.csv",
+      "before_sha256": "591b3b2df2b2b9f199bb8f0bd65819c1fa4dbfc92e52c5115fa6f87ab0b7e784",
+      "after_sha256": "2450806daa32af99387f64ca330463e41118d62da5440b8baab87be6fc0901b2"
+    },
+    {
+      "file": "research_analysis/stage1/实验结果与证据表.md",
+      "before_sha256": "dceee037f5a94b44025c6f38836be217bdc2e3847621835855f3c401044a40d4",
+      "after_sha256": "7b48f1da9f908562c94902287b982b48d513e1039d2f62e3a6d83708e48c663a"
+    },
+    {
+      "file": "research_analysis/stage1/paper_cells.md",
+      "before_sha256": "ab65f87023ab68580b8cb006a85e20fa1c31106914c3a89cf453e86e58d096d4",
+      "after_sha256": "f260d796d7293531886b64e6e442bf99f5d14001dc17e53b30cda24bb33ecf45"
+    },
+    {
+      "file": "research_analysis/stage1/paper_experiments_cells.md",
+      "before_sha256": "9f03482c9b16d7bd87246cdd4c6906368943c47e47391b940f49f16f1b3450cd",
+      "after_sha256": "461cf7340048d85c190c7c6aac39aea7e58043d448ee0d66d924140a51a708f5"
+    },
+    {
+      "file": "research_analysis/stage1/paper_preprocessing_experiments_cells.md",
+      "before_sha256": "7cf7db42029f7b2975f2aae5ad9948cacf96660aaed2de4b3809c16dcb2f0bfe",
+      "after_sha256": "f4e7ff870188e6aab13ceabe105380734c74759d7fbd13b71aeda2eddbfb0f0a"
+    },
+    {
+      "file": "research_analysis/stage5/quality_summary.json",
+      "before_sha256": "ea865474ee90d750e48607b3a88325c8165831eea9f0b6b47068b2fc59204505",
+      "after_sha256": "319703035eb1400e858b6d000360e24c8057607ffd035ee896dde460b30799b3"
+    },
+    {
+      "file": "research_analysis/stage5/project_checks.json",
+      "before_sha256": "ce03cd85fab7d8b70c7dd42389959fe86ff9ed81269f5ff69054617ff78fb703",
+      "after_sha256": "914f02fd8740bfa6ca7141a487da9ac951aaf152b98837162abb970d0c8dcfaf"
+    },
+    {
+      "file": "research_analysis/stage5/compile_result.json",
+      "before_sha256": "337cd0b303f2a19dba45e033a8e9a9e6f9cbd07db3a647a2e1e32e9aed29c636",
+      "after_sha256": "239096c0e895ee8f5da1ed610cd9ea6c9c50ffb3145b5a347e1bc38c8d6e3356"
+    },
+    {
+      "file": "research_analysis/stage4/compile_attempt_1.json",
+      "before_sha256": "cb6c62c1a9d04d25f8cd8d1be543165fc7bce9493cdea066db504c3c894fca26",
+      "after_sha256": "c9d6b36b802de72ab76c55cd2f59ad400dc6f16595ec573e16ce6eaf961415f2"
+    },
+    {
+      "file": "research_analysis/stage4/paper_body_before_stage4.txt",
+      "before_sha256": "33c335fa48bc0524fcd19d8c9b1269b169a868dfa6ece72837c5356fbc5e4576",
+      "after_sha256": "1986ac47d74a51d5117a0dc6903dd95707e6cb11e1a77762ca5a5f66a6dd7e90"
+    },
+    {
+      "file": "research_analysis/stage4/compile_attempt_2.json",
+      "before_sha256": "337cd0b303f2a19dba45e033a8e9a9e6f9cbd07db3a647a2e1e32e9aed29c636",
+      "after_sha256": "239096c0e895ee8f5da1ed610cd9ea6c9c50ffb3145b5a347e1bc38c8d6e3356"
+    },
+    {
+      "file": "research_analysis/stage4/project_checks.json",
+      "before_sha256": "a9cab3a5bf65b720bd0b6d20dd86a4b02311d56119dcd28188cf226563c37683",
+      "after_sha256": "7b063477e1fa6e418d39c182184e2843f0f9a79e4c94bc003f07c42f8c46c806"
+    },
+    {
+      "file": "research_analysis/stage4/project_structure.json",
+      "before_sha256": "5836b035ec7071c81d3003418144f0a7e2b5603b5b8ab31eb4ad8216ce06bf1a",
+      "after_sha256": "ba335d35e93722ea0d26a429e48c8b0f729165faf070639619e54e2155401014"
+    },
+    {
+      "file": "research_analysis/stage3/论文阅读稿.md",
+      "before_sha256": "830084c2d174e0d32c20513f4af76628bd52ee12cfd5ef8e2ac822800cb7d217",
+      "after_sha256": "a3804a9f39b2730980a7e7bae360f002c2141340e1a9b98cc760dc0fbda5bbea"
+    },
+    {
+      "file": "research_analysis/stage3/来源核对表.md",
+      "before_sha256": "ad334ca98a013547c9f57e8d8ddfe14698257a222d78ac5dc696265ac37c0ab7",
+      "after_sha256": "4bf269a432421e9e8ebe5429051028f24564032135087481c5b0e16dcce05a66"
+    },
+    {
+      "file": "review/check_environment.py",
+      "before_sha256": "9be5ae4e3691e27951fccea2cfca2b7251a80fb67bf584f61bc069162336f89e",
+      "after_sha256": "17baeca76613c211b4ffada338d9c249003d308921003ad81d8eb55efb9bf396"
+    },
+    {
+      "file": "research_analysis/stage5/package_project.py",
+      "before_sha256": null,
+      "after_sha256": "af334d9958979807ffe78bbccb26fc3535462ae4bce7c1484671ec264b339163"
+    },
+    {
+      "file": "research_analysis/stage5/check_project.py",
+      "before_sha256": null,
+      "after_sha256": "511ca1f43f71eb303206f025653dbc66344d3ef90e52702efdee0c805ff29039"
+    },
+    {
+      "file": "glucose_project/source_catalog.json",
+      "before_sha256": "f981d466a5327fda74b559c0fa6bd124ae70439f075b20869a85f576600c06fd",
+      "after_sha256": "71430d83778a3235ad8d559f7bcaac391339ec562a4cc4e6709035172e341996"
+    }
+  ],
+  "removed_generated_caches": [
+    "__pycache__/paper_optimized.cpython-310.pyc",
+    "review/preprocessing_ablation/__pycache__/run_ablation.cpython-310.pyc",
+    "review/preprocessing_ablation/__pycache__/render_results.cpython-310.pyc",
+    "review/sequential_experiments/__pycache__/predict_selected.cpython-310.pyc",
+    "review/sequential_experiments/__pycache__/run_experiments.cpython-310.pyc",
+    "review/sequential_experiments/__pycache__/render_results.cpython-310.pyc",
+    "tests/__pycache__/test_workflow_entrypoints.cpython-310.pyc",
+    "glucose_project/__pycache__/runner.cpython-310.pyc",
+    "glucose_project/__pycache__/catalog.cpython-310.pyc",
+    "glucose_project/__pycache__/__main__.cpython-310.pyc",
+    "glucose_project/__pycache__/__init__.cpython-310.pyc",
+    "glucose_project/reports/__pycache__/historical.cpython-310.pyc",
+    "glucose_project/reports/__pycache__/sequential.cpython-310.pyc",
+    "glucose_project/reports/__pycache__/preprocessing.cpython-310.pyc",
+    "glucose_project/reports/__pycache__/__init__.cpython-310.pyc",
+    "glucose_project/validation/__pycache__/preprocessing.cpython-310.pyc",
+    "glucose_project/validation/__pycache__/__init__.cpython-310.pyc",
+    "glucose_project/preprocessing/__pycache__/ablation.cpython-310.pyc",
+    "glucose_project/preprocessing/__pycache__/__init__.cpython-310.pyc",
+    "glucose_project/inference/__pycache__/predict.cpython-310.pyc",
+    "glucose_project/inference/__pycache__/__init__.cpython-310.pyc",
+    "glucose_project/environment/__pycache__/check.cpython-310.pyc",
+    "glucose_project/environment/__pycache__/__init__.cpython-310.pyc",
+    "glucose_project/legacy/__pycache__/optimization.cpython-310.pyc",
+    "glucose_project/legacy/__pycache__/baseline.cpython-310.pyc",
+    "glucose_project/legacy/__pycache__/__init__.cpython-310.pyc",
+    "glucose_project/experiments/__pycache__/external_baselines.cpython-310.pyc",
+    "glucose_project/experiments/__pycache__/sequential.cpython-310.pyc",
+    "glucose_project/experiments/__pycache__/__init__.cpython-310.pyc",
+    "glucose_project/ensembles/__pycache__/refine_neural.cpython-310.pyc",
+    "glucose_project/ensembles/__pycache__/blend_neural.cpython-310.pyc",
+    "glucose_project/ensembles/__pycache__/__init__.cpython-310.pyc"
+  ],
+  "protected_artifacts_verified": 691,
+  "protected_artifacts_unchanged": true,
+  "historical_source_manifest_preserved": true,
+  "models_retrained": false,
+  "notebooks_executed": false,
+  "regenerated_metadata": [
+    "research_analysis/stage5/package_validation.json"
+  ],
+  "regenerated_metadata_note": "Archive validation is regenerated after packaging and excluded from the embedded revision manifest to avoid a circular hash dependency."
+}

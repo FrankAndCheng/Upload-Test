@@ -1,0 +1,21 @@
+{
+  "python_files_syntax_checked": 46,
+  "json_and_notebook_files_parsed": 68,
+  "notebooks_parsed": 4,
+  "portable_notebook_root_checks": 2,
+  "protected_artifacts_unchanged": true,
+  "protected_artifact_count": 691,
+  "workflow_tests_passed": 6,
+  "paper_structure_check_passed": true,
+  "archives": [
+    {
+      "file": "research_analysis/stage5/glucose_latex_reviewed.zip",
+      "crc_and_hashes_passed": true
+    },
+    {
+      "file": "research_analysis/stage4/glucose_latex_project.zip",
+      "crc_and_hashes_passed": true
+    }
+  ],
+  "retraining_performed": false
+}

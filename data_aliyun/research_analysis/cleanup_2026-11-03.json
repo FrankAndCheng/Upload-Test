@@ -1,0 +1,171 @@
+{
+  "date": "2026-11-03",
+  "deleted_files": 153,
+  "deleted_logical_bytes": 57290009,
+  "deleted": [
+    {
+      "path": ".DS_Store",
+      "bytes": 10244,
+      "files": 1
+    },
+    {
+      "path": "glucose_project/.DS_Store",
+      "bytes": 8196,
+      "files": 1
+    },
+    {
+      "path": "research_analysis/.DS_Store",
+      "bytes": 10244,
+      "files": 1
+    },
+    {
+      "path": "research_analysis/stage3/.DS_Store",
+      "bytes": 6148,
+      "files": 1
+    },
+    {
+      "path": "research_analysis/stage3/paper_body.aux",
+      "bytes": 19111,
+      "files": 1
+    },
+    {
+      "path": "research_analysis/stage3/paper_body.log",
+      "bytes": 44847,
+      "files": 1
+    },
+    {
+      "path": "research_analysis/stage3/paper_body.out",
+      "bytes": 6127,
+      "files": 1
+    },
+    {
+      "path": "research_analysis/stage3/paper/.DS_Store",
+      "bytes": 6148,
+      "files": 1
+    },
+    {
+      "path": "review/.DS_Store",
+      "bytes": 8196,
+      "files": 1
+    },
+    {
+      "path": "review/sequential_experiments/.DS_Store",
+      "bytes": 6148,
+      "files": 1
+    },
+    {
+      "path": "review/optimization/.DS_Store",
+      "bytes": 6148,
+      "files": 1
+    },
+    {
+      "path": "review/preprocessing_ablation/.DS_Store",
+      "bytes": 6148,
+      "files": 1
+    },
+    {
+      "path": "research_analysis/stage4/glucose_latex_project.zip",
+      "bytes": 4763723,
+      "files": 1
+    },
+    {
+      "path": "research_analysis/stage5/glucose_latex_reviewed.zip",
+      "bytes": 5344175,
+      "files": 1
+    },
+    {
+      "path": "temporary/assemble_glucose_manuscript.py",
+      "bytes": 20889,
+      "files": 1
+    },
+    {
+      "path": "temporary/check_glucose_latex_project.py",
+      "bytes": 3755,
+      "files": 1
+    },
+    {
+      "path": "temporary/glucose_manuscript_reading.py",
+      "bytes": 6094,
+      "files": 1
+    },
+    {
+      "path": "temporary/glucose_manuscript_sources.py",
+      "bytes": 8549,
+      "files": 1
+    },
+    {
+      "path": "temporary/glucose_stage1_audit.py",
+      "bytes": 14436,
+      "files": 1
+    },
+    {
+      "path": "temporary/glucose_stage1_tables.py",
+      "bytes": 7584,
+      "files": 1
+    },
+    {
+      "path": "temporary/prepare_glucose_latex_project.py",
+      "bytes": 8054,
+      "files": 1
+    },
+    {
+      "path": "temporary/paper_audit.txt",
+      "bytes": 77934,
+      "files": 1
+    },
+    {
+      "path": "temporary/paper_experiments_audit.txt",
+      "bytes": 13568,
+      "files": 1
+    },
+    {
+      "path": "temporary/paper_optimized_audit.txt",
+      "bytes": 16320,
+      "files": 1
+    },
+    {
+      "path": "temporary/paper_preprocessing_experiments_audit.txt",
+      "bytes": 22418,
+      "files": 1
+    },
+    {
+      "path": "temporary/stage1_figures_1.png",
+      "bytes": 445506,
+      "files": 1
+    },
+    {
+      "path": "temporary/stage1_figures_2.png",
+      "bytes": 193940,
+      "files": 1
+    },
+    {
+      "path": "temporary/glucose_pdf_review_20261103",
+      "bytes": 46068417,
+      "files": 125
+    },
+    {
+      "path": "temporary/glucose-stage5-matplotlib",
+      "bytes": 136942,
+      "files": 1
+    }
+  ],
+  "empty_cache_directories_removed": [
+    "glucose_project/ensembles/__pycache__",
+    "glucose_project/experiments/__pycache__",
+    "glucose_project/legacy/__pycache__",
+    "glucose_project/__pycache__",
+    "glucose_project/environment/__pycache__",
+    "glucose_project/inference/__pycache__",
+    "glucose_project/preprocessing/__pycache__",
+    "glucose_project/validation/__pycache__",
+    "glucose_project/reports/__pycache__",
+    "tests/__pycache__",
+    "__pycache__",
+    "review/sequential_experiments/__pycache__",
+    "review/preprocessing_ablation/__pycache__"
+  ],
+  "protected_file_count": 63,
+  "protected_files_unchanged": true,
+  "retained": "Original data, notebooks, source code, figures, experiment predictions/caches/models, audit evidence, open-editor PDF and final PDF/source delivery.",
+  "note": "Removing auxiliary files means the next LaTeX compilation may need two passes again. No source or PDF recompilation was performed."
+}
