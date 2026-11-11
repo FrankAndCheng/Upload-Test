@@ -1,0 +1,186 @@
+{
+  "CV_recomputed": true,
+  "fold_count_verified": true,
+  "PCA_dimension_verified": true,
+  "holdout_metrics_recomputed": true,
+  "maximum_metric_roundtrip_error": 4.440892098500626e-16,
+  "input_hashes_unchanged": true,
+  "reference_checks": [
+    {
+      "model": "Ridge",
+      "dataset": "development",
+      "reference_reproduced": true
+    },
+    {
+      "model": "Ridge",
+      "dataset": "B",
+      "reference_reproduced": true
+    },
+    {
+      "model": "DecisionTree",
+      "dataset": "development",
+      "reference_reproduced": true
+    },
+    {
+      "model": "DecisionTree",
+      "dataset": "B",
+      "reference_reproduced": true
+    },
+    {
+      "model": "AdaBoost",
+      "dataset": "development",
+      "reference_reproduced": true
+    },
+    {
+      "model": "AdaBoost",
+      "dataset": "B",
+      "reference_reproduced": true
+    },
+    {
+      "model": "RandomForest",
+      "dataset": "development",
+      "reference_reproduced": true
+    },
+    {
+      "model": "RandomForest",
+      "dataset": "B",
+      "reference_reproduced": true
+    },
+    {
+      "model": "XGBoost_original",
+      "dataset": "development",
+      "reference_reproduced": true
+    },
+    {
+      "model": "XGBoost_original",
+      "dataset": "B",
+      "reference_reproduced": true
+    }
+  ],
+  "reload_checks": [
+    {
+      "dataset": "development",
+      "model": "Ridge",
+      "mode": "scale",
+      "max_reload_prediction_difference": 8.881784197001252e-16
+    },
+    {
+      "dataset": "development",
+      "model": "DecisionTree",
+      "mode": "raw",
+      "max_reload_prediction_difference": 0.0
+    },
+    {
+      "dataset": "development",
+      "model": "AdaBoost",
+      "mode": "raw",
+      "max_reload_prediction_difference": 8.881784197001252e-16
+    },
+    {
+      "dataset": "development",
+      "model": "RandomForest",
+      "mode": "raw",
+      "max_reload_prediction_difference": 8.881784197001252e-16
+    },
+    {
+      "dataset": "development",
+      "model": "XGBoost_original",
+      "mode": "raw",
+      "max_reload_prediction_difference": 1.7763568394002505e-15
+    },
+    {
+      "dataset": "development",
+      "model": "XGBoost_optimized",
+      "mode": "raw",
+      "max_reload_prediction_difference": 8.881784197001252e-16
+    },
+    {
+      "dataset": "development",
+      "model": "LightGBM",
+      "mode": "raw",
+      "max_reload_prediction_difference": 1.7763568394002505e-15
+    },
+    {
+      "dataset": "development",
+      "model": "HistGradientBoosting",
+      "mode": "native",
+      "max_reload_prediction_difference": 8.881784197001252e-16
+    },
+    {
+      "dataset": "development",
+      "model": "NeuralNetwork_original",
+      "mode": "scale_pca",
+      "max_reload_prediction_difference": 4.768371590913034e-07
+    },
+    {
+      "dataset": "development",
+      "model": "NeuralNetwork_small",
+      "mode": "scale",
+      "max_reload_prediction_difference": 1.7763568394002505e-15
+    },
+    {
+      "dataset": "B",
+      "model": "Ridge",
+      "mode": "scale",
+      "max_reload_prediction_difference": 8.881784197001252e-16
+    },
+    {
+      "dataset": "B",
+      "model": "DecisionTree",
+      "mode": "raw",
+      "max_reload_prediction_difference": 8.881784197001252e-16
+    },
+    {
+      "dataset": "B",
+      "model": "AdaBoost",
+      "mode": "raw",
+      "max_reload_prediction_difference": 8.881784197001252e-16
+    },
+    {
+      "dataset": "B",
+      "model": "RandomForest",
+      "mode": "raw",
+      "max_reload_prediction_difference": 2.6645352591003757e-15
+    },
+    {
+      "dataset": "B",
+      "model": "XGBoost_original",
+      "mode": "raw",
+      "max_reload_prediction_difference": 8.881784197001252e-16
+    },
+    {
+      "dataset": "B",
+      "model": "XGBoost_optimized",
+      "mode": "raw",
+      "max_reload_prediction_difference": 8.881784197001252e-16
+    },
+    {
+      "dataset": "B",
+      "model": "LightGBM",
+      "mode": "raw",
+      "max_reload_prediction_difference": 8.881784197001252e-16
+    },
+    {
+      "dataset": "B",
+      "model": "HistGradientBoosting",
+      "mode": "native",
+      "max_reload_prediction_difference": 8.881784197001252e-16
+    },
+    {
+      "dataset": "B",
+      "model": "NeuralNetwork_original",
+      "mode": "scale_pca",
+      "max_reload_prediction_difference": 4.76837158203125e-07
+    },
+    {
+      "dataset": "B",
+      "model": "NeuralNetwork_small",
+      "mode": "scale",
+      "max_reload_prediction_difference": 8.881784197001252e-16
+    }
+  ],
+  "fusion_reloaded": true,
+  "experiment_notebook_executed": true,
+  "notebook_schemas_valid": true,
+  "prior_main_cells_preserved": 72
+}

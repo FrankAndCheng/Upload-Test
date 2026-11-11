@@ -1,0 +1,11 @@
+model,reference,recommended,CV_best,reference_CV_MSE,recommended_CV_MSE
+Ridge,scale,scale,raw,1.8496224929490417,1.8496224929490417
+DecisionTree,raw,raw,raw,2.0336333988215056,2.0336333988215056
+AdaBoost,raw,raw,scale,1.990995139934698,1.990995139934698
+RandomForest,raw,raw,raw,1.851444349108574,1.851444349108574
+XGBoost_original,raw,raw,raw,1.8069881471952833,1.8069881471952833
+XGBoost_optimized,raw,raw,raw,1.781860659952008,1.781860659952008
+LightGBM,native,raw,raw,1.808118163149742,1.7963041679787353
+HistGradientBoosting,native,native,scale,1.7904737117098044,1.7904737117098044
+NeuralNetwork_original,scale_pca,scale_pca,scale,1.9305327870283207,1.9305327870283207
+NeuralNetwork_small,scale,scale,scale,1.895840751012493,1.895840751012493

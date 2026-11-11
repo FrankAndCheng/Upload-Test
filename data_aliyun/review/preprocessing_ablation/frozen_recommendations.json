@@ -1,0 +1,306 @@
+{
+  "source_sha256": "dea4e5c28b18b142bc4fa27ce50d7dd8023be65db0892e3bb6e15522ad42df46",
+  "input_hashes": {
+    "data/d_train_20180102.csv": "b832c38e87f23381fb4fb7439151ee9ca0e628e36ad30e9469c780b9ba23d671",
+    "data/d_test_A_20180102.csv": "13c666c3e9e29b0bdd087307e3e3668cdd5dcd600fef9705bddc2140365e3de1",
+    "data/d_answer_a_20180128.csv": "d13d5428bfab96a5e400393d2cce5ae539b301e66283ca930af049d0ebba9595",
+    "review/external_b_comparison/frozen_configurations.json": "09ee8c298e5e6de8f9c73c98766a23e77a4d620edc65f013ad36eec1fc6870a5",
+    "review/sequential_experiments/frozen_selection.json": "6907c14113887d16131596d6355011fc21d652cb9e962c7d5c8808980d44033a",
+    "review/sequential_experiments/run_experiments.py": "f301925f6849114a0dfea5c17be5fb58be5f9a90d7b22c6d9015ab6c74c28d39"
+  },
+  "recommendations": [
+    {
+      "model": "Ridge",
+      "reference": "scale",
+      "recommended": "scale",
+      "CV_best": "raw",
+      "reference_CV_MSE": 1.8496224929490417,
+      "recommended_CV_MSE": 1.8496224929490417
+    },
+    {
+      "model": "DecisionTree",
+      "reference": "raw",
+      "recommended": "raw",
+      "CV_best": "raw",
+      "reference_CV_MSE": 2.0336333988215056,
+      "recommended_CV_MSE": 2.0336333988215056
+    },
+    {
+      "model": "AdaBoost",
+      "reference": "raw",
+      "recommended": "raw",
+      "CV_best": "scale",
+      "reference_CV_MSE": 1.990995139934698,
+      "recommended_CV_MSE": 1.990995139934698
+    },
+    {
+      "model": "RandomForest",
+      "reference": "raw",
+      "recommended": "raw",
+      "CV_best": "raw",
+      "reference_CV_MSE": 1.851444349108574,
+      "recommended_CV_MSE": 1.851444349108574
+    },
+    {
+      "model": "XGBoost_original",
+      "reference": "raw",
+      "recommended": "raw",
+      "CV_best": "raw",
+      "reference_CV_MSE": 1.8069881471952833,
+      "recommended_CV_MSE": 1.8069881471952833
+    },
+    {
+      "model": "XGBoost_optimized",
+      "reference": "raw",
+      "recommended": "raw",
+      "CV_best": "raw",
+      "reference_CV_MSE": 1.781860659952008,
+      "recommended_CV_MSE": 1.781860659952008
+    },
+    {
+      "model": "LightGBM",
+      "reference": "native",
+      "recommended": "raw",
+      "CV_best": "raw",
+      "reference_CV_MSE": 1.808118163149742,
+      "recommended_CV_MSE": 1.7963041679787353
+    },
+    {
+      "model": "HistGradientBoosting",
+      "reference": "native",
+      "recommended": "native",
+      "CV_best": "scale",
+      "reference_CV_MSE": 1.7904737117098044,
+      "recommended_CV_MSE": 1.7904737117098044
+    },
+    {
+      "model": "NeuralNetwork_original",
+      "reference": "scale_pca",
+      "recommended": "scale_pca",
+      "CV_best": "scale",
+      "reference_CV_MSE": 1.9305327870283207,
+      "recommended_CV_MSE": 1.9305327870283207
+    },
+    {
+      "model": "NeuralNetwork_small",
+      "reference": "scale",
+      "recommended": "scale",
+      "CV_best": "scale",
+      "reference_CV_MSE": 1.895840751012493,
+      "recommended_CV_MSE": 1.895840751012493
+    }
+  ],
+  "selection_rule": "relative mean OOF MSE improvement >=0.005 AND >=7/10 paired fold wins vs frozen current reference; choose eligible minimum; otherwise retain reference",
+  "specifications": [
+    {
+      "name": "Ridge",
+      "family": "ridge",
+      "variant": "all",
+      "params": {
+        "alpha": 100.0,
+        "copy_X": true,
+        "fit_intercept": true,
+        "max_iter": null,
+        "positive": false,
+        "random_state": null,
+        "solver": "auto",
+        "tol": 0.0001
+      },
+      "reference": "scale"
+    },
+    {
+      "name": "DecisionTree",
+      "family": "tree",
+      "variant": "all",
+      "params": {
+        "ccp_alpha": 0.0,
+        "criterion": "squared_error",
+        "max_depth": 6,
+        "max_features": null,
+        "max_leaf_nodes": null,
+        "min_impurity_decrease": 0.0,
+        "min_samples_leaf": 60,
+        "min_samples_split": 10,
+        "min_weight_fraction_leaf": 0.0,
+        "random_state": 30,
+        "splitter": "random"
+      },
+      "reference": "raw"
+    },
+    {
+      "name": "AdaBoost",
+      "family": "ada",
+      "variant": "all",
+      "params": {
+        "estimator": {
+          "ccp_alpha": 0.0,
+          "criterion": "squared_error",
+          "max_depth": 3,
+          "max_features": null,
+          "max_leaf_nodes": null,
+          "min_impurity_decrease": 0.0,
+          "min_samples_leaf": 20,
+          "min_samples_split": 2,
+          "min_weight_fraction_leaf": 0.0,
+          "random_state": 23,
+          "splitter": "best"
+        },
+        "learning_rate": 0.005,
+        "loss": "exponential",
+        "n_estimators": 300,
+        "random_state": 32
+      },
+      "reference": "raw"
+    },
+    {
+      "name": "RandomForest",
+      "family": "forest",
+      "variant": "all",
+      "params": {
+        "bootstrap": true,
+        "ccp_alpha": 0.0,
+        "criterion": "squared_error",
+        "max_depth": null,
+        "max_features": 0.6,
+        "max_leaf_nodes": null,
+        "max_samples": null,
+        "min_impurity_decrease": 0.0,
+        "min_samples_leaf": 7,
+        "min_samples_split": 2,
+        "min_weight_fraction_leaf": 0.0,
+        "n_estimators": 200,
+        "n_jobs": 2,
+        "oob_score": false,
+        "random_state": 23,
+        "verbose": 0,
+        "warm_start": false
+      },
+      "reference": "raw"
+    },
+    {
+      "name": "XGBoost_original",
+      "family": "xgb",
+      "variant": "no_hepatitis",
+      "params": {
+        "n_estimators": 350,
+        "learning_rate": 0.02,
+        "max_depth": 4,
+        "min_child_weight": 30,
+        "reg_lambda": 10,
+        "subsample": 0.8,
+        "colsample_bytree": 0.8
+      },
+      "reference": "raw"
+    },
+    {
+      "name": "XGBoost_optimized",
+      "family": "xgb",
+      "variant": "interactions",
+      "params": {
+        "colsample_bytree": 0.65,
+        "gamma": 0.05,
+        "learning_rate": 0.03962175009621365,
+        "max_depth": 5,
+        "min_child_weight": 22.839155331252698,
+        "n_estimators": 393,
+        "reg_alpha": 1.0,
+        "reg_lambda": 119.89079839483685,
+        "subsample": 0.8
+      },
+      "reference": "raw"
+    },
+    {
+      "name": "LightGBM",
+      "family": "lgb",
+      "variant": "interactions",
+      "params": {
+        "reg_lambda": 1.0,
+        "num_leaves": 15,
+        "n_estimators": 800,
+        "min_child_samples": 20,
+        "learning_rate": 0.015,
+        "colsample_bytree": 1.0
+      },
+      "reference": "native"
+    },
+    {
+      "name": "HistGradientBoosting",
+      "family": "hist",
+      "variant": "combined",
+      "params": {
+        "min_samples_leaf": 80,
+        "max_leaf_nodes": 7,
+        "max_iter": 700,
+        "learning_rate": 0.02,
+        "l2_regularization": 50.0
+      },
+      "reference": "native"
+    },
+    {
+      "name": "NeuralNetwork_original",
+      "family": "nn_original",
+      "variant": "all",
+      "epochs": 87,
+      "batch_size": 32,
+      "reference": "scale_pca"
+    },
+    {
+      "name": "NeuralNetwork_small",
+      "family": "nn_small",
+      "variant": "no_hepatitis",
+      "epochs": 36,
+      "batch_size": 64,
+      "reference": "scale"
+    }
+  ],
+  "fusion": {
+    "members": [
+      "XGBoost_optimized",
+      "LightGBM",
+      "Ridge",
+      "NeuralNetwork_small"
+    ],
+    "weights": [
+      0.25,
+      0.25,
+      0.25,
+      0.25
+    ],
+    "change_weights": false
+  },
+  "fusion_CV": [
+    {
+      "version": "reference",
+      "seed": 23,
+      "MSE": 1.7540949420892022,
+      "RMSE": 1.3244224938021862,
+      "MAE": 0.7143438788762777,
+      "R2": 0.1927628958433545
+    },
+    {
+      "version": "reference",
+      "seed": 2026,
+      "MSE": 1.757977915464035,
+      "RMSE": 1.325887595335304,
+      "MAE": 0.7187685763537607,
+      "R2": 0.19097594571459797
+    },
+    {
+      "version": "recommended",
+      "seed": 23,
+      "MSE": 1.7509737119226714,
+      "RMSE": 1.3232436328668546,
+      "MAE": 0.7127509352056483,
+      "R2": 0.19419929061343222
+    },
+    {
+      "version": "recommended",
+      "seed": 2026,
+      "MSE": 1.7549412605441908,
+      "RMSE": 1.3247419599847325,
+      "MAE": 0.7181072531562793,
+      "R2": 0.19237341883021997
+    }
+  ],
+  "note": "No development/B-based selection; all model hyperparameters fixed."
+}

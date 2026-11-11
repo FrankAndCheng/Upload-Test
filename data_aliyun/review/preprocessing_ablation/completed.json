@@ -1,0 +1,58 @@
+{
+  "seconds": 1635.257332086563,
+  "source_sha256": "dea4e5c28b18b142bc4fa27ce50d7dd8023be65db0892e3bb6e15522ad42df46",
+  "reference_checks": [
+    {
+      "model": "Ridge",
+      "dataset": "development",
+      "reference_reproduced": true
+    },
+    {
+      "model": "Ridge",
+      "dataset": "B",
+      "reference_reproduced": true
+    },
+    {
+      "model": "DecisionTree",
+      "dataset": "development",
+      "reference_reproduced": true
+    },
+    {
+      "model": "DecisionTree",
+      "dataset": "B",
+      "reference_reproduced": true
+    },
+    {
+      "model": "AdaBoost",
+      "dataset": "development",
+      "reference_reproduced": true
+    },
+    {
+      "model": "AdaBoost",
+      "dataset": "B",
+      "reference_reproduced": true
+    },
+    {
+      "model": "RandomForest",
+      "dataset": "development",
+      "reference_reproduced": true
+    },
+    {
+      "model": "RandomForest",
+      "dataset": "B",
+      "reference_reproduced": true
+    },
+    {
+      "model": "XGBoost_original",
+      "dataset": "development",
+      "reference_reproduced": true
+    },
+    {
+      "model": "XGBoost_original",
+      "dataset": "B",
+      "reference_reproduced": true
+    }
+  ],
+  "input_files_unchanged": true,
+  "selection_frozen_before_evaluation": true
+}
