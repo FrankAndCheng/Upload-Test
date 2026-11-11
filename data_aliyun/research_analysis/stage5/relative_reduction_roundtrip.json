@@ -1,0 +1,18 @@
+[
+  {
+    "dataset": "development",
+    "saved_metric_percent": 2.313553669459018,
+    "CSV_prediction_percent": 2.313552770002494,
+    "absolute_difference": 8.994565243725106e-07,
+    "propagated_roundtrip_bound": 8.994565243311014e-07,
+    "passed": true
+  },
+  {
+    "dataset": "B",
+    "saved_metric_percent": 1.4725935680874762,
+    "CSV_prediction_percent": 1.4725938335057787,
+    "absolute_difference": 2.6541830244752873e-07,
+    "propagated_roundtrip_bound": 2.6541830236576295e-07,
+    "passed": true
+  }
+]

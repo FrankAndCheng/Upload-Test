@@ -1,0 +1,18 @@
+{
+  "metric_comparisons": 1090,
+  "metrics_passed": 1090,
+  "max_metric_abs_difference": 2.0521943255857877e-08,
+  "checks": 123,
+  "checks_passed": 123,
+  "retrained": false,
+  "executed_notebooks": false,
+  "research_files_unchanged": true,
+  "manifest_files": 755,
+  "research_files": 752,
+  "changed_OS_metadata": [
+    ".DS_Store",
+    "review/.DS_Store"
+  ],
+  "numpy_version": "1.26.4",
+  "pandas_version": "2.0.3"
+}

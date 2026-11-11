@@ -1,0 +1,322 @@
+--- before/paper_body.tex
++++ after/paper_body.tex
+@@ -4,6 +4,7 @@
+ \usepackage[margin=25mm,top=23mm,bottom=24mm]{geometry}
+ \usepackage{amsmath,amssymb}
+ \usepackage{graphicx,booktabs,array,longtable}
++\newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}
+ \usepackage{caption}
+ \usepackage[section]{placeins}
+ \usepackage{xurl}
+@@ -25,6 +26,7 @@
+ \renewcommand{\textfraction}{0.08}
+ \renewcommand{\floatpagefraction}{0.7}
+ \raggedbottom
++\pagestyle{plain}
+ \begin{document}
+ \input{paper/sections/frontmatter.tex}
+ \input{paper/sections/01_problem}
+--- before/paper/references.tex
++++ after/paper/references.tex
+@@ -1,4 +1,5 @@
+ \begin{thebibliography}{99}
++\raggedright
+ \bibitem{pitfalls}
+ scikit-learn developers. Common pitfalls and recommended practices. 官方文档，访问日期2026-11-01. \url{https://scikit-learn.org/stable/common_pitfalls.html}.
+ \bibitem{pca}
+--- before/paper/sections/appendix_b_parameters.tex
++++ after/paper/sections/appendix_b_parameters.tex
+@@ -9,4 +9,8 @@
+ 
+ 原大网络首个Dense后使用Dropout0.4，其余三个隐藏Dense分别接BatchNormalization与Dropout0.6/0.5/0.6；后四个Dense使用原构造中的normal初始化。小网络采用ReLU隐藏层、隐藏核L2=0.001和逐层Dropout，参数由式\eqref{eq:smallnn}及正文结构确定。原大网络的旧PReLU序列化需要按冻结结构重建后恢复权重，已有核验记录仅证明相应推理恢复，不代表恢复优化器状态续训。
+ 
++\begingroup
++\raggedright
+ 历史运行版本为NumPy1.26.4、pandas2.0.3、SciPy1.11.1、scikit-learn1.3.0、statsmodels0.14.0、TensorFlow2.16.2、Keras3.8.0、XGBoost2.1.3、LightGBM4.1.0和factor-analyzer0.4.1。scikit-learn提供了相关回归与预处理实现\cite{sklearn}；文末1.3系列网页现标1.3.2，算法细节同时依据实际安装源码核对，不将网页版本当作实验运行版本。
++\par
++\endgroup
+--- before/paper/sections/appendix_d_diagnostics.tex
++++ after/paper/sections/appendix_d_diagnostics.tex
+@@ -1,6 +1,7 @@
+ \section{完整预处理结果与探索图}\label{app:diagnostics}
+ 表\ref{tab:holdout-all}给出42配置在开发/B的84行指标，均为固定配置的已知集合评价，不以其中最低B分数重新选型。自动缺失指示及PCA维数取决于拟合部分，420个折的维数与误差保存在相应结果表中，不统一指定为探索中的29维。
+ \input{paper/tables/holdout_all.tex}
++\clearpage
+ 
+ 以下图除相关热图按原计算步骤重排外，均原样提取自保存Notebook。图\ref{fig:box1}和图\ref{fig:box2}使用填补后的训练副本且混合量纲，不能据其绝对高度跨变量比较离散程度。图\ref{fig:ols-residual}和图\ref{fig:ols-qq}仅反映OLS训练拟合；图\ref{fig:correlation}仅含输入，省略过密的格内数值，完整相关矩阵随稿提供。图\ref{fig:pca-diagnostic}只描述探索输入方差。图\ref{fig:nn-inner}反映原大网络内部选择，不是开发或B的学习曲线。
+ \begin{figure}[htbp]
+--- before/paper/sections/frontmatter.tex
++++ after/paper/sections/frontmatter.tex
+@@ -1,5 +1,5 @@
+ \begin{center}
+-{\Large\bfseries 基于体检指标与异质模型融合的血糖回归预测及预处理对照研究}
++{\Large\bfseries 基于体检指标与异质模型融合的\\[0.25em]血糖回归预测及预处理对照研究}
+ \end{center}
+ 
+ \begin{abstract}
+--- before/paper/tables/all_fields.tex
++++ after/paper/tables/all_fields.tex
+@@ -1,12 +1,13 @@
+ \begingroup
+ \small
+-\setlength{\tabcolsep}{3pt}
+-\begin{longtable}{p{0.4\linewidth}p{0.19\linewidth}p{0.12\linewidth}p{0.17\linewidth}}
++\setlength{\tabcolsep}{5pt}
++\begin{longtable}{L{0.4\linewidth}L{0.19\linewidth}L{0.12\linewidth}L{0.17\linewidth}}
+ \caption{原始字段与训练子集缺失统计}\label{tab:all-fields}\\
+ \toprule
+ 字段 & 角色 & 缺失行数 & 缺失比例（\%） \\
+ \midrule
+ \endfirsthead
++\caption[]{原始字段与训练子集缺失统计（续）}\\
+ \toprule
+ 字段 & 角色 & 缺失行数 & 缺失比例（\%） \\
+ \midrule
+--- before/paper/tables/bands.tex
++++ after/paper/tables/bands.tex
+@@ -1,6 +1,6 @@
+ \begin{table}[htbp]
+ \small
+-\setlength{\tabcolsep}{3pt}
++\setlength{\tabcolsep}{5pt}
+ \centering
+ \caption{最终四模型按真实目标分箱的误差诊断}
+ \label{tab:bands}
+--- before/paper/tables/baseline_config.tex
++++ after/paper/tables/baseline_config.tex
+@@ -1,10 +1,10 @@
+ \begin{table}[htbp]
+ \small
+-\setlength{\tabcolsep}{3pt}
++\setlength{\tabcolsep}{5pt}
+ \centering
+ \caption{六模型的关键冻结配置}
+ \label{tab:baseline-config}
+-\begin{tabular}{p{0.18\linewidth}p{0.73\linewidth}}
++\begin{tabular}{L{0.18\linewidth}L{0.73\linewidth}}
+ \toprule
+ 模型 & 配置与表示 \\
+ \midrule
+--- before/paper/tables/baseline_results.tex
++++ after/paper/tables/baseline_results.tex
+@@ -1,6 +1,6 @@
+ \begin{table}[htbp]
+ \small
+-\setlength{\tabcolsep}{3pt}
++\setlength{\tabcolsep}{5pt}
+ \centering
+ \caption{六基准在当前开发/B的误差（未舍入预测）}
+ \label{tab:baseline-results}
+--- before/paper/tables/baseline_search.tex
++++ after/paper/tables/baseline_search.tex
+@@ -1,10 +1,10 @@
+ \begin{table}[htbp]
+ \small
+-\setlength{\tabcolsep}{3pt}
++\setlength{\tabcolsep}{5pt}
+ \centering
+ \caption{原基准参数候选范围与抽取数量}
+ \label{tab:baseline-search}
+-\begin{tabular}{p{0.17\linewidth}p{0.64\linewidth}p{0.09\linewidth}}
++\begin{tabular}{L{0.17\linewidth}L{0.64\linewidth}L{0.09\linewidth}}
+ \toprule
+ 模型 & 实际候选空间 & 抽取数 \\
+ \midrule
+--- before/paper/tables/factorial.tex
++++ after/paper/tables/factorial.tex
+@@ -1,6 +1,6 @@
+ \begin{table}[htbp]
+ \small
+-\setlength{\tabcolsep}{3pt}
++\setlength{\tabcolsep}{5pt}
+ \centering
+ \caption{十个固定模型版本的四处理平均OOF MSE}
+ \label{tab:factorial}
+--- before/paper/tables/features.tex
++++ after/paper/tables/features.tex
+@@ -1,10 +1,10 @@
+ \begin{table}[htbp]
+ \small
+-\setlength{\tabcolsep}{3pt}
++\setlength{\tabcolsep}{5pt}
+ \centering
+ \caption{固定原XGBoost参数的特征与缺失处理对照}
+ \label{tab:features}
+-\begin{tabular}{p{0.18\linewidth}p{0.38\linewidth}p{0.13\linewidth}p{0.18\linewidth}}
++\begin{tabular}{L{0.18\linewidth}L{0.38\linewidth}L{0.13\linewidth}L{0.18\linewidth}}
+ \toprule
+ 配置 & 输入构造 & 填补前列数 & CV23 MSE \\
+ \midrule
+--- before/paper/tables/final_metrics.tex
++++ after/paper/tables/final_metrics.tex
+@@ -1,6 +1,6 @@
+ \begin{table}[htbp]
+ \small
+-\setlength{\tabcolsep}{3pt}
++\setlength{\tabcolsep}{5pt}
+ \centering
+ \caption{最终四模型的开发/B综合指标}
+ \label{tab:final-metrics}
+--- before/paper/tables/fusion_treatment.tex
++++ after/paper/tables/fusion_treatment.tex
+@@ -1,6 +1,6 @@
+ \begin{table}[htbp]
+ \small
+-\setlength{\tabcolsep}{3pt}
++\setlength{\tabcolsep}{5pt}
+ \centering
+ \caption{保持四模型权重的预处理版本复核}
+ \label{tab:fusion-treatment}
+--- before/paper/tables/historical.tex
++++ after/paper/tables/historical.tex
+@@ -1,10 +1,10 @@
+ \begin{table}[htbp]
+ \small
+-\setlength{\tabcolsep}{3pt}
++\setlength{\tabcolsep}{5pt}
+ \centering
+ \caption{两套历史协议的独立结果}
+ \label{tab:historical}
+-\begin{tabular}{p{0.08\linewidth}p{0.18\linewidth}p{0.45\linewidth}p{0.17\linewidth}}
++\begin{tabular}{L{0.08\linewidth}L{0.18\linewidth}L{0.45\linewidth}L{0.17\linewidth}}
+ \toprule
+ 协议 & 评价行 & 模型 & MSE \\
+ \midrule
+--- before/paper/tables/holdout_all.tex
++++ after/paper/tables/holdout_all.tex
+@@ -1,12 +1,14 @@
+ \begingroup
+ \small
+-\setlength{\tabcolsep}{3pt}
++\renewcommand{\arraystretch}{1.08}
++\setlength{\tabcolsep}{5pt}
+ \begin{longtable}{lrrrrrr}
+ \caption{固定模型所有处理在开发/B的完整指标}\label{tab:holdout-all}\\
+ \toprule
+ 集合 & 模型 & 处理 & MSE & RMSE & MAE & $R^2$ \\
+ \midrule
+ \endfirsthead
++\caption[]{固定模型所有处理在开发/B的完整指标（续）}\\
+ \toprule
+ 集合 & 模型 & 处理 & MSE & RMSE & MAE & $R^2$ \\
+ \midrule
+--- before/paper/tables/intervals.tex
++++ after/paper/tables/intervals.tex
+@@ -1,10 +1,10 @@
+ \begin{table}[htbp]
+ \small
+-\setlength{\tabcolsep}{3pt}
++\setlength{\tabcolsep}{5pt}
+ \centering
+ \caption{固定预测下MSE差与95\%行配对区间}
+ \label{tab:intervals}
+-\begin{tabular}{p{0.08\linewidth}p{0.28\linewidth}p{0.17\linewidth}p{0.17\linewidth}p{0.17\linewidth}}
++\begin{tabular}{L{0.08\linewidth}L{0.28\linewidth}L{0.17\linewidth}L{0.17\linewidth}L{0.17\linewidth}}
+ \toprule
+ 集合 & 比较 & MSE差 & 下界 & 上界 \\
+ \midrule
+--- before/paper/tables/joint_search.tex
++++ after/paper/tables/joint_search.tex
+@@ -1,10 +1,10 @@
+ \begin{table}[htbp]
+ \small
+-\setlength{\tabcolsep}{3pt}
++\setlength{\tabcolsep}{5pt}
+ \centering
+ \caption{联合搜索的预声明参数范围}
+ \label{tab:joint-search}
+-\begin{tabular}{p{0.15\linewidth}p{0.66\linewidth}p{0.09\linewidth}}
++\begin{tabular}{L{0.15\linewidth}L{0.66\linewidth}L{0.09\linewidth}}
+ \toprule
+ 家族 & 范围与固定处理 & 抽取数 \\
+ \midrule
+--- before/paper/tables/members.tex
++++ after/paper/tables/members.tex
+@@ -1,10 +1,10 @@
+ \begin{table}[htbp]
+ \small
+-\setlength{\tabcolsep}{3pt}
++\setlength{\tabcolsep}{5pt}
+ \centering
+ \caption{最终融合成员及各自输入处理}
+ \label{tab:members}
+-\begin{tabular}{p{0.2\linewidth}p{0.59\linewidth}p{0.1\linewidth}}
++\begin{tabular}{L{0.2\linewidth}L{0.59\linewidth}L{0.1\linewidth}}
+ \toprule
+ 成员 & 特征与预处理 & 权重 \\
+ \midrule
+--- before/paper/tables/protocol.tex
++++ after/paper/tables/protocol.tex
+@@ -1,10 +1,10 @@
+ \begin{table}[htbp]
+ \small
+-\setlength{\tabcolsep}{3pt}
++\setlength{\tabcolsep}{5pt}
+ \centering
+ \caption{当前主协议的样本与拟合范围}
+ \label{tab:protocol}
+-\begin{tabular}{p{0.13\linewidth}p{0.13\linewidth}p{0.12\linewidth}p{0.5\linewidth}}
++\begin{tabular}{L{0.13\linewidth}L{0.13\linewidth}L{0.12\linewidth}L{0.5\linewidth}}
+ \toprule
+ 用途 & 拟合/选择行 & 评价行 & 备注 \\
+ \midrule
+--- before/paper/tables/provenance.tex
++++ after/paper/tables/provenance.tex
+@@ -1,10 +1,10 @@
+ \begin{table}[htbp]
+ \footnotesize
+-\setlength{\tabcolsep}{3pt}
++\setlength{\tabcolsep}{5pt}
+ \centering
+ \caption{研究环节的Notebook与文件定位}
+ \label{tab:provenance}
+-\begin{tabular}{p{0.2\linewidth}p{0.24\linewidth}p{0.46\linewidth}}
++\begin{tabular}{L{0.2\linewidth}L{0.24\linewidth}L{0.46\linewidth}}
+ \toprule
+ 研究内容 & Notebook定位 & 存档/实现定位 \\
+ \midrule
+--- before/paper/tables/stages.tex
++++ after/paper/tables/stages.tex
+@@ -1,10 +1,10 @@
+ \begin{table}[htbp]
+ \small
+-\setlength{\tabcolsep}{3pt}
++\setlength{\tabcolsep}{5pt}
+ \centering
+ \caption{顺序优化阶段的选择分数与冻结评价}
+ \label{tab:stages}
+-\begin{tabular}{p{0.31\linewidth}p{0.21\linewidth}p{0.18\linewidth}p{0.18\linewidth}}
++\begin{tabular}{L{0.31\linewidth}L{0.21\linewidth}L{0.18\linewidth}L{0.18\linewidth}}
+ \toprule
+ 方案 & 两套OOF均值 & 开发MSE & B MSE \\
+ \midrule
+--- before/paper/tables/symbols.tex
++++ after/paper/tables/symbols.tex
+@@ -1,10 +1,10 @@
+ \begin{table}[htbp]
+ \small
+-\setlength{\tabcolsep}{3pt}
++\setlength{\tabcolsep}{5pt}
+ \centering
+ \caption{主要符号及含义}
+ \label{tab:symbols}
+-\begin{tabular}{p{0.27\linewidth}p{0.65\linewidth}}
++\begin{tabular}{L{0.27\linewidth}L{0.65\linewidth}}
+ \toprule
+ 符号 & 定义 \\
+ \midrule
+--- before/paper/tables/treatments.tex
++++ after/paper/tables/treatments.tex
+@@ -1,10 +1,10 @@
+ \begin{table}[htbp]
+ \small
+-\setlength{\tabcolsep}{3pt}
++\setlength{\tabcolsep}{5pt}
+ \centering
+ \caption{固定模型预处理配置定义}
+ \label{tab:treatments}
+-\begin{tabular}{p{0.2\linewidth}p{0.3\linewidth}p{0.15\linewidth}p{0.2\linewidth}}
++\begin{tabular}{L{0.2\linewidth}L{0.3\linewidth}L{0.15\linewidth}L{0.2\linewidth}}
+ \toprule
+ 记号 & 缺失处理 & 标准化 & PCA \\
+ \midrule

@@ -1,0 +1,62 @@
+[
+  {
+    "model": "Ridge",
+    "recomputed": "scale",
+    "saved": "scale",
+    "passed": true
+  },
+  {
+    "model": "DecisionTree",
+    "recomputed": "raw",
+    "saved": "raw",
+    "passed": true
+  },
+  {
+    "model": "AdaBoost",
+    "recomputed": "raw",
+    "saved": "raw",
+    "passed": true
+  },
+  {
+    "model": "RandomForest",
+    "recomputed": "raw",
+    "saved": "raw",
+    "passed": true
+  },
+  {
+    "model": "XGBoost_original",
+    "recomputed": "raw",
+    "saved": "raw",
+    "passed": true
+  },
+  {
+    "model": "XGBoost_optimized",
+    "recomputed": "raw",
+    "saved": "raw",
+    "passed": true
+  },
+  {
+    "model": "LightGBM",
+    "recomputed": "raw",
+    "saved": "raw",
+    "passed": true
+  },
+  {
+    "model": "HistGradientBoosting",
+    "recomputed": "native",
+    "saved": "native",
+    "passed": true
+  },
+  {
+    "model": "NeuralNetwork_original",
+    "recomputed": "scale_pca",
+    "saved": "scale_pca",
+    "passed": true
+  },
+  {
+    "model": "NeuralNetwork_small",
+    "recomputed": "scale",
+    "saved": "scale",
+    "passed": true
+  }
+]

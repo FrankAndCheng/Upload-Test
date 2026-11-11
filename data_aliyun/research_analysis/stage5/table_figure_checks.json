@@ -1,0 +1,328 @@
+[
+  {
+    "kind": "table",
+    "label": "tab:symbols",
+    "file": "research_analysis/stage3/paper/tables/symbols.tex",
+    "rows": 12,
+    "headers_match": true,
+    "all_cells_match": true,
+    "sources_exist": true,
+    "sources": [
+      "research_analysis/stage1/研究内容梳理报告.md"
+    ]
+  },
+  {
+    "kind": "table",
+    "label": "tab:protocol",
+    "file": "research_analysis/stage3/paper/tables/protocol.tex",
+    "rows": 3,
+    "headers_match": true,
+    "all_cells_match": true,
+    "sources_exist": true,
+    "sources": [
+      "review/sequential_experiments/split_ids.csv",
+      "research_analysis/stage1/data_profile.json"
+    ]
+  },
+  {
+    "kind": "table",
+    "label": "tab:baseline-config",
+    "file": "research_analysis/stage3/paper/tables/baseline_config.tex",
+    "rows": 6,
+    "headers_match": true,
+    "all_cells_match": true,
+    "sources_exist": true,
+    "sources": [
+      "review/external_b_comparison/frozen_configurations.json"
+    ]
+  },
+  {
+    "kind": "table",
+    "label": "tab:features",
+    "file": "research_analysis/stage3/paper/tables/features.tex",
+    "rows": 8,
+    "headers_match": true,
+    "all_cells_match": true,
+    "sources_exist": true,
+    "sources": [
+      "review/sequential_experiments/feature_ablation.csv",
+      "review/sequential_experiments/run_experiments.py"
+    ]
+  },
+  {
+    "kind": "table",
+    "label": "tab:members",
+    "file": "research_analysis/stage3/paper/tables/members.tex",
+    "rows": 4,
+    "headers_match": true,
+    "all_cells_match": true,
+    "sources_exist": true,
+    "sources": [
+      "review/sequential_experiments/frozen_selection.json"
+    ]
+  },
+  {
+    "kind": "table",
+    "label": "tab:baseline-results",
+    "file": "research_analysis/stage3/paper/tables/baseline_results.tex",
+    "rows": 6,
+    "headers_match": true,
+    "all_cells_match": true,
+    "sources_exist": true,
+    "sources": [
+      "review/external_b_comparison/comparison.csv"
+    ]
+  },
+  {
+    "kind": "table",
+    "label": "tab:stages",
+    "file": "research_analysis/stage3/paper/tables/stages.tex",
+    "rows": 6,
+    "headers_match": true,
+    "all_cells_match": true,
+    "sources_exist": true,
+    "sources": [
+      "review/sequential_experiments/stage_comparison.csv",
+      "review/sequential_experiments/confirmation.csv"
+    ]
+  },
+  {
+    "kind": "table",
+    "label": "tab:final-metrics",
+    "file": "research_analysis/stage3/paper/tables/final_metrics.tex",
+    "rows": 2,
+    "headers_match": true,
+    "all_cells_match": true,
+    "sources_exist": true,
+    "sources": [
+      "review/sequential_experiments/evaluation.csv"
+    ]
+  },
+  {
+    "kind": "table",
+    "label": "tab:treatments",
+    "file": "research_analysis/stage3/paper/tables/treatments.tex",
+    "rows": 5,
+    "headers_match": true,
+    "all_cells_match": true,
+    "sources_exist": true,
+    "sources": [
+      "review/preprocessing_ablation/plan.json",
+      "review/preprocessing_ablation/run_ablation.py"
+    ]
+  },
+  {
+    "kind": "table",
+    "label": "tab:factorial",
+    "file": "research_analysis/stage3/paper/tables/factorial.tex",
+    "rows": 10,
+    "headers_match": true,
+    "all_cells_match": true,
+    "sources_exist": true,
+    "sources": [
+      "review/preprocessing_ablation/factorial_cv_table.csv"
+    ]
+  },
+  {
+    "kind": "table",
+    "label": "tab:fusion-treatment",
+    "file": "research_analysis/stage3/paper/tables/fusion_treatment.tex",
+    "rows": 4,
+    "headers_match": true,
+    "all_cells_match": true,
+    "sources_exist": true,
+    "sources": [
+      "review/preprocessing_ablation/fusion_holdout.csv"
+    ]
+  },
+  {
+    "kind": "table",
+    "label": "tab:intervals",
+    "file": "research_analysis/stage3/paper/tables/intervals.tex",
+    "rows": 4,
+    "headers_match": true,
+    "all_cells_match": true,
+    "sources_exist": true,
+    "sources": [
+      "review/sequential_experiments/paired_intervals.csv",
+      "review/preprocessing_ablation/holdout_paired_intervals.csv"
+    ]
+  },
+  {
+    "kind": "table",
+    "label": "tab:bands",
+    "file": "research_analysis/stage3/paper/tables/bands.tex",
+    "rows": 6,
+    "headers_match": true,
+    "all_cells_match": true,
+    "sources_exist": true,
+    "sources": [
+      "review/sequential_experiments/target_bands.csv"
+    ]
+  },
+  {
+    "kind": "table",
+    "label": "tab:all-fields",
+    "file": "research_analysis/stage3/paper/tables/all_fields.tex",
+    "rows": 42,
+    "headers_match": true,
+    "all_cells_match": true,
+    "sources_exist": true,
+    "sources": [
+      "research_analysis/stage1/data_dictionary.csv"
+    ]
+  },
+  {
+    "kind": "table",
+    "label": "tab:baseline-search",
+    "file": "research_analysis/stage3/paper/tables/baseline_search.tex",
+    "rows": 4,
+    "headers_match": true,
+    "all_cells_match": true,
+    "sources_exist": true,
+    "sources": [
+      "paper.ipynb"
+    ]
+  },
+  {
+    "kind": "table",
+    "label": "tab:joint-search",
+    "file": "research_analysis/stage3/paper/tables/joint_search.tex",
+    "rows": 3,
+    "headers_match": true,
+    "all_cells_match": true,
+    "sources_exist": true,
+    "sources": [
+      "review/sequential_experiments/run_experiments.py",
+      "review/sequential_experiments/joint_search_plan.json"
+    ]
+  },
+  {
+    "kind": "table",
+    "label": "tab:historical",
+    "file": "research_analysis/stage3/paper/tables/historical.tex",
+    "rows": 7,
+    "headers_match": true,
+    "all_cells_match": true,
+    "sources_exist": true,
+    "sources": [
+      "review/optimization/same_validation/results.json",
+      "review/optimization/external/results.json"
+    ]
+  },
+  {
+    "kind": "table",
+    "label": "tab:holdout-all",
+    "file": "research_analysis/stage3/paper/tables/holdout_all.tex",
+    "rows": 84,
+    "headers_match": true,
+    "all_cells_match": true,
+    "sources_exist": true,
+    "sources": [
+      "review/preprocessing_ablation/holdout_metrics.csv"
+    ]
+  },
+  {
+    "kind": "table",
+    "label": "tab:provenance",
+    "file": "research_analysis/stage3/paper/tables/provenance.tex",
+    "rows": 7,
+    "headers_match": true,
+    "all_cells_match": true,
+    "sources_exist": true,
+    "sources": [
+      "research_analysis/stage1/notebook_cell_index.csv",
+      "research_analysis/stage1/实验结果与证据表.md"
+    ]
+  },
+  {
+    "kind": "figure",
+    "label": "fig:age",
+    "file": "research_analysis/stage3/paper/figures/paper_C007_O03.png",
+    "bytes_unchanged": true,
+    "sha256": "b80000f51d185f7460677b03c0c6e7c9b3bae91e9cde551bc28523c12f21e8c0",
+    "locator": "paper.ipynb C007输出3"
+  },
+  {
+    "kind": "figure",
+    "label": "fig:glucose",
+    "file": "research_analysis/stage3/paper/figures/paper_C009_O01.png",
+    "bytes_unchanged": true,
+    "sha256": "f8f8b9b87c5a65261cfd3ca023329d76d9c1a6cf5ddc7a97dad205a1e7d1361b",
+    "locator": "paper.ipynb C009输出1"
+  },
+  {
+    "kind": "figure",
+    "label": "fig:missing",
+    "file": "research_analysis/stage3/paper/figures/paper_C012_O02.png",
+    "bytes_unchanged": true,
+    "sha256": "1fd5348d63cb78a71aebfd368ab92e2488a5c7c090b1c5c53e798c7785e78f45",
+    "locator": "paper.ipynb C012输出2"
+  },
+  {
+    "kind": "figure",
+    "label": "fig:history",
+    "file": "research_analysis/stage3/paper/figures/paper_optimized_C004_O03.png",
+    "bytes_unchanged": true,
+    "sha256": "a9aaf68f63b2063643cff536db4d4bca7526976dc416f9314eaa286146a08a29",
+    "locator": "paper_optimized.ipynb C004输出3"
+  },
+  {
+    "kind": "figure",
+    "label": "fig:box1",
+    "file": "research_analysis/stage3/paper/figures/paper_C026_O01.png",
+    "bytes_unchanged": true,
+    "sha256": "7d2eeaaa23ba24b461628cf2eef74a13ed3a9bb2fff218e9a944d59c9f4ac896",
+    "locator": "paper.ipynb C026输出1"
+  },
+  {
+    "kind": "figure",
+    "label": "fig:box2",
+    "file": "research_analysis/stage3/paper/figures/paper_C027_O01.png",
+    "bytes_unchanged": true,
+    "sha256": "7443fd5f793a3d2bb0ad5fe6175b598922e952deccc9bea28b6ac15dcfecc20d",
+    "locator": "paper.ipynb C027输出1"
+  },
+  {
+    "kind": "figure",
+    "label": "fig:ols-residual",
+    "file": "research_analysis/stage3/paper/figures/paper_C032_O02.png",
+    "bytes_unchanged": true,
+    "sha256": "e4ba559a8cf3d58527586dafe7bd485c91b8ceea23f006b888e057ce55f803c3",
+    "locator": "paper.ipynb C032输出2"
+  },
+  {
+    "kind": "figure",
+    "label": "fig:ols-qq",
+    "file": "research_analysis/stage3/paper/figures/paper_C032_O03.png",
+    "bytes_unchanged": true,
+    "sha256": "fdd055fcbcbcf0d25e21580e0e788a931eac85da3a2d09ecce84a765c77a0e60",
+    "locator": "paper.ipynb C032输出3"
+  },
+  {
+    "kind": "figure",
+    "label": "fig:correlation",
+    "file": "research_analysis/stage3/paper/figures/paper_C037_O02.png",
+    "bytes_unchanged": true,
+    "sha256": "26908c48c84d4dfda66bd0755ea6bc5dcaed14cb0e6a0e08a3881bfaa758e0e0",
+    "locator": "paper.ipynb C037输出2",
+    "displayed_reformatted_figure": "research_analysis/stage3/paper/figures/training_correlation_reformatted.png",
+    "matrix_file": "research_analysis/stage3/paper/tables/training_correlation_matrix.csv"
+  },
+  {
+    "kind": "figure",
+    "label": "fig:pca-diagnostic",
+    "file": "research_analysis/stage3/paper/figures/paper_C040_O02.png",
+    "bytes_unchanged": true,
+    "sha256": "99469930cadc16698eb7ce0e9ad6e2de3ec546e3455d5db120b598019ee77658",
+    "locator": "paper.ipynb C040输出2"
+  },
+  {
+    "kind": "figure",
+    "label": "fig:nn-inner",
+    "file": "research_analysis/stage3/paper/figures/paper_C051_O02.png",
+    "bytes_unchanged": true,
+    "sha256": "03f7823ac56cdd6b5a4e54ab8a7b8b914100744636129a235a92169cbeb58764",
+    "locator": "paper.ipynb C051输出2"
+  }
+]

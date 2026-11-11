@@ -1,0 +1,21 @@
+{
+  "notebook": "paper.ipynb",
+  "cells_1based": [
+    2,
+    14,
+    17,
+    23,
+    34,
+    37
+  ],
+  "training_rows": 4649,
+  "input_columns": 40,
+  "target_included": false,
+  "change": "Only layout: omit cell annotations, adjust label sizes, fix colorbar to [-1,1].",
+  "original_figure": "research_analysis/stage1/figures/paper_C037_O02.png",
+  "rendered_figure": "research_analysis/stage3/paper/figures/training_correlation_reformatted.png",
+  "sha256": "b1a1ee62cea457f392f6d3054a5163e4e8d760d0f65a463804d20797a0056432",
+  "matrix_file": "research_analysis/stage3/paper/tables/training_correlation_matrix.csv",
+  "standardized_vs_imputed_correlation_max_gap": 5.662137425588298e-15,
+  "new_predictive_experiments": false
+}

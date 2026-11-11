@@ -1,0 +1,617 @@
+[
+  {
+    "check": "all_raw_ids_unique",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "split_training_ids",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "split_development_ids",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "preprocessing_training_ids",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "review/external_b_comparison/predictions.csv unique ids",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "review/external_b_comparison/predictions.csv targets match raw",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "review/external_b_comparison/predictions.csv finite",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "review/sequential_experiments/development_predictions.csv unique ids",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "review/sequential_experiments/development_predictions.csv targets match raw",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "review/sequential_experiments/development_predictions.csv finite",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "sequential blend arithmetic development",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "review/preprocessing_ablation/development_predictions.csv unique ids",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "review/preprocessing_ablation/development_predictions.csv targets match raw",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "review/preprocessing_ablation/development_predictions.csv finite",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "preprocessing fusion arithmetic development reference",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "preprocessing fusion arithmetic development recommended",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "review/sequential_experiments/B_predictions.csv unique ids",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "review/sequential_experiments/B_predictions.csv targets match raw",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "review/sequential_experiments/B_predictions.csv finite",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "sequential blend arithmetic B",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "review/preprocessing_ablation/B_predictions.csv unique ids",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "review/preprocessing_ablation/B_predictions.csv targets match raw",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "review/preprocessing_ablation/B_predictions.csv finite",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "preprocessing fusion arithmetic B reference",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "preprocessing fusion arithmetic B recommended",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "review/preprocessing_ablation/oof_predictions.csv unique ids",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "review/preprocessing_ablation/oof_predictions.csv targets match raw",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "review/preprocessing_ablation/oof_predictions.csv finite",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "CV mean Ridge raw",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "CV mean Ridge scale",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "CV mean Ridge pca",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "CV mean Ridge scale_pca",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "CV mean DecisionTree raw",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "CV mean DecisionTree scale",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "CV mean DecisionTree pca",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "CV mean DecisionTree scale_pca",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "CV mean AdaBoost raw",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "CV mean AdaBoost scale",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "CV mean AdaBoost pca",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "CV mean AdaBoost scale_pca",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "CV mean RandomForest raw",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "CV mean RandomForest scale",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "CV mean RandomForest pca",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "CV mean RandomForest scale_pca",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "CV mean XGBoost_original raw",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "CV mean XGBoost_original scale",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "CV mean XGBoost_original pca",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "CV mean XGBoost_original scale_pca",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "CV mean XGBoost_optimized raw",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "CV mean XGBoost_optimized scale",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "CV mean XGBoost_optimized pca",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "CV mean XGBoost_optimized scale_pca",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "CV mean LightGBM raw",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "CV mean LightGBM scale",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "CV mean LightGBM pca",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "CV mean LightGBM scale_pca",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "CV mean LightGBM native",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "CV mean HistGradientBoosting raw",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "CV mean HistGradientBoosting scale",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "CV mean HistGradientBoosting pca",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "CV mean HistGradientBoosting scale_pca",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "CV mean HistGradientBoosting native",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "CV mean NeuralNetwork_original raw",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "CV mean NeuralNetwork_original scale",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "CV mean NeuralNetwork_original pca",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "CV mean NeuralNetwork_original scale_pca",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "CV mean NeuralNetwork_small raw",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "CV mean NeuralNetwork_small scale",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "CV mean NeuralNetwork_small pca",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "CV mean NeuralNetwork_small scale_pca",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "review/sequential_experiments/oof_finalists.csv unique ids",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "review/sequential_experiments/oof_finalists.csv targets match raw",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "review/sequential_experiments/oof_finalists.csv finite",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "confirmation mean baseline_xgb",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "confirmation mean feature_combined",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "confirmation mean joint_xgb_089",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "confirmation mean blend_33",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "confirmation mean nn_128_pca",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "confirmation mean nn_64_nohep_raw",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "confirmation mean nn_blend_06",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "review/optimization/same_validation/predictions_validation.csv unique ids",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "review/optimization/same_validation/predictions_validation.csv targets match raw",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "review/optimization/same_validation/predictions_validation.csv finite",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "review/optimization/same_validation/oof_predictions.csv unique ids",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "review/optimization/same_validation/oof_predictions.csv targets match raw",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "review/optimization/same_validation/oof_predictions.csv finite",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "review/optimization/external/predictions_A.csv unique ids",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "review/optimization/external/predictions_A.csv targets match raw",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "review/optimization/external/predictions_A.csv finite",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "review/optimization/external/predictions_B.csv unique ids",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "review/optimization/external/predictions_B.csv targets match raw",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "review/optimization/external/predictions_B.csv finite",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "review/optimization/external/oof_predictions.csv unique ids",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "review/optimization/external/oof_predictions.csv targets match raw",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "review/optimization/external/oof_predictions.csv finite",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "paired MSE mean development feature_combined",
+    "passed": true,
+    "detail": "abs difference=2.78e-17; tolerance=5e-7 for CSV float precision"
+  },
+  {
+    "check": "paired MSE mean development joint_xgb_089",
+    "passed": true,
+    "detail": "abs difference=8.33e-17; tolerance=5e-7 for CSV float precision"
+  },
+  {
+    "check": "paired MSE mean development blend_33",
+    "passed": true,
+    "detail": "abs difference=9.71e-17; tolerance=5e-7 for CSV float precision"
+  },
+  {
+    "check": "paired MSE mean development nn_128_pca",
+    "passed": true,
+    "detail": "abs difference=2.78e-17; tolerance=5e-7 for CSV float precision"
+  },
+  {
+    "check": "paired MSE mean B feature_combined",
+    "passed": true,
+    "detail": "abs difference=4.16e-17; tolerance=5e-7 for CSV float precision"
+  },
+  {
+    "check": "paired MSE mean B joint_xgb_089",
+    "passed": true,
+    "detail": "abs difference=4.34e-17; tolerance=5e-7 for CSV float precision"
+  },
+  {
+    "check": "paired MSE mean B blend_33",
+    "passed": true,
+    "detail": "abs difference=9.19e-17; tolerance=5e-7 for CSV float precision"
+  },
+  {
+    "check": "paired MSE mean B nn_128_pca",
+    "passed": true,
+    "detail": "abs difference=5.55e-17; tolerance=5e-7 for CSV float precision"
+  },
+  {
+    "check": "paired MSE mean development nn_64_nohep_raw",
+    "passed": true,
+    "detail": "abs difference=3.78e-09; tolerance=5e-7 for CSV float precision"
+  },
+  {
+    "check": "paired MSE mean B nn_64_nohep_raw",
+    "passed": true,
+    "detail": "abs difference=2.27e-09; tolerance=5e-7 for CSV float precision"
+  },
+  {
+    "check": "paired MSE mean development nn_blend_06",
+    "passed": true,
+    "detail": "abs difference=9.02e-17; tolerance=5e-7 for CSV float precision"
+  },
+  {
+    "check": "paired MSE mean B nn_blend_06",
+    "passed": true,
+    "detail": "abs difference=3.47e-18; tolerance=5e-7 for CSV float precision"
+  },
+  {
+    "check": "no_notebook_error_outputs",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "training_only_final_choice",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "historical paper.ipynb first71 exact snapshot",
+    "passed": true,
+    "detail": "Full current notebook differs; removing the two appended Markdown cells reproduces historical file SHA256 exactly."
+  },
+  {
+    "check": "review/sequential_experiments/input_manifest.json hash review/sequential_experiments/run_experiments.py",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "review/sequential_experiments/input_manifest.json hash data/d_train_20180102.csv",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "review/sequential_experiments/input_manifest.json hash data/d_test_A_20180102.csv",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "review/sequential_experiments/input_manifest.json hash data/d_answer_a_20180128.csv",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "review/preprocessing_ablation/plan.json hash data/d_train_20180102.csv",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "review/preprocessing_ablation/plan.json hash data/d_test_A_20180102.csv",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "review/preprocessing_ablation/plan.json hash data/d_answer_a_20180128.csv",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "review/preprocessing_ablation/plan.json hash review/external_b_comparison/frozen_configurations.json",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "review/preprocessing_ablation/plan.json hash review/sequential_experiments/frozen_selection.json",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "review/preprocessing_ablation/plan.json hash review/sequential_experiments/run_experiments.py",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "source snapshot review/sequential_experiments/run_experiments.py",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "source snapshot review/preprocessing_ablation/run_ablation.py",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "original_research_unchanged_excluding_OS_metadata",
+    "passed": true,
+    "detail": "[]"
+  }
+]

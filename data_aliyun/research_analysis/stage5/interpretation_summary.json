@@ -1,0 +1,12 @@
+{
+  "numeric_comparisons": 122,
+  "numeric_passed": 122,
+  "max_absolute_difference": 4.319125237461918e-07,
+  "replacement_rules": 10,
+  "replacement_rules_passed": 10,
+  "relative_reductions_percent": {
+    "development": 2.313553669459018,
+    "B": 1.4725935680874762
+  },
+  "retrained": false
+}

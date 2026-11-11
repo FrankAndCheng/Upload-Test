@@ -1,0 +1,14 @@
+{
+  "archive": "research_analysis/stage5/glucose_latex_reviewed.zip",
+  "files": 79,
+  "bytes": 5344175,
+  "sha256": "ce3d6a8a6d7ac611dc3388f5c2de373ba579a23f2d8bb55326253cab97073143",
+  "crc_check": true,
+  "all_file_hashes_match": true,
+  "compiled_sources_match": true,
+  "all_TeX_dependencies_resolved": true,
+  "dependencies_checked": 46,
+  "exported_paper_PDF_included": false,
+  "historical_archive_removed_on": "2026-11-03",
+  "superseded_by": "output/pdf/glucose_paper_delivery.zip"
+}

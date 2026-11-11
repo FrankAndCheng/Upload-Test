@@ -1,0 +1,123 @@
+[
+  {
+    "key": "pitfalls",
+    "author": "scikit-learn developers",
+    "title": "Common pitfalls and recommended practices",
+    "url": "https://scikit-learn.org/stable/common_pitfalls.html",
+    "publication": "官方文档，访问日期2026-11-01",
+    "verified": "2026-11-01; official primary page or author preprint",
+    "stage5_rechecked": "2026-11-01",
+    "page_opened_successfully": true,
+    "verification_scope": "Primary page accessible; bibliographic title/authors/year or documentation series cross-checked. No unverified DOI added."
+  },
+  {
+    "key": "pca",
+    "author": "scikit-learn developers",
+    "title": "PCA",
+    "url": "https://scikit-learn.org/1.3/modules/generated/sklearn.decomposition.PCA.html",
+    "publication": "1.3系列官方文档，访问日期2026-11-01",
+    "verified": "2026-11-01; official primary page or author preprint",
+    "stage5_rechecked": "2026-11-01",
+    "page_opened_successfully": true,
+    "verification_scope": "Primary page accessible; bibliographic title/authors/year or documentation series cross-checked. No unverified DOI added."
+  },
+  {
+    "key": "lasso",
+    "author": "scikit-learn developers",
+    "title": "Lasso",
+    "url": "https://scikit-learn.org/1.3/modules/generated/sklearn.linear_model.Lasso.html",
+    "publication": "1.3系列官方文档，访问日期2026-11-01",
+    "verified": "2026-11-01; official primary page or author preprint",
+    "stage5_rechecked": "2026-11-01",
+    "page_opened_successfully": true,
+    "verification_scope": "Primary page accessible; bibliographic title/authors/year or documentation series cross-checked. No unverified DOI added."
+  },
+  {
+    "key": "ridge",
+    "author": "scikit-learn developers",
+    "title": "Ridge",
+    "url": "https://scikit-learn.org/1.3/modules/generated/sklearn.linear_model.Ridge.html",
+    "publication": "1.3系列官方文档，访问日期2026-11-01",
+    "verified": "2026-11-01; official primary page or author preprint",
+    "stage5_rechecked": "2026-11-01",
+    "page_opened_successfully": true,
+    "verification_scope": "Primary page accessible; bibliographic title/authors/year or documentation series cross-checked. No unverified DOI added."
+  },
+  {
+    "key": "forest",
+    "author": "scikit-learn developers",
+    "title": "RandomForestRegressor",
+    "url": "https://scikit-learn.org/1.3/modules/generated/sklearn.ensemble.RandomForestRegressor.html",
+    "publication": "1.3系列官方文档，访问日期2026-11-01",
+    "verified": "2026-11-01; official primary page or author preprint",
+    "stage5_rechecked": "2026-11-01",
+    "page_opened_successfully": true,
+    "verification_scope": "Primary page accessible; bibliographic title/authors/year or documentation series cross-checked. No unverified DOI added."
+  },
+  {
+    "key": "ada",
+    "author": "scikit-learn developers",
+    "title": "AdaBoostRegressor",
+    "url": "https://scikit-learn.org/1.3/modules/generated/sklearn.ensemble.AdaBoostRegressor.html",
+    "publication": "1.3系列官方文档，访问日期2026-11-01",
+    "verified": "2026-11-01; official primary page or author preprint",
+    "stage5_rechecked": "2026-11-01",
+    "page_opened_successfully": true,
+    "verification_scope": "Primary page accessible; bibliographic title/authors/year or documentation series cross-checked. No unverified DOI added."
+  },
+  {
+    "key": "xgboost",
+    "author": "Chen T, Guestrin C",
+    "title": "XGBoost: A Scalable Tree Boosting System",
+    "url": "https://arxiv.org/abs/1603.02754",
+    "publication": "2016. arXiv:1603.02754",
+    "verified": "2026-11-01; official primary page or author preprint",
+    "stage5_rechecked": "2026-11-01",
+    "page_opened_successfully": true,
+    "verification_scope": "Primary page accessible; bibliographic title/authors/year or documentation series cross-checked. No unverified DOI added."
+  },
+  {
+    "key": "lightgbm",
+    "author": "Ke G, Meng Q, Finley T, et al.",
+    "title": "LightGBM: A Highly Efficient Gradient Boosting Decision Tree",
+    "url": "https://proceedings.neurips.cc/paper/2017/hash/6449f44a102fde848669bdd9eb6b76fa-Abstract.html",
+    "publication": "Advances in Neural Information Processing Systems, 30, 2017",
+    "verified": "2026-11-01; official primary page or author preprint",
+    "stage5_rechecked": "2026-11-01",
+    "page_opened_successfully": true,
+    "verification_scope": "Primary page accessible; bibliographic title/authors/year or documentation series cross-checked. No unverified DOI added."
+  },
+  {
+    "key": "lgb-tuning",
+    "author": "LightGBM developers",
+    "title": "Parameters Tuning",
+    "url": "https://lightgbm.readthedocs.io/en/v4.1.0/Parameters-Tuning.html",
+    "publication": "4.1.0官方文档，访问日期2026-11-01",
+    "verified": "2026-11-01; official primary page or author preprint",
+    "stage5_rechecked": "2026-11-01",
+    "page_opened_successfully": true,
+    "verification_scope": "Primary page accessible; bibliographic title/authors/year or documentation series cross-checked. No unverified DOI added."
+  },
+  {
+    "key": "hist",
+    "author": "scikit-learn developers",
+    "title": "HistGradientBoostingRegressor",
+    "url": "https://scikit-learn.org/1.3/modules/generated/sklearn.ensemble.HistGradientBoostingRegressor.html",
+    "publication": "1.3系列官方文档，访问日期2026-11-01",
+    "verified": "2026-11-01; official primary page or author preprint",
+    "stage5_rechecked": "2026-11-01",
+    "page_opened_successfully": true,
+    "verification_scope": "Primary page accessible; bibliographic title/authors/year or documentation series cross-checked. No unverified DOI added."
+  },
+  {
+    "key": "sklearn",
+    "author": "Pedregosa F, Varoquaux G, Gramfort A, et al.",
+    "title": "Scikit-learn: Machine Learning in Python",
+    "url": "https://jmlr.org/papers/v12/pedregosa11a.html",
+    "publication": "Journal of Machine Learning Research, 2011, 12(85): 2825--2830",
+    "verified": "2026-11-01; official primary page or author preprint",
+    "stage5_rechecked": "2026-11-01",
+    "page_opened_successfully": true,
+    "verification_scope": "Primary page accessible; bibliographic title/authors/year or documentation series cross-checked. No unverified DOI added."
+  }
+]

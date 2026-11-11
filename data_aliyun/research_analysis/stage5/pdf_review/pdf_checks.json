@@ -1,0 +1,560 @@
+{
+  "pages": 32,
+  "PDF_SHA256": "08d86bbd16b21513c4f58826f0fc15df8fda9677a06b3fe91a05169e49d1e006",
+  "PDF_bytes": 3323685,
+  "numbered_equations_unchanged": 23,
+  "tables_checked": 19,
+  "table_checks": [
+    {
+      "file": "paper/tables/all_fields.tex",
+      "rows_and_headers_unchanged": true
+    },
+    {
+      "file": "paper/tables/bands.tex",
+      "rows_and_headers_unchanged": true
+    },
+    {
+      "file": "paper/tables/baseline_config.tex",
+      "rows_and_headers_unchanged": true
+    },
+    {
+      "file": "paper/tables/baseline_results.tex",
+      "rows_and_headers_unchanged": true
+    },
+    {
+      "file": "paper/tables/baseline_search.tex",
+      "rows_and_headers_unchanged": true
+    },
+    {
+      "file": "paper/tables/factorial.tex",
+      "rows_and_headers_unchanged": true
+    },
+    {
+      "file": "paper/tables/features.tex",
+      "rows_and_headers_unchanged": true
+    },
+    {
+      "file": "paper/tables/final_metrics.tex",
+      "rows_and_headers_unchanged": true
+    },
+    {
+      "file": "paper/tables/fusion_treatment.tex",
+      "rows_and_headers_unchanged": true
+    },
+    {
+      "file": "paper/tables/historical.tex",
+      "rows_and_headers_unchanged": true
+    },
+    {
+      "file": "paper/tables/holdout_all.tex",
+      "rows_and_headers_unchanged": true
+    },
+    {
+      "file": "paper/tables/intervals.tex",
+      "rows_and_headers_unchanged": true
+    },
+    {
+      "file": "paper/tables/joint_search.tex",
+      "rows_and_headers_unchanged": true
+    },
+    {
+      "file": "paper/tables/members.tex",
+      "rows_and_headers_unchanged": true
+    },
+    {
+      "file": "paper/tables/protocol.tex",
+      "rows_and_headers_unchanged": true
+    },
+    {
+      "file": "paper/tables/provenance.tex",
+      "rows_and_headers_unchanged": true
+    },
+    {
+      "file": "paper/tables/stages.tex",
+      "rows_and_headers_unchanged": true
+    },
+    {
+      "file": "paper/tables/symbols.tex",
+      "rows_and_headers_unchanged": true
+    },
+    {
+      "file": "paper/tables/treatments.tex",
+      "rows_and_headers_unchanged": true
+    }
+  ],
+  "changed_scientific_content": [],
+  "all_figure_assets_unchanged": true,
+  "fonts": [
+    {
+      "name": "/PUZAPF+FandolSong-Bold-Identity-H",
+      "embedded": true
+    },
+    {
+      "name": "/NCVKUU+FandolSong-Regular-Identity-H",
+      "embedded": true
+    },
+    {
+      "name": "/RBYMVA+LMRoman10-Regular-Identity-H",
+      "embedded": true
+    },
+    {
+      "name": "/FTSKIA+LMRoman12-Bold-Identity-H",
+      "embedded": true
+    },
+    {
+      "name": "/CJIACS+LMRoman12-Regular-Identity-H",
+      "embedded": true
+    },
+    {
+      "name": "/LTHXDY+CMMI12",
+      "embedded": true
+    },
+    {
+      "name": "/LLTBPC+CMMI8",
+      "embedded": true
+    },
+    {
+      "name": "/JHOCJS+CMR12",
+      "embedded": true
+    },
+    {
+      "name": "/EBGJKD+CMEX10",
+      "embedded": true
+    },
+    {
+      "name": "/HUUVAM+CMSY8",
+      "embedded": true
+    },
+    {
+      "name": "/YZCOTI+CMSY10",
+      "embedded": true
+    },
+    {
+      "name": "/HACNQR+CMR8",
+      "embedded": true
+    },
+    {
+      "name": "/MVZGAP+LMRoman10-Bold-Identity-H",
+      "embedded": true
+    },
+    {
+      "name": "/ZQDOBP+CMMI7",
+      "embedded": true
+    },
+    {
+      "name": "/LLYSVS+CMMI10",
+      "embedded": true
+    },
+    {
+      "name": "/KPENJG+CMR10",
+      "embedded": true
+    },
+    {
+      "name": "/GJYFUV+CMMI6",
+      "embedded": true
+    },
+    {
+      "name": "/VOCLBA+LMRoman8-Regular-Identity-H",
+      "embedded": true
+    },
+    {
+      "name": "/PGCXIN+LMRomanDemi10-Regular-Identity-H",
+      "embedded": true
+    },
+    {
+      "name": "/ORSKSF+CMR7",
+      "embedded": true
+    },
+    {
+      "name": "/NFRVTR+CMR6",
+      "embedded": true
+    },
+    {
+      "name": "/SYGLUK+LMMono12-Regular-Identity-H",
+      "embedded": true
+    },
+    {
+      "name": "/ILNVDE+LMRoman9-Regular-Identity-H",
+      "embedded": true
+    }
+  ],
+  "all_fonts_embedded": true,
+  "broken_internal_links": [],
+  "named_destinations": 158,
+  "compilation_warnings": [],
+  "compilation_success": true,
+  "page_checks": [
+    {
+      "page": 1,
+      "A4": true,
+      "extracted_chars": 1022,
+      "outside_page_chars": 0,
+      "unresolved_marker": false,
+      "footer_page_number": "1",
+      "footer_correct": true,
+      "figures": 0
+    },
+    {
+      "page": 2,
+      "A4": true,
+      "extracted_chars": 869,
+      "outside_page_chars": 0,
+      "unresolved_marker": false,
+      "footer_page_number": "2",
+      "footer_correct": true,
+      "figures": 0
+    },
+    {
+      "page": 3,
+      "A4": true,
+      "extracted_chars": 820,
+      "outside_page_chars": 0,
+      "unresolved_marker": false,
+      "footer_page_number": "3",
+      "footer_correct": true,
+      "figures": 0
+    },
+    {
+      "page": 4,
+      "A4": true,
+      "extracted_chars": 1052,
+      "outside_page_chars": 0,
+      "unresolved_marker": false,
+      "footer_page_number": "4",
+      "footer_correct": true,
+      "figures": 0
+    },
+    {
+      "page": 5,
+      "A4": true,
+      "extracted_chars": 690,
+      "outside_page_chars": 0,
+      "unresolved_marker": false,
+      "footer_page_number": "5",
+      "footer_correct": true,
+      "figures": 1
+    },
+    {
+      "page": 6,
+      "A4": true,
+      "extracted_chars": 71,
+      "outside_page_chars": 0,
+      "unresolved_marker": false,
+      "footer_page_number": "6",
+      "footer_correct": true,
+      "figures": 2
+    },
+    {
+      "page": 7,
+      "A4": true,
+      "extracted_chars": 958,
+      "outside_page_chars": 0,
+      "unresolved_marker": false,
+      "footer_page_number": "7",
+      "footer_correct": true,
+      "figures": 0
+    },
+    {
+      "page": 8,
+      "A4": true,
+      "extracted_chars": 885,
+      "outside_page_chars": 0,
+      "unresolved_marker": false,
+      "footer_page_number": "8",
+      "footer_correct": true,
+      "figures": 0
+    },
+    {
+      "page": 9,
+      "A4": true,
+      "extracted_chars": 982,
+      "outside_page_chars": 0,
+      "unresolved_marker": false,
+      "footer_page_number": "9",
+      "footer_correct": true,
+      "figures": 0
+    },
+    {
+      "page": 10,
+      "A4": true,
+      "extracted_chars": 1070,
+      "outside_page_chars": 0,
+      "unresolved_marker": false,
+      "footer_page_number": "10",
+      "footer_correct": true,
+      "figures": 0
+    },
+    {
+      "page": 11,
+      "A4": true,
+      "extracted_chars": 1051,
+      "outside_page_chars": 0,
+      "unresolved_marker": false,
+      "footer_page_number": "11",
+      "footer_correct": true,
+      "figures": 0
+    },
+    {
+      "page": 12,
+      "A4": true,
+      "extracted_chars": 1142,
+      "outside_page_chars": 0,
+      "unresolved_marker": false,
+      "footer_page_number": "12",
+      "footer_correct": true,
+      "figures": 0
+    },
+    {
+      "page": 13,
+      "A4": true,
+      "extracted_chars": 918,
+      "outside_page_chars": 0,
+      "unresolved_marker": false,
+      "footer_page_number": "13",
+      "footer_correct": true,
+      "figures": 0
+    },
+    {
+      "page": 14,
+      "A4": true,
+      "extracted_chars": 919,
+      "outside_page_chars": 0,
+      "unresolved_marker": false,
+      "footer_page_number": "14",
+      "footer_correct": true,
+      "figures": 0
+    },
+    {
+      "page": 15,
+      "A4": true,
+      "extracted_chars": 852,
+      "outside_page_chars": 0,
+      "unresolved_marker": false,
+      "footer_page_number": "15",
+      "footer_correct": true,
+      "figures": 0
+    },
+    {
+      "page": 16,
+      "A4": true,
+      "extracted_chars": 1094,
+      "outside_page_chars": 0,
+      "unresolved_marker": false,
+      "footer_page_number": "16",
+      "footer_correct": true,
+      "figures": 0
+    },
+    {
+      "page": 17,
+      "A4": true,
+      "extracted_chars": 1051,
+      "outside_page_chars": 0,
+      "unresolved_marker": false,
+      "footer_page_number": "17",
+      "footer_correct": true,
+      "figures": 0
+    },
+    {
+      "page": 18,
+      "A4": true,
+      "extracted_chars": 976,
+      "outside_page_chars": 0,
+      "unresolved_marker": false,
+      "footer_page_number": "18",
+      "footer_correct": true,
+      "figures": 0
+    },
+    {
+      "page": 19,
+      "A4": true,
+      "extracted_chars": 1076,
+      "outside_page_chars": 0,
+      "unresolved_marker": false,
+      "footer_page_number": "19",
+      "footer_correct": true,
+      "figures": 0
+    },
+    {
+      "page": 20,
+      "A4": true,
+      "extracted_chars": 1692,
+      "outside_page_chars": 0,
+      "unresolved_marker": false,
+      "footer_page_number": "20",
+      "footer_correct": true,
+      "figures": 0
+    },
+    {
+      "page": 21,
+      "A4": true,
+      "extracted_chars": 805,
+      "outside_page_chars": 0,
+      "unresolved_marker": false,
+      "footer_page_number": "21",
+      "footer_correct": true,
+      "figures": 0
+    },
+    {
+      "page": 22,
+      "A4": true,
+      "extracted_chars": 999,
+      "outside_page_chars": 0,
+      "unresolved_marker": false,
+      "footer_page_number": "22",
+      "footer_correct": true,
+      "figures": 0
+    },
+    {
+      "page": 23,
+      "A4": true,
+      "extracted_chars": 1196,
+      "outside_page_chars": 0,
+      "unresolved_marker": false,
+      "footer_page_number": "23",
+      "footer_correct": true,
+      "figures": 0
+    },
+    {
+      "page": 24,
+      "A4": true,
+      "extracted_chars": 799,
+      "outside_page_chars": 0,
+      "unresolved_marker": false,
+      "footer_page_number": "24",
+      "footer_correct": true,
+      "figures": 1
+    },
+    {
+      "page": 25,
+      "A4": true,
+      "extracted_chars": 1802,
+      "outside_page_chars": 0,
+      "unresolved_marker": false,
+      "footer_page_number": "25",
+      "footer_correct": true,
+      "figures": 0
+    },
+    {
+      "page": 26,
+      "A4": true,
+      "extracted_chars": 1568,
+      "outside_page_chars": 0,
+      "unresolved_marker": false,
+      "footer_page_number": "26",
+      "footer_correct": true,
+      "figures": 0
+    },
+    {
+      "page": 27,
+      "A4": true,
+      "extracted_chars": 196,
+      "outside_page_chars": 0,
+      "unresolved_marker": false,
+      "footer_page_number": "27",
+      "footer_correct": true,
+      "figures": 1
+    },
+    {
+      "page": 28,
+      "A4": true,
+      "extracted_chars": 66,
+      "outside_page_chars": 0,
+      "unresolved_marker": false,
+      "footer_page_number": "28",
+      "footer_correct": true,
+      "figures": 2
+    },
+    {
+      "page": 29,
+      "A4": true,
+      "extracted_chars": 16,
+      "outside_page_chars": 0,
+      "unresolved_marker": false,
+      "footer_page_number": "29",
+      "footer_correct": true,
+      "figures": 1
+    },
+    {
+      "page": 30,
+      "A4": true,
+      "extracted_chars": 99,
+      "outside_page_chars": 0,
+      "unresolved_marker": false,
+      "footer_page_number": "30",
+      "footer_correct": true,
+      "figures": 2
+    },
+    {
+      "page": 31,
+      "A4": true,
+      "extracted_chars": 35,
+      "outside_page_chars": 0,
+      "unresolved_marker": false,
+      "footer_page_number": "31",
+      "footer_correct": true,
+      "figures": 1
+    },
+    {
+      "page": 32,
+      "A4": true,
+      "extracted_chars": 787,
+      "outside_page_chars": 0,
+      "unresolved_marker": false,
+      "footer_page_number": "32",
+      "footer_correct": true,
+      "figures": 0
+    }
+  ],
+  "renderer": "PDFium; Poppler initial rendering could not resolve its CJK data path.",
+  "visual_review_complete": true,
+  "official_template_verified": false,
+  "visual_reviewed_pages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32
+  ],
+  "detail_reviewed_pages": [
+    1,
+    6,
+    20,
+    22,
+    24,
+    25,
+    26,
+    27,
+    30,
+    32
+  ],
+  "visual_method": "All 32 pages rendered and visually inspected; final pagination changed only pages 26/27, which were re-inspected. Other page-image hashes were unchanged.",
+  "source_main": "research_analysis/stage3/paper_body.tex",
+  "pdf_delivery": "output/pdf/glucose_paper.pdf"
+}
