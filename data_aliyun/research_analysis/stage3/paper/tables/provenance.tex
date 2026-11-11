@@ -1,0 +1,20 @@
+\begin{table}[htbp]
+\footnotesize
+\setlength{\tabcolsep}{5pt}
+\centering
+\caption{研究环节的Notebook与文件定位}
+\label{tab:provenance}
+\begin{tabular}{L{0.2\linewidth}L{0.24\linewidth}L{0.46\linewidth}}
+\toprule
+研究内容 & Notebook定位 & 存档/实现定位 \\
+\midrule
+数据与训练探索 & 主C002/C005--C044 & 原始CSV、数据划分id与探索输出 \\
+原六模型 & 主C046--C071 & external\_b\_comparison冻结配置、comparison及predictions \\
+特征/联合搜索 & 顺序C004/C006 & run\_experiments及feature\_ablation/training\_cv \\
+网络补充/融合 & 顺序C008--C012 & refine\_nn\_features、complete\_nn\_blends及冻结选择 \\
+主结果及区间 & 顺序C014；主C072 & evaluation、paired\_intervals、target\_bands及逐行预测 \\
+预处理对照 & 预处理C004--C014；主C073 & run\_ablation、frozen\_recommendations与holdout指标 \\
+历史协议 & 早期C004--C010 & paper\_optimized及optimization两协议结果 \\
+\bottomrule
+\end{tabular}
+\end{table}

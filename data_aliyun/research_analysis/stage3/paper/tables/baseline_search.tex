@@ -1,0 +1,17 @@
+\begin{table}[htbp]
+\small
+\setlength{\tabcolsep}{5pt}
+\centering
+\caption{原基准参数候选范围与抽取数量}
+\label{tab:baseline-search}
+\begin{tabular}{L{0.17\linewidth}L{0.64\linewidth}L{0.09\linewidth}}
+\toprule
+模型 & 实际候选空间 & 抽取数 \\
+\midrule
+决策树 & 深度3/4/5/6/7；叶最少10/20/40/60；节点分裂最少2/10/20 & 24 \\
+AdaBoost & 轮数100/200/300；学习率0.005/0.01/0.03/0.1；误差linear/square/exponential & 18 \\
+原XGBoost & 轮数100/200/350；学习率0.02/0.05/0.1；深度2/3/4；子节点Hessian和10/30/60；L2=10/30/60；行和列比例各0.8/1.0 & 24 \\
+随机森林 & 深度8/15/不限；叶最少7/15/30；特征比例0.6/0.8/1.0；树数200固定 & 12 \\
+\bottomrule
+\end{tabular}
+\end{table}

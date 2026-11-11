@@ -1,0 +1,25 @@
+\begin{table}[htbp]
+\small
+\setlength{\tabcolsep}{5pt}
+\centering
+\caption{主要符号及含义}
+\label{tab:symbols}
+\begin{tabular}{L{0.27\linewidth}L{0.65\linewidth}}
+\toprule
+符号 & 定义 \\
+\midrule
+$\mathcal D_T,\mathcal D_V,\mathcal D_B$ & 当前训练、开发与B集合，分别4649、1993、1000行 \\
+$F,n_F$ & 某次实际拟合行集合及其样本数；包括折内、内部子集或完整拟合集 \\
+$x_i,y_i,\hat y_i$ & 第i条记录的输入、真实血糖与预测血糖 \\
+$n_T,p$ & 训练行数及当前表示的输入列数；p随特征与变换改变 \\
+$\Phi_F,\phi_i$ & 只在F拟合的编码/预处理组合及其输出向量 \\
+$m_{ij},q_j(F),J_F$ & 缺失指示、拟合列中位数及拟合时出现缺失的列集合 \\
+$u_i,z_i,t_i$ & 填补并加指示后的向量、标准化向量、PCA得分 \\
+$\xi_i,\zeta_i$ & 40维训练探索填补向量及其标准化表示，不加自动缺失指示 \\
+$I_{s,k},\mathcal E_s(c)$ & 种子s的第k验证折及候选c的合并OOF损失 \\
+$\alpha_R,\alpha_L$ & Ridge与Lasso惩罚系数，分别100与0.05 \\
+$\eta,\lambda_X,a_X,\gamma_X$ & 提升学习率、XGB叶权L2/L1及叶数惩罚，按模型参数确定 \\
+$\pi_m,\Delta_E,Q_g$ & 外层融合权重、候选减参考的MSE差、分箱平方误差贡献 \\
+\bottomrule
+\end{tabular}
+\end{table}

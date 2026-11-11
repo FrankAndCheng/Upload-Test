@@ -1,0 +1,18 @@
+\begin{table}[htbp]
+\small
+\setlength{\tabcolsep}{5pt}
+\centering
+\caption{固定模型预处理配置定义}
+\label{tab:treatments}
+\begin{tabular}{L{0.2\linewidth}L{0.3\linewidth}L{0.15\linewidth}L{0.2\linewidth}}
+\toprule
+记号 & 缺失处理 & 标准化 & PCA \\
+\midrule
+raw & 中位数+缺失指示 & 否 & 否 \\
+scale & 同raw & 是 & 否 \\
+pca & 同raw & 否 & 98\%方差 \\
+scale\_pca & 同raw & 是 & 98\%方差 \\
+native（另列） & LGB/HistGB原生路由 & 否 & 否 \\
+\bottomrule
+\end{tabular}
+\end{table}

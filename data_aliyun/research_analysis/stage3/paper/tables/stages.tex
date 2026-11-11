@@ -1,0 +1,19 @@
+\begin{table}[htbp]
+\small
+\setlength{\tabcolsep}{5pt}
+\centering
+\caption{顺序优化阶段的选择分数与冻结评价}
+\label{tab:stages}
+\begin{tabular}{L{0.31\linewidth}L{0.21\linewidth}L{0.18\linewidth}L{0.18\linewidth}}
+\toprule
+方案 & 两套OOF均值 & 开发MSE & B MSE \\
+\midrule
+原XGBoost & 1.806988 & 2.228808 & 1.252744 \\
+组合特征 & 1.786509 & 2.218877 & 1.275351 \\
+联合XGBoost & 1.781861 & 2.236749 & 1.242601 \\
+三模型等权 & 1.762972 & 2.196540 & 1.245558 \\
+去乙肝小网络 & 1.911642 & 2.260269 & 1.352561 \\
+四模型各25\% & 1.759568 & 2.177243 & 1.234296 \\
+\bottomrule
+\end{tabular}
+\end{table}

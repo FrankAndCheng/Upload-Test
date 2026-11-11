@@ -1,0 +1,16 @@
+\begin{table}[htbp]
+\small
+\setlength{\tabcolsep}{5pt}
+\centering
+\caption{联合搜索的预声明参数范围}
+\label{tab:joint-search}
+\begin{tabular}{L{0.15\linewidth}L{0.66\linewidth}L{0.09\linewidth}}
+\toprule
+家族 & 范围与固定处理 & 抽取数 \\
+\midrule
+XGBoost & 轮数整数200--1000；深度整数2--6；学习率对数均匀[0.01,0.12]；子节点Hessian和对数均匀[5,120]；L2对数均匀[0.1,150]；L1=0/0.1/1/10；gamma=0/0.05/0.2/1；行、列比例各0.65/0.8/1；填补/原生缺失二选一 & 100 \\
+LightGBM & 轮数250/500/800；学习率0.015/0.03/0.06；叶数7/15/31；叶最少20/40/80；L2=1/10/50；列比例0.7/1；原生缺失 & 12 \\
+HistGB & 轮数200/400/700；学习率0.02/0.05；叶数7/15；叶最少20/50/80；L2=1/10/50；关闭早停、原生缺失 & 8 \\
+\bottomrule
+\end{tabular}
+\end{table}

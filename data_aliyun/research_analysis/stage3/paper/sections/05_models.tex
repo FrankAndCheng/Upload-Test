@@ -1,0 +1,159 @@
+\section{预测模型建立与求解}\label{sec:models}
+
+\subsection{统一训练与选型流程}
+设$\Phi_F$为仅在拟合集合$F$估计的预处理变换。传统模型从原始输入出发，在每一训练折内拟合列处理、填补、缩放及可选PCA，再预测对应验证折。主基准采用种子23的打乱五折；对全特征、去乙肝、去八项相关特征及联合删列四集合，各比较有无PCA共八种表示。候选相对原始全特征必须五折均不变差且平均MSE更低，才有资格替换默认表示；随后在选中表示下搜索参数。该保守规则是流程决定规则，不是显著性检验。
+
+后续顺序实验以合并折外预测评价候选。令$I_{s,k}$为种子$s$的第$k$验证折，$\hat y_{i,s}^{\mathrm{OOF}}(c)$为未拟合第$i$行的模型对候选$c$给出的预测，则
+\begin{equation}
+\mathcal E_s(c)=\frac1{n_T}\sum_{i\in\mathcal D_T}(y_i-\hat y_{i,s}^{\mathrm{OOF}}(c))^2,
+\qquad\overline{\mathcal E}(c)=\frac{\mathcal E_{23}(c)+\mathcal E_{2026}(c)}2.
+\label{eq:oof}
+\end{equation}
+两套五折用于筛选与复核，复用同一4649条记录，不是样本量翻倍的独立试验。两套损失的均值也不是先平均两套预测后再求MSE。主基准的搜索实现按各折MSE等权平均，后续顺序实验按合并OOF行求平均；折大小相差1时二者有细微差别。
+
+\begin{quote}
+\textbf{算法1：训练内部选择与冻结评价。}
+\begin{enumerate}
+\item 固定4649条训练行与1993条开发行，声明候选表示、参数预算及评价指标。
+\item 在训练五折内分别拟合预处理与模型，汇集每行OOF预测；网络只在外层训练折内部留出的20\%选择轮数，再重拟合该外层训练折。
+\item 顺序比较特征组、联合参数、树/线性融合与小网络。对训练OOF异常记录提出补充特征对照，记录其适应性来源。
+\item 第一套五折筛选各阶段候选，以第二套五折复核；补充融合先按第一套选择相同权重，再比较两套损失均值。
+\item 固定最终模型、特征处理、参数、网络轮数与权重。以4649条拟合并评价开发集，以全部6642条重拟合并评价B集。
+\end{enumerate}
+\end{quote}
+补充流程的最终决定先由训练OOF保存，随后读取既已生成的开发/B成员预测进行加权。该次流程没有用这些评价误差回调权重，但不能消除数据在既往研究中被查看的影响。
+
+\subsection{六类基准预测模型}
+
+\subsubsection{正则化线性参考}
+相关输入与缺失指示可能使普通线性系数不稳定，因此预测基准采用Ridge而不是将探索OLS作为无约束预测器。令$\phi_i=\Phi_F(x_i)$，则
+\begin{equation}
+(\widehat b_R,\widehat\beta_R)=\operatorname*{arg\,min}_{b_R,\beta_R}
+\sum_{i\in F}(y_i-b_R-\phi_i^\top\beta_R)^2+\alpha_R\|\beta_R\|_2^2,
+\qquad\alpha_R=100.
+\label{eq:ridge}
+\end{equation}
+截距不惩罚，系数无非负约束；采用实现的自动求解器。式\eqref{eq:ridge}使用平方残差和而不是平均损失，保留与惩罚100一致的尺度\cite{ridge}。主基准表示比较最终保留全特征、折内填补、标准化、无PCA；此配置同时作为后续融合成员。
+
+\subsubsection{决策树与随机森林}
+回归树通过输入空间的逐节点切分构造叶区域。设某棵树叶区域为$R_\ell$，叶预测为$c_\ell$，$F_\ell$为该叶所含拟合行，则
+\begin{equation}
+h(x)=\sum_{\ell=1}^{L}c_\ell\mathbf1\{\Phi_F(x)\in R_\ell\},
+\qquad c_\ell=\frac1{|F_\ell|}\sum_{i\in F_\ell}y_i.
+\label{eq:tree}
+\end{equation}
+分裂依据平方误差不纯度，采用贪心构造，不声称全局树结构最优。基准单树使用随机候选切分，24组训练CV搜索选出深度6、叶最少60、节点分裂最少10，树种子30。输入为全特征、折内填补，不缩放、不做PCA。
+
+随机森林在bootstrap样本和随机候选特征下拟合200棵回归树，各树叶均值按其抽样频数计算，最终输出均值\cite{forest}：
+\begin{equation}
+\hat y_{\mathrm{RF}}(x)=\frac1{200}\sum_{t=1}^{200}h_t(x).
+\label{eq:forest}
+\end{equation}
+12组训练CV参数候选选出不限最大深度、叶最少7、候选特征比例0.6，种子23。其叶最少样本数限制了局部拟合规模；本文没有将OOB或未计算的森林重要性作为验证结果。
+
+\subsubsection{AdaBoost.R2}
+AdaBoost基准使用AdaBoost.R2，逐轮按当前误差调整样本抽样权重\cite{ada}。设第$t$轮归一化行权重为$d_i^{(t)}$，当前实现未传入外部样本权重，故初始化为$d_i^{(1)}=1/n_F$；按该分布有放回抽样拟合回归树$h_t$。对于选中的指数误差变换，非零最大误差条件下定义
+\begin{equation}
+\begin{aligned}
+r_{it}&=\frac{|h_t(x_i)-y_i|}{\max_j|h_t(x_j)-y_j|},\quad e_{it}=1-\exp(-r_{it}),\\
+E_t&=\sum_i d_i^{(t)}e_{it},\quad\beta_t=\frac{E_t}{1-E_t},\quad
+a_t=\eta_A\log(1/\beta_t),\\
+d_i^{(t+1)}&\propto d_i^{(t)}\beta_t^{\eta_A(1-e_{it})}.
+\end{aligned}
+\label{eq:ada}
+\end{equation}
+在$0<E_t<1/2$时按上式更新，完美拟合或误差过大时按实现规则终止。最终预测为各$h_t(x)$按$a_t$的加权中位数，不是外层融合所用的加权平均。
+
+基础树固定深度3、叶最少20；外层种子32。18组训练CV搜索选中最大300个基学习器、$\eta_A=0.005$、指数误差变换。300是迭代上限，不能由构造参数推定实际有效树数恰为300。
+
+\subsubsection{原XGBoost}
+XGBoost用加性回归树与正则化控制拟合复杂度\cite{xgboost}。令第$t-1$轮预测函数为$f^{(t-1)}$，在半平方损失下$g_{it}=f^{(t-1)}(x_i)-y_i$、$H_{it}=1$。候选增量树$h_t$有$L_t$个叶，叶输出向量为$\omega_t$，忽略常数的二阶目标写为
+\begin{equation}
+\begin{aligned}
+\widetilde{\mathcal L}_t&=
+\sum_{i\in F}\left[g_{it}h_t(x_i)+\frac12 H_{it}h_t(x_i)^2\right]
+\\
+{}&\quad+\gamma_X L_t+\frac{\lambda_X}{2}\|\omega_t\|_2^2+a_X\|\omega_t\|_1.
+\end{aligned}
+\label{eq:xgb}
+\end{equation}
+其中$\gamma_X$、$\lambda_X$、$a_X$分别表示叶数、叶权L2和L1惩罚。树拟合后按学习率缩减加入预测函数。
+
+基准使用平方误差回归目标和直方图分裂，表示比较选中去乙肝、填补、不缩放/PCA；24组参数候选选择350轮、学习率0.02、深度4、最小子节点Hessian和30、L2惩罚10、行/列采样比例各0.8。轮数与结构在训练CV中一起选择，不扫描开发或B误差决定轮数。
+
+\subsubsection{原大网络}
+原网络的隐藏层宽度为400、160、64、26，输出层为单个线性单元。隐藏层使用PReLU，Dropout比例依次为0.4、0.6、0.5、0.6；160、64、26层后含BatchNormalization。采用MSE和Adamax，batch为32、最大100轮、内部验证损失耐心值12，随机种子23。Adamax学习率未在原构造器中显式指定，本文不补设新值。
+
+在4649条训练行内部划3719条拟合与930条验证，仅比较标准化原始表示和标准化后PCA。两者内部MSE分别1.808403和1.744353，对应最佳轮数98和87，因此固定PCA与87轮，在完整4649条重新拟合。内部验证用于表示与轮数选择，不作为最终外部成绩。
+
+表\ref{tab:baseline-config}汇总六基准的关键配置，完整搜索空间与软件版本见附录\ref{app:parameters}。
+\input{paper/tables/baseline_config.tex}
+
+\subsection{特征分组构造与固定参数消融}
+工程特征均由单行原始输入确定。以40列基础输入的缺失指示定义总计数$M_i=\sum_jm_{ij}$，并对肝功能、血脂、肾功能、乙肝四个指定列集合$G$计算$M_i^{(G)}=\sum_{j\in G}m_{ij}$。其中肝功能计数组只含AST、ALT及总蛋白；血脂组含甘油三酯、总胆固醇、HDL和LDL；肾功能组含尿素、肌酐和尿酸；乙肝组含五项。计数先于删乙肝列执行。
+
+设$a_i,b_i$是同一行的分子、分母，安全比值为
+\begin{equation}
+R_i(a,b)=\begin{cases}a_i/b_i,&b_i>10^{-6},\\\mathrm{NaN},&\text{其他情况}.
+\end{cases}
+\label{eq:ratio}
+\end{equation}
+三项比值分别为甘油三酯/HDL、ALT/AST及中性粒细胞百分比/淋巴细胞百分比。分子缺失也使结果缺失；分母不是统一加上常数。设$W_i^{\mathrm{blood}}$为白细胞计数，$P_{ic}$为某类细胞百分数，则五类细胞估算计数为
+\begin{equation}
+C_{ic}=W_i^{\mathrm{blood}}P_{ic}/100,
+\qquad c\in\{\text{中性、淋巴、单核、嗜酸、嗜碱}\}.
+\label{eq:counts}
+\end{equation}
+这些变量是推算输入，而非新采集的独立测量。年龄项包括年龄分别乘甘油三酯、HDL、尿酸、ALT，以及年龄平方，共5项。无穷结果转为缺失。
+
+固定原XGBoost参数比较表\ref{tab:features}的8组配置。除全特征外，工程变体均删除乙肝五项；组合变体仍含乙肝缺失计数，不能称完全移除乙肝检测状态信息。各组仅为有限分组对照，不是所有工程项的全因子实验。
+\input{paper/tables/features.tex}
+
+\subsection{特征与参数联合搜索}
+第一阶段依据种子23的OOF误差选出前三名特征变体，与去乙肝基线共同构成后续特征池。联合搜索预先抽样100个XGBoost配置、12个LightGBM配置和8个HistGradientBoosting配置；除新候选外保留已有特征候选参与比较，避免新搜索误差较高时仍强行替换。XGBoost同时改变树结构、轮数、学习率、正则、采样与缺失处理，LGB和HistGB候选使用原生缺失处理。
+
+LightGBM采用按叶增益生长的直方图提升树\cite{lightgbm}，通过叶数、叶最少样本数和叶权正则限制复杂度\cite{lgb-tuning}。HistGradientBoosting采用平方误差直方图提升，支持训练分裂学习缺失路由\cite{hist}。两者与XGBoost可概括为
+\begin{equation}
+f^{(M)}(x)=f^{(0)}(x)+\eta\sum_{t=1}^{M}h_t(x),
+\label{eq:additive}
+\end{equation}
+但分裂、生长与缺失处理按各自实现执行，不能把三者当成相同求解器。HistGB关闭内部早停，轮数由候选固定。本文没有额外评估GOSS、EFB或GPU加速的贡献。
+
+训练选择的优化XGBoost采用去乙肝加年龄交互表示、填补、393轮、学习率0.03962175009621365、深度5、最小子节点Hessian和22.839155331252698、L2惩罚119.89079839483685、L1惩罚1、叶数惩罚0.05、行采样0.8和列采样0.65。LightGBM家族优胜采用相同年龄交互表示、15叶、叶最少20、800轮、学习率0.015和L2惩罚1。HistGB家族优胜采用组合特征、7叶、叶最少80、700轮、学习率0.02和L2惩罚50。后者参与比较，未成为最终四模型成员。
+
+\subsection{树与线性融合及小网络补充}
+融合成员池由联合XGBoost优胜、冻结随机森林、Ridge及新增提升树家族优胜构成，共5个不重复成员。对每一对成员比较0.25、0.5和0.75的首成员权重，共30个组合，再比较10个三成员等权组合，共40个。使用OOF预测评分，不另行拟合二层回归器。训练选中的三模型为优化XGBoost、Ridge与LightGBM各1/3。
+
+小网络先比较64--32与128--64--16两种隐藏结构，各有无PCA，共4个候选。隐藏层为ReLU，逐层Dropout分别为0.1或0.2；隐藏核L2系数0.001，Adam学习率0.001，batch64。令$\theta$为网络参数，$\mathcal B$为训练小批次，$\mathcal H$为设定核正则的隐藏层集合，目标为
+\begin{equation}
+\begin{aligned}
+\mathcal J_{\mathrm{NN}}(\theta)&=\frac1{|\mathcal B|}\sum_{i\in\mathcal B}
+\bigl[y_i-f_\theta(\Phi_F(x_i))\bigr]^2\\
+{}&\quad+0.001\sum_{\ell\in\mathcal H}\|W_\ell^{\mathrm{NN}}\|_F^2.
+\end{aligned}
+\label{eq:smallnn}
+\end{equation}
+L2仅作用于指定隐藏Dense核，不扩展到偏置或输出层。Dropout只在训练时启用。各外层训练折内留20\%选择轮数，最多100轮、耐心12，然后以最佳轮数重新拟合完整外层训练折。
+
+训练OOF诊断发现全特征64--32网络对某记录预测约66.675，而真实血糖4.58。基于其极端乙肝输入，记录补充计划并比较同结构去乙肝的原始/PCA两种表示，形成2个适应性候选。该单条异常是提出对照的依据，不能证明乙肝对所有模型无用。补充后选中去乙肝、标准化、无PCA的64--32网络，两套内部选轮的中位数为36轮；此轮数用于后续开发/B重拟合。
+
+\subsection{四模型融合与配置冻结}
+设成员$m$的OOF预测为$\hat y_{i,23}^{(m)}$，外层权重为$\pi_m$。融合在已枚举的有限集合$\mathcal W$中比较：
+\begin{equation}
+\widehat\pi\in\operatorname*{arg\,min}_{\pi\in\mathcal W}
+\frac1{n_T}\sum_i\left(y_i-\sum_m\pi_m\hat y_{i,23}^{(m)}\right)^2,
+\qquad \pi_m\ge0,\quad\sum_m\pi_m=1.
+\label{eq:weights}
+\end{equation}
+式\eqref{eq:weights}表示实际网格比较，不是对连续单纯形求最优。预先声明的补充计划将小网络分别与原XGBoost、联合XGBoost、三模型融合按网络权重0.25、0.5、0.75组合，共9组。先按种子23选择补充权重，再用种子2026复核相同候选，并与原阶段优胜比较两套OOF损失均值。
+
+最终选择为小网络25\%加三模型75\%，严格展开为
+\begin{equation}
+\begin{aligned}
+\hat y_{\mathrm{final}}(x)&=\tfrac14\bigl[\hat y_{\mathrm{XGB,opt}}(x)+\hat y_{\mathrm{LGB}}(x)\\
+{}&\qquad+\hat y_{\mathrm{Ridge}}(x)+\hat y_{\mathrm{NN,nohep}}(x)\bigr].
+\end{aligned}
+\label{eq:final}
+\end{equation}
+四个成员分别保留自身特征与预处理，而非共享同一PCA输入。具体组成见表\ref{tab:members}。固定权重及网络轮数后，开发和B评价均不再根据相应误差回调参数。
+\input{paper/tables/members.tex}

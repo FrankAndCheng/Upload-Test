@@ -1,0 +1,17 @@
+\begin{table}[htbp]
+\small
+\setlength{\tabcolsep}{5pt}
+\centering
+\caption{最终融合成员及各自输入处理}
+\label{tab:members}
+\begin{tabular}{L{0.2\linewidth}L{0.59\linewidth}L{0.1\linewidth}}
+\toprule
+成员 & 特征与预处理 & 权重 \\
+\midrule
+优化XGBoost & 去乙肝+年龄项；中位数/缺失指示；无缩放/PCA & 25\% \\
+LightGBM & 去乙肝+年龄项；原生缺失；无缩放/PCA & 25\% \\
+Ridge & 全40列；中位数/缺失指示；标准化，无PCA & 25\% \\
+小网络 & 去乙肝；中位数/缺失指示；标准化，无PCA；64--32，36轮 & 25\% \\
+\bottomrule
+\end{tabular}
+\end{table}

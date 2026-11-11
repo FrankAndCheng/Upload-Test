@@ -1,0 +1,19 @@
+\begin{table}[htbp]
+\small
+\setlength{\tabcolsep}{5pt}
+\centering
+\caption{六基准在当前开发/B的误差（未舍入预测）}
+\label{tab:baseline-results}
+\begin{tabular}{lrrrr}
+\toprule
+模型 & 开发MSE & B MSE & 开发MAE & B MAE \\
+\midrule
+原XGBoost & 2.228808 & 1.252744 & 0.780951 & 0.648007 \\
+随机森林 & 2.276036 & 1.334292 & 0.786652 & 0.664520 \\
+原大网络 & 2.375530 & 1.342265 & 0.748643 & 0.596760 \\
+Ridge & 2.289115 & 1.372016 & 0.807902 & 0.711438 \\
+决策树 & 2.595176 & 1.401940 & 0.829650 & 0.680730 \\
+AdaBoost.R2 & 2.455500 & 1.444966 & 0.808051 & 0.709821 \\
+\bottomrule
+\end{tabular}
+\end{table}

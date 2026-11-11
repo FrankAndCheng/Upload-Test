@@ -1,0 +1,21 @@
+\begin{table}[htbp]
+\small
+\setlength{\tabcolsep}{5pt}
+\centering
+\caption{固定原XGBoost参数的特征与缺失处理对照}
+\label{tab:features}
+\begin{tabular}{L{0.18\linewidth}L{0.38\linewidth}L{0.13\linewidth}L{0.18\linewidth}}
+\toprule
+配置 & 输入构造 & 填补前列数 & CV23 MSE \\
+\midrule
+去乙肝参考 & 基础输入去乙肝五项 & 35 & 1.803531 \\
+全特征 & 基础40列保留 & 40 & 1.797830 \\
+缺失计数 & 去乙肝+总/4组计数 & 40 & 1.801047 \\
+比值 & 去乙肝+3比值 & 38 & 1.797452 \\
+估算计数 & 去乙肝+5计数 & 40 & 1.802958 \\
+年龄项 & 去乙肝+4交互/年龄平方 & 40 & 1.789187 \\
+组合 & 去乙肝+18工程项 & 53 & 1.783699 \\
+原生缺失参考 & 去乙肝，不填补 & 35 & 1.812445 \\
+\bottomrule
+\end{tabular}
+\end{table}

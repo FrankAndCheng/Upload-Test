@@ -1,0 +1,20 @@
+\begin{table}[htbp]
+\small
+\setlength{\tabcolsep}{5pt}
+\centering
+\caption{两套历史协议的独立结果}
+\label{tab:historical}
+\begin{tabular}{L{0.08\linewidth}L{0.18\linewidth}L{0.45\linewidth}L{0.17\linewidth}}
+\toprule
+协议 & 评价行 & 模型 & MSE \\
+\midrule
+H1 & 1561验证 & legacy\_linear & 1.714056 \\
+H1 & 1561验证 & legacy\_xgb\_40 & 1.659235 \\
+H1 & 1561验证 & LGB+HistGB各半 & 1.579267 \\
+H2 & A1000 & Ridge & 1.792473 \\
+H2 & A1000 & HistGB+LGB各半 & 1.730496 \\
+H2 & B1000 & Ridge & 1.379045 \\
+H2 & B1000 & HistGB+LGB各半 & 1.274190 \\
+\bottomrule
+\end{tabular}
+\end{table}

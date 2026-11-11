@@ -1,0 +1,17 @@
+\begin{table}[htbp]
+\small
+\setlength{\tabcolsep}{5pt}
+\centering
+\caption{保持四模型权重的预处理版本复核}
+\label{tab:fusion-treatment}
+\begin{tabular}{lrrrrr}
+\toprule
+集合 & 版本 & MSE & RMSE & MAE & $R^2$ \\
+\midrule
+开发 & 原处理 & 2.177243 & 1.475548 & 0.777364 & 0.205397 \\
+开发 & 推荐处理 & 2.174456 & 1.474604 & 0.776223 & 0.206414 \\
+B & 原处理 & 1.234296 & 1.110989 & 0.638160 & 0.196253 \\
+B & 推荐处理 & 1.234823 & 1.111226 & 0.639440 & 0.195910 \\
+\bottomrule
+\end{tabular}
+\end{table}

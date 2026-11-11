@@ -1,0 +1,169 @@
+{
+  "main": "research_analysis/stage3/paper_body.tex",
+  "engine": "XeLaTeX",
+  "sections": [
+    "01_problem",
+    "02_analysis",
+    "03_assumptions_symbols",
+    "04_data",
+    "05_models",
+    "06_results",
+    "07_preprocessing",
+    "08_evaluation",
+    "09_conclusion",
+    "appendix_a_fields",
+    "appendix_b_parameters",
+    "appendix_c_history",
+    "appendix_d_diagnostics",
+    "appendix_e_provenance"
+  ],
+  "tables": [
+    {
+      "label": "tab:symbols",
+      "file": "paper/tables/symbols.tex"
+    },
+    {
+      "label": "tab:protocol",
+      "file": "paper/tables/protocol.tex"
+    },
+    {
+      "label": "tab:baseline-config",
+      "file": "paper/tables/baseline_config.tex"
+    },
+    {
+      "label": "tab:features",
+      "file": "paper/tables/features.tex"
+    },
+    {
+      "label": "tab:members",
+      "file": "paper/tables/members.tex"
+    },
+    {
+      "label": "tab:baseline-results",
+      "file": "paper/tables/baseline_results.tex"
+    },
+    {
+      "label": "tab:stages",
+      "file": "paper/tables/stages.tex"
+    },
+    {
+      "label": "tab:final-metrics",
+      "file": "paper/tables/final_metrics.tex"
+    },
+    {
+      "label": "tab:treatments",
+      "file": "paper/tables/treatments.tex"
+    },
+    {
+      "label": "tab:factorial",
+      "file": "paper/tables/factorial.tex"
+    },
+    {
+      "label": "tab:fusion-treatment",
+      "file": "paper/tables/fusion_treatment.tex"
+    },
+    {
+      "label": "tab:intervals",
+      "file": "paper/tables/intervals.tex"
+    },
+    {
+      "label": "tab:bands",
+      "file": "paper/tables/bands.tex"
+    },
+    {
+      "label": "tab:all-fields",
+      "file": "paper/tables/all_fields.tex"
+    },
+    {
+      "label": "tab:baseline-search",
+      "file": "paper/tables/baseline_search.tex"
+    },
+    {
+      "label": "tab:joint-search",
+      "file": "paper/tables/joint_search.tex"
+    },
+    {
+      "label": "tab:historical",
+      "file": "paper/tables/historical.tex"
+    },
+    {
+      "label": "tab:holdout-all",
+      "file": "paper/tables/holdout_all.tex"
+    },
+    {
+      "label": "tab:provenance",
+      "file": "paper/tables/provenance.tex"
+    }
+  ],
+  "figures": [
+    {
+      "file": "paper_C007_O03.png",
+      "sha256": "b80000f51d185f7460677b03c0c6e7c9b3bae91e9cde551bc28523c12f21e8c0",
+      "source": "research_analysis/stage1/figures/paper_C007_O03.png"
+    },
+    {
+      "file": "paper_C009_O01.png",
+      "sha256": "f8f8b9b87c5a65261cfd3ca023329d76d9c1a6cf5ddc7a97dad205a1e7d1361b",
+      "source": "research_analysis/stage1/figures/paper_C009_O01.png"
+    },
+    {
+      "file": "paper_C012_O02.png",
+      "sha256": "1fd5348d63cb78a71aebfd368ab92e2488a5c7c090b1c5c53e798c7785e78f45",
+      "source": "research_analysis/stage1/figures/paper_C012_O02.png"
+    },
+    {
+      "file": "paper_optimized_C004_O03.png",
+      "sha256": "a9aaf68f63b2063643cff536db4d4bca7526976dc416f9314eaa286146a08a29",
+      "source": "research_analysis/stage1/figures/paper_optimized_C004_O03.png"
+    },
+    {
+      "file": "paper_C026_O01.png",
+      "sha256": "7d2eeaaa23ba24b461628cf2eef74a13ed3a9bb2fff218e9a944d59c9f4ac896",
+      "source": "research_analysis/stage1/figures/paper_C026_O01.png"
+    },
+    {
+      "file": "paper_C027_O01.png",
+      "sha256": "7443fd5f793a3d2bb0ad5fe6175b598922e952deccc9bea28b6ac15dcfecc20d",
+      "source": "research_analysis/stage1/figures/paper_C027_O01.png"
+    },
+    {
+      "file": "paper_C032_O02.png",
+      "sha256": "e4ba559a8cf3d58527586dafe7bd485c91b8ceea23f006b888e057ce55f803c3",
+      "source": "research_analysis/stage1/figures/paper_C032_O02.png"
+    },
+    {
+      "file": "paper_C032_O03.png",
+      "sha256": "fdd055fcbcbcf0d25e21580e0e788a931eac85da3a2d09ecce84a765c77a0e60",
+      "source": "research_analysis/stage1/figures/paper_C032_O03.png"
+    },
+    {
+      "file": "paper_C037_O02.png",
+      "sha256": "26908c48c84d4dfda66bd0755ea6bc5dcaed14cb0e6a0e08a3881bfaa758e0e0",
+      "source": "research_analysis/stage1/figures/paper_C037_O02.png"
+    },
+    {
+      "file": "paper_C040_O02.png",
+      "sha256": "99469930cadc16698eb7ce0e9ad6e2de3ec546e3455d5db120b598019ee77658",
+      "source": "research_analysis/stage1/figures/paper_C040_O02.png"
+    },
+    {
+      "file": "paper_C051_O02.png",
+      "sha256": "03f7823ac56cdd6b5a4e54ab8a7b8b914100744636129a235a92169cbeb58764",
+      "source": "research_analysis/stage1/figures/paper_C051_O02.png"
+    }
+  ],
+  "reference_keys": [
+    "pitfalls",
+    "pca",
+    "lasso",
+    "ridge",
+    "forest",
+    "ada",
+    "xgboost",
+    "lightgbm",
+    "lgb-tuning",
+    "hist",
+    "sklearn"
+  ],
+  "original_body_sha256": "33c335fa48bc0524fcd19d8c9b1269b169a868dfa6ece72837c5356fbc5e4576"
+}

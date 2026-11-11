@@ -1,0 +1,19 @@
+\begin{table}[htbp]
+\small
+\setlength{\tabcolsep}{5pt}
+\centering
+\caption{六模型的关键冻结配置}
+\label{tab:baseline-config}
+\begin{tabular}{L{0.18\linewidth}L{0.73\linewidth}}
+\toprule
+模型 & 配置与表示 \\
+\midrule
+Ridge & 惩罚100；全特征、填补及标准化，无PCA \\
+决策树 & 深度6，叶最少60，节点分裂最少10，随机切分，种子30；全特征填补 \\
+随机森林 & 200棵，不限深度，叶最少7，特征比例0.6，种子23；全特征填补 \\
+AdaBoost.R2 & 基础树深度3、叶最少20；最多300轮，学习率0.005，指数误差，外层种子32；全特征填补 \\
+原XGBoost & 350轮，学习率0.02，深度4，子节点Hessian和30，L2=10，行/列比例各0.8；去乙肝填补 \\
+原大网络 & 400--160--64--26--1，PReLU、Dropout及BatchNorm，Adamax，batch32；标准化+PCA，87轮 \\
+\bottomrule
+\end{tabular}
+\end{table}

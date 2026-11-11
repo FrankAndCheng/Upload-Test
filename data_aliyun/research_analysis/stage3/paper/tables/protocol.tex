@@ -1,0 +1,16 @@
+\begin{table}[htbp]
+\small
+\setlength{\tabcolsep}{5pt}
+\centering
+\caption{当前主协议的样本与拟合范围}
+\label{tab:protocol}
+\begin{tabular}{L{0.13\linewidth}L{0.13\linewidth}L{0.12\linewidth}L{0.5\linewidth}}
+\toprule
+用途 & 拟合/选择行 & 评价行 & 备注 \\
+\midrule
+训练内部选择 & 4649 & 相应训练验证折 & 原train3957+A692；五折内估计预处理 \\
+开发评分 & 4649 & 1993 & 原train1685+A308；不是纯A验证 \\
+B集复核 & 6642 & 1000 & 冻结后以train+A全部重拟合；B有历史使用 \\
+\bottomrule
+\end{tabular}
+\end{table}

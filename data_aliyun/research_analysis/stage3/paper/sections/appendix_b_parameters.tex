@@ -1,0 +1,16 @@
+\section{参数、搜索范围与复现条件}\label{app:parameters}
+原基准的八种表示由四个列集合乘有无PCA组成；八项相关列为AST、总胆固醇、红细胞压积、血红蛋白、血小板比积、红细胞平均血红蛋白量、白球比例及中性粒细胞百分比。表示比较先固定基准参数，参数搜索后续进行，不声称在表示与所有参数的完整笛卡尔积上穷举。
+
+原基准候选范围见表\ref{tab:baseline-search}。Ridge惩罚100在本轮预先固定。网络的两个表示及轮数由训练内部验证选择，不列入下表的传统模型参数网格。
+\input{paper/tables/baseline_search.tex}
+
+联合搜索范围见表\ref{tab:joint-search}。对数均匀分布表示在对数尺度等概率抽样；整数区间注明实际包含端点。各配置使用预定随机种子抽样，不根据B误差改变抽样方案。
+\input{paper/tables/joint_search.tex}
+
+原大网络首个Dense后使用Dropout0.4，其余三个隐藏Dense分别接BatchNormalization与Dropout0.6/0.5/0.6；后四个Dense使用原构造中的normal初始化。小网络采用ReLU隐藏层、隐藏核L2=0.001和逐层Dropout，参数由式\eqref{eq:smallnn}及正文结构确定。原大网络的旧PReLU序列化需要按冻结结构重建后恢复权重，已有核验记录仅证明相应推理恢复，不代表恢复优化器状态续训。
+
+\begingroup
+\raggedright
+历史运行版本为NumPy1.26.4、pandas2.0.3、SciPy1.11.1、scikit-learn1.3.0、statsmodels0.14.0、TensorFlow2.16.2、Keras3.8.0、XGBoost2.1.3、LightGBM4.1.0和factor-analyzer0.4.1。scikit-learn提供了相关回归与预处理实现\cite{sklearn}；文末1.3系列网页现标1.3.2，算法细节同时依据实际安装源码核对，不将网页版本当作实验运行版本。
+\par
+\endgroup

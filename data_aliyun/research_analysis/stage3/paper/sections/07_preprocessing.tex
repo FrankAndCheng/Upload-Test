@@ -1,0 +1,49 @@
+\section{标准化与PCA对照实验}\label{sec:preprocessing}
+
+\subsection{固定模型下的四处理设计}
+为区分缩放、压缩与模型配置变化，固定六基准及优化XGBoost、LightGBM、HistGB、小网络，共10个版本的特征和参数。原大网络固定87轮、batch32，小网络固定36轮、batch64；本轮各折不用早停，初始化种子23。四种处理见表\ref{tab:treatments}。
+\input{paper/tables/treatments.tex}
+
+LGB和HistGB另保留原生缺失参考，共42个配置；以种子23、2026各做五折，得到420个折拟合结果。四格中的填补与缺失指示完全相同，native参考则改变了缺失处理，不能把其差异全归因于标准化或PCA。
+
+\subsection{替换规则与条件效应}
+设模型现有处理为$r_0$，候选处理为$c$，$e_{s,k}(c)$为对应折MSE。相对改善与折胜数定义为
+\begin{equation}
+\begin{aligned}
+G(c)&=\frac{\overline{\mathcal E}(r_0)-\overline{\mathcal E}(c)}{\overline{\mathcal E}(r_0)},\\
+W(c)&=\sum_{s\in\{23,2026\}}\sum_{k=1}^{5}
+\mathbf1\{e_{s,k}(c)<e_{s,k}(r_0)-10^{-12}\}.
+\end{aligned}
+\label{eq:replacement}
+\end{equation}
+候选须满足$G(c)\ge0.005$且$W(c)\ge7$才有资格替换现有处理，在合格者中取平均OOF MSE最低者；否则保留现有处理。这是预设的保守工程门槛，并非显著性检验，也不同于原基准的“五折均不变差”规则。
+
+以$\overline{\mathcal E}(\mathrm{scale})-\overline{\mathcal E}(\mathrm{raw})$描述无PCA时增加标准化的条件效应，以$\overline{\mathcal E}(\mathrm{scale\_pca})-\overline{\mathcal E}(\mathrm{scale})$描述已标准化后增加PCA的效应。差值为负才代表误差下降，不将其扩展为未开展的方差分析或交互显著性检验。
+
+\begin{quote}
+\textbf{算法2：固定模型预处理对照。}
+\begin{enumerate}
+\item 固定10个模型的特征、参数及网络训练轮数，声明四处理和两个native参考。
+\item 在两套五折中逐训练折估计所需预处理，保存每行OOF、折误差与变换后维数。
+\item 计算两套损失均值、相对现有处理的改善与10折胜数，按式\eqref{eq:replacement}冻结推荐处理。
+\item 不改变四模型权重，对参考和推荐处理分别在开发/B复核，区分单模型替换与融合结果。
+\end{enumerate}
+\end{quote}
+
+\subsection{单模型处理结果}
+表\ref{tab:factorial}列出四格OOF平均MSE。十个模型的最低处理均不含PCA，但这只是本轮固定配置下的比较，不是PCA在所有任务上的普遍结论。
+\input{paper/tables/factorial.tex}
+
+原大网络从raw改为仅标准化，平均OOF MSE由2.089127降至1.929678，下降7.632296\%，10个配对折均较低；小网络由2.379670降至1.895841，下降20.331780\%，也赢10折。本轮证据支持这两种网络使用标准化。
+
+在标准化后增加PCA，原大网络由1.929678变为1.930533，变差约0.044287\%；小网络由1.895841变为1.941302，变差约2.397965\%。原大网络保留旧PCA仅因为取消PCA未达到相对现处理0.5\%改善且赢7折的替换门槛，不能由“保留”推出“必需”。Ridge仅标准化相对raw变差约0.068118\%，同样没有明确的实测收益证据。
+
+树模型缩放的差异很小或未改善，而PCA通常提高误差。LightGBM唯一达到替换门槛的是从原生缺失改为中位数填补加缺失指示：参考OOF1.808118降至1.796304，改善0.653386\%，赢7/10折；推荐仍不缩放、不PCA。其余模型不改变现有处理。具体最低配置和保留决定应区分阅读。
+
+\subsection{保持权重的融合复核}
+按各模型训练CV推荐改变处理，权重仍各25\%。唯一实际变化为LightGBM缺失处理，结果见表\ref{tab:fusion-treatment}。
+\input{paper/tables/fusion_treatment.tex}
+
+推荐版本在开发略好、B略差。原融合在本轮固定网络36轮时的两套OOF均值约1.756036，推荐处理约1.752957；这不能与前轮各折内部早停的1.759568直接作单因素归因。
+
+本轮原大网络构建前统一清理Keras状态后重新初始化，其标准化+PCA参考开发/B MSE为2.395645/1.334516，与原实例2.375530/1.342265不逐值一致。该差异未进一步分解，不能将其归为PCA或某个数值因素的独立效果。四格比较以本轮统一协议下的配对重训为准，原四模型主方案仍保留。
