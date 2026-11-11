@@ -1,0 +1,77 @@
+{
+  "purpose": "保留历史源码完整性；分类入口使用同一解释器在原路径执行，不改变训练实现。",
+  "sources": {
+    "review/check_environment.py": {
+      "sha256": "17baeca76613c211b4ffada338d9c249003d308921003ad81d8eb55efb9bf396",
+      "entry_module": "glucose_project.environment.check",
+      "workflow": "environment",
+      "pre_privacy_sha256": "9be5ae4e3691e27951fccea2cfca2b7251a80fb67bf584f61bc069162336f89e",
+      "change_reason": "Privacy-only path redaction and portable report generation; no training logic changes."
+    },
+    "review/external_b_comparison/evaluate_frozen.py": {
+      "sha256": "b2976a388ca9a58e50cdea891ee98b4a1a5eca7bc17bb4382cd5640cc9ced909",
+      "entry_module": "glucose_project.experiments.external_baselines",
+      "workflow": "original-algorithms"
+    },
+    "review/sequential_experiments/run_experiments.py": {
+      "sha256": "f301925f6849114a0dfea5c17be5fb58be5f9a90d7b22c6d9015ab6c74c28d39",
+      "entry_module": "glucose_project.experiments.sequential",
+      "workflow": "sequential"
+    },
+    "review/sequential_experiments/refine_nn_features.py": {
+      "sha256": "9274d93eff09f49a3d6f01efdfcd73518bea92b0f0f0136751be8e82e9cd60a9",
+      "entry_module": "glucose_project.ensembles.refine_neural",
+      "workflow": "neural-features"
+    },
+    "review/sequential_experiments/complete_nn_blends.py": {
+      "sha256": "ca246917c48693df30bc61742493fca16f7024b2e4bedd0802df7163ad4d4316",
+      "entry_module": "glucose_project.ensembles.blend_neural",
+      "workflow": "neural-blend"
+    },
+    "review/preprocessing_ablation/run_ablation.py": {
+      "sha256": "dea4e5c28b18b142bc4fa27ce50d7dd8023be65db0892e3bb6e15522ad42df46",
+      "entry_module": "glucose_project.preprocessing.ablation",
+      "workflow": "preprocessing"
+    },
+    "review/sequential_experiments/predict_selected.py": {
+      "sha256": "ad80a303325eb5e747476e4a67ef44c1d956e7caa1b0da2025dff7a995aa3f29",
+      "entry_module": "glucose_project.inference.predict",
+      "workflow": "predict"
+    },
+    "review/preprocessing_ablation/verify_results.py": {
+      "sha256": "5c9dbeea6cf0141187091e1a0875c952430524ebaa2094e3fcf5fd2aba484a70",
+      "entry_module": "glucose_project.validation.preprocessing",
+      "workflow": "verify-preprocessing"
+    },
+    "review/sequential_experiments/render_results.py": {
+      "sha256": "f2152ef5c1ce4102e35a23ddc86380f4489fbaf7604385c49b07fd354663e790",
+      "entry_module": "glucose_project.reports.sequential",
+      "workflow": "report-sequential",
+      "pre_privacy_sha256": "f6984b55d8b9544a3d83487dc71596b8e382cccd4fdb1bdc3b75c8d16c744505",
+      "change_reason": "Privacy-only path redaction and portable report generation; no training logic changes."
+    },
+    "review/preprocessing_ablation/render_results.py": {
+      "sha256": "410662863e6b76de3fbc72ac5f25086368c8f564a6ed0ff215ed1c9624d8a81f",
+      "entry_module": "glucose_project.reports.preprocessing",
+      "workflow": "report-preprocessing",
+      "pre_privacy_sha256": "9ea2e10aab09310b1472980e77ea99e74264862dd408df430c29a66f4733f40f",
+      "change_reason": "Privacy-only path redaction and portable report generation; no training logic changes."
+    },
+    "review/optimization/analyze_results.py": {
+      "sha256": "21f27b935546445a27c4cc7f3c714cffd070c55e8d4430e861973c8a0d90c28f",
+      "entry_module": "glucose_project.reports.historical",
+      "workflow": "report-historical"
+    },
+    "paper_optimized.py": {
+      "sha256": "bb6624223f7033f99b3c937ff2ee28037cc4995ac2f50ccc4632c03038c24310",
+      "entry_module": "glucose_project.legacy.optimization",
+      "workflow": "legacy-optimization"
+    },
+    "review/baseline_check.py": {
+      "sha256": "cefbbca083ace568623abe12fa79de43f25c783d85592bc5de69fc117ea18929",
+      "entry_module": "glucose_project.legacy.baseline",
+      "workflow": "legacy-baseline"
+    }
+  },
+  "privacy_revision": "2026-11-01"
+}

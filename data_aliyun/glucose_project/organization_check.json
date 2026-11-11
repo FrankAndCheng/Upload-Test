@@ -1,0 +1,19 @@
+{
+  "date": "2026-10-22",
+  "python": "python",
+  "categorized_workflows": 13,
+  "categories": 8,
+  "routing_tests_passed": 6,
+  "historical_source_hashes_unchanged": true,
+  "models_retrained": false,
+  "inference_check": {
+    "input": "data/d_test_B_20180128.csv",
+    "scope": "full",
+    "rows": 1000,
+    "selected": "nn_blend_06",
+    "max_abs_difference": 1.1370849684055884e-07,
+    "reference": "review/sequential_experiments/B_predictions.csv",
+    "rtol": 1e-07,
+    "atol": 1e-07
+  }
+}
